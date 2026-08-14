@@ -1,0 +1,4254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8a3da6721bf6c198fa87705f0d62ece6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8a3da6721bf6c198fa87705f0d62ece6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8a3da6721bf6c198fa87705f0d62ece6 = L.map(
+                "map_8a3da6721bf6c198fa87705f0d62ece6",
+                {
+                    center: [23.9969261, -104.68402357],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_55cbcef9af436f834f14b2e3d3a490cc = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_55cbcef9af436f834f14b2e3d3a490cc.addTo(map_8a3da6721bf6c198fa87705f0d62ece6);
+        
+    
+            var feature_group_34f180dc2f930c5b6d4e267b258f58fd = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_9e6ca03e6bb50e06c5f5c03e9a21e4c9 = L.marker(
+                [23.9969261, -104.68402357],
+                {
+}
+            ).addTo(feature_group_34f180dc2f930c5b6d4e267b258f58fd);
+        
+    
+            var icon_6beaad9cd57867e5538894a8034196c6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-w",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_88311c590edbfe8b27692688cd07a03b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_df92b8e489c808fafae3405f56433cfb = $(`<div id="html_df92b8e489c808fafae3405f56433cfb" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 489<br><b>Cve_Fuente:</b> 0445<br><b>Nombre Fuente:</b> BODEGA AURRERA PRIMO DE VERDAD 2544<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_88311c590edbfe8b27692688cd07a03b.setContent(html_df92b8e489c808fafae3405f56433cfb);
+            
+        
+
+        marker_9e6ca03e6bb50e06c5f5c03e9a21e4c9.bindPopup(popup_88311c590edbfe8b27692688cd07a03b)
+        ;
+
+        
+    
+    
+                marker_9e6ca03e6bb50e06c5f5c03e9a21e4c9.setIcon(icon_6beaad9cd57867e5538894a8034196c6);
+            
+    
+            var marker_85675cd0f7f5beea84fb146295bd468e = L.marker(
+                [23.99884822, -104.67842294],
+                {
+}
+            ).addTo(feature_group_34f180dc2f930c5b6d4e267b258f58fd);
+        
+    
+            var icon_96c6204a2bced30115734579f7eb9715 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-w",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_714e7db46ca443a29c305eee6525e5d0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0dcaad3f698c3c9fb17425e4e0440983 = $(`<div id="html_0dcaad3f698c3c9fb17425e4e0440983" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 583<br><b>Cve_Fuente:</b> 1133<br><b>Nombre Fuente:</b> CARNICERIA GALLEGOS<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_714e7db46ca443a29c305eee6525e5d0.setContent(html_0dcaad3f698c3c9fb17425e4e0440983);
+            
+        
+
+        marker_85675cd0f7f5beea84fb146295bd468e.bindPopup(popup_714e7db46ca443a29c305eee6525e5d0)
+        ;
+
+        
+    
+    
+                marker_85675cd0f7f5beea84fb146295bd468e.setIcon(icon_96c6204a2bced30115734579f7eb9715);
+            
+    
+            var marker_e0c37a1ddc06858a4737ade5e42f2c98 = L.marker(
+                [23.99935312, -104.6698226],
+                {
+}
+            ).addTo(feature_group_34f180dc2f930c5b6d4e267b258f58fd);
+        
+    
+            var icon_25ad46d47d6531b0d071e66deaa20a30 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-j",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0105860f0e1e9a63342cdfac05ffe8d6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2e3858589ad3de878ef6fd9af63b0afd = $(`<div id="html_2e3858589ad3de878ef6fd9af63b0afd" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 582<br><b>Cve_Fuente:</b> 1131<br><b>Nombre Fuente:</b> CARNICERIA DON CELES<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_0105860f0e1e9a63342cdfac05ffe8d6.setContent(html_2e3858589ad3de878ef6fd9af63b0afd);
+            
+        
+
+        marker_e0c37a1ddc06858a4737ade5e42f2c98.bindPopup(popup_0105860f0e1e9a63342cdfac05ffe8d6)
+        ;
+
+        
+    
+    
+                marker_e0c37a1ddc06858a4737ade5e42f2c98.setIcon(icon_25ad46d47d6531b0d071e66deaa20a30);
+            
+    
+            var marker_1c3d090d5ed19c7032b7602528a06719 = L.marker(
+                [23.99959238, -104.662483],
+                {
+}
+            ).addTo(feature_group_34f180dc2f930c5b6d4e267b258f58fd);
+        
+    
+            var icon_8e04d8acf94d81e38b4a0a40fb0872fe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-j",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fb74a5ed8030a00f575e8ba0ff236ed4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3380f9bc60caa601337f8a55935963c0 = $(`<div id="html_3380f9bc60caa601337f8a55935963c0" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 280<br><b>Cve_Fuente:</b> 0440<br><b>Nombre Fuente:</b> TACOS TORTAS Y CARNITAS EL MEXICANO<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_fb74a5ed8030a00f575e8ba0ff236ed4.setContent(html_3380f9bc60caa601337f8a55935963c0);
+            
+        
+
+        marker_1c3d090d5ed19c7032b7602528a06719.bindPopup(popup_fb74a5ed8030a00f575e8ba0ff236ed4)
+        ;
+
+        
+    
+    
+                marker_1c3d090d5ed19c7032b7602528a06719.setIcon(icon_8e04d8acf94d81e38b4a0a40fb0872fe);
+            
+    
+            var marker_9acb993418959e94b779d1316173569b = L.marker(
+                [24.00124241, -104.67424961],
+                {
+}
+            ).addTo(feature_group_34f180dc2f930c5b6d4e267b258f58fd);
+        
+    
+            var icon_40c20ee52077f63bb8c989e73dd3851a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-w",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_53eb337fc70c26c4f7128d01d3a6b1e4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bb281a988769a7487a30c325d166f5c1 = $(`<div id="html_bb281a988769a7487a30c325d166f5c1" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 525<br><b>Cve_Fuente:</b> 1120<br><b>Nombre Fuente:</b> MISCELANEA<br><b>Número de Específicos:</b> 3<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_53eb337fc70c26c4f7128d01d3a6b1e4.setContent(html_bb281a988769a7487a30c325d166f5c1);
+            
+        
+
+        marker_9acb993418959e94b779d1316173569b.bindPopup(popup_53eb337fc70c26c4f7128d01d3a6b1e4)
+        ;
+
+        
+    
+    
+                marker_9acb993418959e94b779d1316173569b.setIcon(icon_40c20ee52077f63bb8c989e73dd3851a);
+            
+    
+            var marker_17ff61c76853ec924098f9a23863e827 = L.marker(
+                [24.00184146, -104.6744979],
+                {
+}
+            ).addTo(feature_group_34f180dc2f930c5b6d4e267b258f58fd);
+        
+    
+            var icon_09a9628cb068a3f811ac2d2c3102a0bb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-w",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4eda34e713d451da1ac2d3035bbb8a3d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_66288031092955a5a02691c20751a40b = $(`<div id="html_66288031092955a5a02691c20751a40b" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 585<br><b>Cve_Fuente:</b> 1087<br><b>Nombre Fuente:</b> FRUTERIA SHELSY<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_4eda34e713d451da1ac2d3035bbb8a3d.setContent(html_66288031092955a5a02691c20751a40b);
+            
+        
+
+        marker_17ff61c76853ec924098f9a23863e827.bindPopup(popup_4eda34e713d451da1ac2d3035bbb8a3d)
+        ;
+
+        
+    
+    
+                marker_17ff61c76853ec924098f9a23863e827.setIcon(icon_09a9628cb068a3f811ac2d2c3102a0bb);
+            
+    
+            var marker_eeb89fe272b3c135ebbe93577c757b52 = L.marker(
+                [24.00295164, -104.6622056],
+                {
+}
+            ).addTo(feature_group_34f180dc2f930c5b6d4e267b258f58fd);
+        
+    
+            var icon_fa3db7da2e61db547e841f9d3d473095 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-j",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ef9fffd00fc2878dba6c07e9a8c8cb21 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5ceaa156655e385102677db82adbbead = $(`<div id="html_5ceaa156655e385102677db82adbbead" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 317<br><b>Cve_Fuente:</b> 1119<br><b>Nombre Fuente:</b> DOMINGO ARRIETA<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_ef9fffd00fc2878dba6c07e9a8c8cb21.setContent(html_5ceaa156655e385102677db82adbbead);
+            
+        
+
+        marker_eeb89fe272b3c135ebbe93577c757b52.bindPopup(popup_ef9fffd00fc2878dba6c07e9a8c8cb21)
+        ;
+
+        
+    
+    
+                marker_eeb89fe272b3c135ebbe93577c757b52.setIcon(icon_fa3db7da2e61db547e841f9d3d473095);
+            
+    
+            var marker_6901547cc544cda34dfd2d8eebad128d = L.marker(
+                [24.00700033, -104.67081259],
+                {
+}
+            ).addTo(feature_group_34f180dc2f930c5b6d4e267b258f58fd);
+        
+    
+            var icon_ac0ccfb5118db60a407bea4b5017ad2e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-m",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_33b04664ab814e8c8b1b616a80b8b505 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c6b1d265830edde31d56dd60ce52fea2 = $(`<div id="html_c6b1d265830edde31d56dd60ce52fea2" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 318<br><b>Cve_Fuente:</b> 1122<br><b>Nombre Fuente:</b> MISCELANEA IV CENTENARIO<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_33b04664ab814e8c8b1b616a80b8b505.setContent(html_c6b1d265830edde31d56dd60ce52fea2);
+            
+        
+
+        marker_6901547cc544cda34dfd2d8eebad128d.bindPopup(popup_33b04664ab814e8c8b1b616a80b8b505)
+        ;
+
+        
+    
+    
+                marker_6901547cc544cda34dfd2d8eebad128d.setIcon(icon_ac0ccfb5118db60a407bea4b5017ad2e);
+            
+    
+            var marker_90ff500d22b349f9b88bfaba1259b0f5 = L.marker(
+                [24.00806887, -104.68203268],
+                {
+}
+            ).addTo(feature_group_34f180dc2f930c5b6d4e267b258f58fd);
+        
+    
+            var icon_b9d5cb64dc95c4de6605a7f8eeea4841 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-m",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_887fa08b6206caa0fc73e88e44b582a3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9693d350c0e4559b965afdfa917b8536 = $(`<div id="html_9693d350c0e4559b965afdfa917b8536" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 281<br><b>Cve_Fuente:</b> 1106<br><b>Nombre Fuente:</b> POLLO FRESCO<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_887fa08b6206caa0fc73e88e44b582a3.setContent(html_9693d350c0e4559b965afdfa917b8536);
+            
+        
+
+        marker_90ff500d22b349f9b88bfaba1259b0f5.bindPopup(popup_887fa08b6206caa0fc73e88e44b582a3)
+        ;
+
+        
+    
+    
+                marker_90ff500d22b349f9b88bfaba1259b0f5.setIcon(icon_b9d5cb64dc95c4de6605a7f8eeea4841);
+            
+    
+            var marker_751b2084b54914aee76498605d70560e = L.marker(
+                [24.01154011, -104.66261448],
+                {
+}
+            ).addTo(feature_group_34f180dc2f930c5b6d4e267b258f58fd);
+        
+    
+            var icon_48c854c7715df52acc5f3443a07b3766 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-v",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d6e15338e6940a46402a2d9a81358b86 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e33b3a86ca526122c078d9f8ee994816 = $(`<div id="html_e33b3a86ca526122c078d9f8ee994816" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 113<br><b>Cve_Fuente:</b> 1094<br><b>Nombre Fuente:</b> CHEDRAUI DURANGO EL REFUGIO T125<br><b>Número de Específicos:</b> 105<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_d6e15338e6940a46402a2d9a81358b86.setContent(html_e33b3a86ca526122c078d9f8ee994816);
+            
+        
+
+        marker_751b2084b54914aee76498605d70560e.bindPopup(popup_d6e15338e6940a46402a2d9a81358b86)
+        ;
+
+        
+    
+    
+                marker_751b2084b54914aee76498605d70560e.setIcon(icon_48c854c7715df52acc5f3443a07b3766);
+            
+    
+            var marker_ec9331ffe5940a1e8d90b3726dbed05d = L.marker(
+                [24.01186606, -104.6908622],
+                {
+}
+            ).addTo(feature_group_34f180dc2f930c5b6d4e267b258f58fd);
+        
+    
+            var icon_96f4cb9e84f2b0906a5c0140b58f0d95 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c42b8bbecc5f12641206ddbf1b3625cc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_94e27f0011e83791823729baacec00d0 = $(`<div id="html_94e27f0011e83791823729baacec00d0" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 515<br><b>Cve_Fuente:</b> 1055<br><b>Nombre Fuente:</b> SORIANA SUC LAS LOMAS 662<br><b>Número de Específicos:</b> 8<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_c42b8bbecc5f12641206ddbf1b3625cc.setContent(html_94e27f0011e83791823729baacec00d0);
+            
+        
+
+        marker_ec9331ffe5940a1e8d90b3726dbed05d.bindPopup(popup_c42b8bbecc5f12641206ddbf1b3625cc)
+        ;
+
+        
+    
+    
+                marker_ec9331ffe5940a1e8d90b3726dbed05d.setIcon(icon_96f4cb9e84f2b0906a5c0140b58f0d95);
+            
+    
+            var marker_3884ee51813c4b487d0d96a51e0093a0 = L.marker(
+                [24.01385544, -104.66331525],
+                {
+}
+            ).addTo(feature_group_34f180dc2f930c5b6d4e267b258f58fd);
+        
+    
+            var icon_aba965dca0902705bad0884c0101e797 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-v",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d024d3a6348ef193f45ce07ba8275e42 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_38c1ceea4ed0ed91d0cb84cf6ea2c1bf = $(`<div id="html_38c1ceea4ed0ed91d0cb84cf6ea2c1bf" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 549<br><b>Cve_Fuente:</b> 0056<br><b>Nombre Fuente:</b> MISCELANEA EL PALACIO DE HIERRO<br><b>Número de Específicos:</b> 2<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_d024d3a6348ef193f45ce07ba8275e42.setContent(html_38c1ceea4ed0ed91d0cb84cf6ea2c1bf);
+            
+        
+
+        marker_3884ee51813c4b487d0d96a51e0093a0.bindPopup(popup_d024d3a6348ef193f45ce07ba8275e42)
+        ;
+
+        
+    
+    
+                marker_3884ee51813c4b487d0d96a51e0093a0.setIcon(icon_aba965dca0902705bad0884c0101e797);
+            
+    
+            var marker_60854ab2aa9b0475413235af0e15567b = L.marker(
+                [24.01573352, -104.6601443],
+                {
+}
+            ).addTo(feature_group_34f180dc2f930c5b6d4e267b258f58fd);
+        
+    
+            var icon_744277068c664b6fd42014c2abcb5cf0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ea465fe4d11b4057d63970da0d3ad6cc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7959fcb20c903afde323044dd44dfb52 = $(`<div id="html_7959fcb20c903afde323044dd44dfb52" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 186<br><b>Cve_Fuente:</b> 1082<br><b>Nombre Fuente:</b> CENTRO AFRUTEXX<br><b>Número de Específicos:</b> 5<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_ea465fe4d11b4057d63970da0d3ad6cc.setContent(html_7959fcb20c903afde323044dd44dfb52);
+            
+        
+
+        marker_60854ab2aa9b0475413235af0e15567b.bindPopup(popup_ea465fe4d11b4057d63970da0d3ad6cc)
+        ;
+
+        
+    
+    
+                marker_60854ab2aa9b0475413235af0e15567b.setIcon(icon_744277068c664b6fd42014c2abcb5cf0);
+            
+    
+            var marker_cf98985d521dc49ceb1ca9ada541079f = L.marker(
+                [24.01574335, -104.6602932],
+                {
+}
+            ).addTo(feature_group_34f180dc2f930c5b6d4e267b258f58fd);
+        
+    
+            var icon_feebc5be38b4a7242d9acb0533b66b1f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4f7521d5d3f859d7aeca2bdb28044adb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_22cb8429c73c00f52f672ef5dfa1601a = $(`<div id="html_22cb8429c73c00f52f672ef5dfa1601a" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 191<br><b>Cve_Fuente:</b> 1078<br><b>Nombre Fuente:</b> FRUTERIA EL FRONTERIZO<br><b>Número de Específicos:</b> 2<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_4f7521d5d3f859d7aeca2bdb28044adb.setContent(html_22cb8429c73c00f52f672ef5dfa1601a);
+            
+        
+
+        marker_cf98985d521dc49ceb1ca9ada541079f.bindPopup(popup_4f7521d5d3f859d7aeca2bdb28044adb)
+        ;
+
+        
+    
+    
+                marker_cf98985d521dc49ceb1ca9ada541079f.setIcon(icon_feebc5be38b4a7242d9acb0533b66b1f);
+            
+    
+            var marker_3d26cf75a68dc4066cf514fcdaad432a = L.marker(
+                [24.01695391, -104.6519186],
+                {
+}
+            ).addTo(feature_group_34f180dc2f930c5b6d4e267b258f58fd);
+        
+    
+            var icon_72780fbb4f47db4e30413295de7b543f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c4665aee75a40ac5172cb281e260887a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6a255617af63f6071f24c8498bc9e6e6 = $(`<div id="html_6a255617af63f6071f24c8498bc9e6e6" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 179<br><b>Cve_Fuente:</b> 1104<br><b>Nombre Fuente:</b> MISCELANEA CAROL<br><b>Número de Específicos:</b> 6<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_c4665aee75a40ac5172cb281e260887a.setContent(html_6a255617af63f6071f24c8498bc9e6e6);
+            
+        
+
+        marker_3d26cf75a68dc4066cf514fcdaad432a.bindPopup(popup_c4665aee75a40ac5172cb281e260887a)
+        ;
+
+        
+    
+    
+                marker_3d26cf75a68dc4066cf514fcdaad432a.setIcon(icon_72780fbb4f47db4e30413295de7b543f);
+            
+    
+            var marker_67f98ee1f6594c32f0b16289614a2ae7 = L.marker(
+                [24.01716756, -104.64806899],
+                {
+}
+            ).addTo(feature_group_34f180dc2f930c5b6d4e267b258f58fd);
+        
+    
+            var icon_934a19a76b0ed6dd9ec1341668da663e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c27d749afd34178110f42cdeec7b70b3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e254de3f92308cd4563c4c8488175ffc = $(`<div id="html_e254de3f92308cd4563c4c8488175ffc" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 13<br><b>Cve_Fuente:</b> 1093<br><b>Nombre Fuente:</b> MISCELANEA EL YOY<br><b>Número de Específicos:</b> 13<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_c27d749afd34178110f42cdeec7b70b3.setContent(html_e254de3f92308cd4563c4c8488175ffc);
+            
+        
+
+        marker_67f98ee1f6594c32f0b16289614a2ae7.bindPopup(popup_c27d749afd34178110f42cdeec7b70b3)
+        ;
+
+        
+    
+    
+                marker_67f98ee1f6594c32f0b16289614a2ae7.setIcon(icon_934a19a76b0ed6dd9ec1341668da663e);
+            
+    
+            var marker_de18ea2c0978bdf3c79d72a327beebbd = L.marker(
+                [24.02027918, -104.66703996],
+                {
+}
+            ).addTo(feature_group_34f180dc2f930c5b6d4e267b258f58fd);
+        
+    
+            var icon_87e71978cc0702fe51ed34cf41ecfe2f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1219ac9df0afe3c40fab070fb92b2824 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ea2c2fe0f3b8c59128cad33cc1f6ec51 = $(`<div id="html_ea2c2fe0f3b8c59128cad33cc1f6ec51" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 154<br><b>Cve_Fuente:</b> 9557<br><b>Nombre Fuente:</b> CARNICERÍA LA MORENA<br><b>Número de Específicos:</b> 4<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_1219ac9df0afe3c40fab070fb92b2824.setContent(html_ea2c2fe0f3b8c59128cad33cc1f6ec51);
+            
+        
+
+        marker_de18ea2c0978bdf3c79d72a327beebbd.bindPopup(popup_1219ac9df0afe3c40fab070fb92b2824)
+        ;
+
+        
+    
+    
+                marker_de18ea2c0978bdf3c79d72a327beebbd.setIcon(icon_87e71978cc0702fe51ed34cf41ecfe2f);
+            
+    
+            var marker_90c0bd40796dd87e1b508b237f67acf4 = L.marker(
+                [24.02090452, -104.66800064],
+                {
+}
+            ).addTo(feature_group_34f180dc2f930c5b6d4e267b258f58fd);
+        
+    
+            var icon_c759cad65972b35b2c3a3578be4d174d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4b8f1ca63678387b97bee17ec1ec1913 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_70a9eb7a8229dc4b141c2dad27fa3c5d = $(`<div id="html_70a9eb7a8229dc4b141c2dad27fa3c5d" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 315<br><b>Cve_Fuente:</b> 1134<br><b>Nombre Fuente:</b> CARNICERIA JARAMILLO<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_4b8f1ca63678387b97bee17ec1ec1913.setContent(html_70a9eb7a8229dc4b141c2dad27fa3c5d);
+            
+        
+
+        marker_90c0bd40796dd87e1b508b237f67acf4.bindPopup(popup_4b8f1ca63678387b97bee17ec1ec1913)
+        ;
+
+        
+    
+    
+                marker_90c0bd40796dd87e1b508b237f67acf4.setIcon(icon_c759cad65972b35b2c3a3578be4d174d);
+            
+    
+            var marker_f2f3cec712d44ca47cbc73b65ed28920 = L.marker(
+                [24.02127626, -104.6667649],
+                {
+}
+            ).addTo(feature_group_34f180dc2f930c5b6d4e267b258f58fd);
+        
+    
+            var icon_0a25e3d04196a44c1ddd31f051f62447 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3b2a57ab02809f4c725e9c53db62a1e3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_88c098e6ebf663cea9255f287214123f = $(`<div id="html_88c098e6ebf663cea9255f287214123f" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 25<br><b>Cve_Fuente:</b> 1068<br><b>Nombre Fuente:</b> POLLERIA LEO<br><b>Número de Específicos:</b> 2<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_3b2a57ab02809f4c725e9c53db62a1e3.setContent(html_88c098e6ebf663cea9255f287214123f);
+            
+        
+
+        marker_f2f3cec712d44ca47cbc73b65ed28920.bindPopup(popup_3b2a57ab02809f4c725e9c53db62a1e3)
+        ;
+
+        
+    
+    
+                marker_f2f3cec712d44ca47cbc73b65ed28920.setIcon(icon_0a25e3d04196a44c1ddd31f051f62447);
+            
+    
+            var marker_0e70ef811782c18f5a3c65a75c42fb0a = L.marker(
+                [24.02163198, -104.66742788],
+                {
+}
+            ).addTo(feature_group_34f180dc2f930c5b6d4e267b258f58fd);
+        
+    
+            var icon_34bb29280cee625da6360dec385c9683 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fd44e0b30f21015e4f66673064e38347 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c95bdf5670c36133b021a423136fe3af = $(`<div id="html_c95bdf5670c36133b021a423136fe3af" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 102<br><b>Cve_Fuente:</b> 0429<br><b>Nombre Fuente:</b> TORTILLAS DE HARINA MAMA CHELO<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_fd44e0b30f21015e4f66673064e38347.setContent(html_c95bdf5670c36133b021a423136fe3af);
+            
+        
+
+        marker_0e70ef811782c18f5a3c65a75c42fb0a.bindPopup(popup_fd44e0b30f21015e4f66673064e38347)
+        ;
+
+        
+    
+    
+                marker_0e70ef811782c18f5a3c65a75c42fb0a.setIcon(icon_34bb29280cee625da6360dec385c9683);
+            
+    
+            var marker_5d3517d4ab965a166493eb78d9a30a2e = L.marker(
+                [24.0217025, -104.6669377],
+                {
+}
+            ).addTo(feature_group_34f180dc2f930c5b6d4e267b258f58fd);
+        
+    
+            var icon_f58823fd51eca7388e72ced7accc1201 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b7a7f8b14e577ef46554e164c0c85e1f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4c25c53b9ed4314123a4d68fc097d7fe = $(`<div id="html_4c25c53b9ed4314123a4d68fc097d7fe" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 26<br><b>Cve_Fuente:</b> 1101<br><b>Nombre Fuente:</b> CARNICERIA LOS 3 GARCIA<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_b7a7f8b14e577ef46554e164c0c85e1f.setContent(html_4c25c53b9ed4314123a4d68fc097d7fe);
+            
+        
+
+        marker_5d3517d4ab965a166493eb78d9a30a2e.bindPopup(popup_b7a7f8b14e577ef46554e164c0c85e1f)
+        ;
+
+        
+    
+    
+                marker_5d3517d4ab965a166493eb78d9a30a2e.setIcon(icon_f58823fd51eca7388e72ced7accc1201);
+            
+    
+            var marker_30bcfd2834177c2532c08bcce2fad252 = L.marker(
+                [24.02327861, -104.6302164],
+                {
+}
+            ).addTo(feature_group_34f180dc2f930c5b6d4e267b258f58fd);
+        
+    
+            var icon_632f0fedfdf1a7a61373412db2c2efb9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-m",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_15afe969726b8f05164a53827e96940e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_13de3c70d9c16672ad6d3a2d83991741 = $(`<div id="html_13de3c70d9c16672ad6d3a2d83991741" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 165<br><b>Cve_Fuente:</b> 1116<br><b>Nombre Fuente:</b> MISCELANEA DOÑA QUETA<br><b>Número de Específicos:</b> 9<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_15afe969726b8f05164a53827e96940e.setContent(html_13de3c70d9c16672ad6d3a2d83991741);
+            
+        
+
+        marker_30bcfd2834177c2532c08bcce2fad252.bindPopup(popup_15afe969726b8f05164a53827e96940e)
+        ;
+
+        
+    
+    
+                marker_30bcfd2834177c2532c08bcce2fad252.setIcon(icon_632f0fedfdf1a7a61373412db2c2efb9);
+            
+    
+            var marker_c4bb290adf650fc9cf2e0ee9187fe871 = L.marker(
+                [24.02427683, -104.67367734],
+                {
+}
+            ).addTo(feature_group_34f180dc2f930c5b6d4e267b258f58fd);
+        
+    
+            var icon_2cfa1596573e4f9d89ce0f3f80851ba2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-v",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_99a39a804e9dbbcf319356e6712a0b97 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c5631029bf5175a4a246c26fb7ec64a8 = $(`<div id="html_c5631029bf5175a4a246c26fb7ec64a8" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 590<br><b>Cve_Fuente:</b> 0127<br><b>Nombre Fuente:</b> PIZZERIA PIZZALY<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_99a39a804e9dbbcf319356e6712a0b97.setContent(html_c5631029bf5175a4a246c26fb7ec64a8);
+            
+        
+
+        marker_c4bb290adf650fc9cf2e0ee9187fe871.bindPopup(popup_99a39a804e9dbbcf319356e6712a0b97)
+        ;
+
+        
+    
+    
+                marker_c4bb290adf650fc9cf2e0ee9187fe871.setIcon(icon_2cfa1596573e4f9d89ce0f3f80851ba2);
+            
+    
+            var marker_d3d3af2704ada89be08c9de150eea0bf = L.marker(
+                [24.02468484, -104.66977813],
+                {
+}
+            ).addTo(feature_group_34f180dc2f930c5b6d4e267b258f58fd);
+        
+    
+            var icon_2d240bf1dcbb5981cf93f929b01b8cda = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5f99cb6a085a8d4a1e1a39d37723d9a5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2f5f453271b7d9b5b52973e39e6eacc6 = $(`<div id="html_2f5f453271b7d9b5b52973e39e6eacc6" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 62<br><b>Cve_Fuente:</b> 1062<br><b>Nombre Fuente:</b> TIENDA NATURISTA LA CASA DEL TE<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_5f99cb6a085a8d4a1e1a39d37723d9a5.setContent(html_2f5f453271b7d9b5b52973e39e6eacc6);
+            
+        
+
+        marker_d3d3af2704ada89be08c9de150eea0bf.bindPopup(popup_5f99cb6a085a8d4a1e1a39d37723d9a5)
+        ;
+
+        
+    
+    
+                marker_d3d3af2704ada89be08c9de150eea0bf.setIcon(icon_2d240bf1dcbb5981cf93f929b01b8cda);
+            
+    
+            var marker_0d7e4920f095119bcb8cd5bfabd3ada7 = L.marker(
+                [24.02518884, -104.66698617],
+                {
+}
+            ).addTo(feature_group_34f180dc2f930c5b6d4e267b258f58fd);
+        
+    
+            var icon_4226a900a89241734473e5bde6ecb92e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a7f314b323928027402edb4e01a8aaa6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9b136aa002ed6b334957b510e99a73b8 = $(`<div id="html_9b136aa002ed6b334957b510e99a73b8" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 553<br><b>Cve_Fuente:</b> 0069<br><b>Nombre Fuente:</b> CARNICERIA 21 ROJO<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_a7f314b323928027402edb4e01a8aaa6.setContent(html_9b136aa002ed6b334957b510e99a73b8);
+            
+        
+
+        marker_0d7e4920f095119bcb8cd5bfabd3ada7.bindPopup(popup_a7f314b323928027402edb4e01a8aaa6)
+        ;
+
+        
+    
+    
+                marker_0d7e4920f095119bcb8cd5bfabd3ada7.setIcon(icon_4226a900a89241734473e5bde6ecb92e);
+            
+    
+            var marker_c59983095f8471c86309c5c3c555f13d = L.marker(
+                [24.02540434, -104.640546],
+                {
+}
+            ).addTo(feature_group_34f180dc2f930c5b6d4e267b258f58fd);
+        
+    
+            var icon_e16d10f784c04f03911b6361775fc7e9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-v",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5a44bfae61efc9c7331e33ed134727ca = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6c50ad877cb856e2611bd66ffa97642c = $(`<div id="html_6c50ad877cb856e2611bd66ffa97642c" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 170<br><b>Cve_Fuente:</b> 1079<br><b>Nombre Fuente:</b> TIENDA DE ABARROTES LA ESPERANZA<br><b>Número de Específicos:</b> 3<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_5a44bfae61efc9c7331e33ed134727ca.setContent(html_6c50ad877cb856e2611bd66ffa97642c);
+            
+        
+
+        marker_c59983095f8471c86309c5c3c555f13d.bindPopup(popup_5a44bfae61efc9c7331e33ed134727ca)
+        ;
+
+        
+    
+    
+                marker_c59983095f8471c86309c5c3c555f13d.setIcon(icon_e16d10f784c04f03911b6361775fc7e9);
+            
+    
+            var marker_eb59ea29de5ff250cadfc09b3b34a781 = L.marker(
+                [24.02606635, -104.64128686],
+                {
+}
+            ).addTo(feature_group_34f180dc2f930c5b6d4e267b258f58fd);
+        
+    
+            var icon_e54433830ec3a394ef2293fb448c14c4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-v",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bc03a0aee09be83fb505e6e7340c7140 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4a3e5e1f84e2feaee1a829da5401faa8 = $(`<div id="html_4a3e5e1f84e2feaee1a829da5401faa8" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 528<br><b>Cve_Fuente:</b> 1130<br><b>Nombre Fuente:</b> MISCELANEA EL PARAISO<br><b>Número de Específicos:</b> 3<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_bc03a0aee09be83fb505e6e7340c7140.setContent(html_4a3e5e1f84e2feaee1a829da5401faa8);
+            
+        
+
+        marker_eb59ea29de5ff250cadfc09b3b34a781.bindPopup(popup_bc03a0aee09be83fb505e6e7340c7140)
+        ;
+
+        
+    
+    
+                marker_eb59ea29de5ff250cadfc09b3b34a781.setIcon(icon_e54433830ec3a394ef2293fb448c14c4);
+            
+    
+            var marker_d803e0a38f9a19123d75acd7d6f5fcb5 = L.marker(
+                [24.02905373, -104.63155439],
+                {
+}
+            ).addTo(feature_group_34f180dc2f930c5b6d4e267b258f58fd);
+        
+    
+            var icon_62ce48f0ad29e6c1045a7894fdab9c3c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-m",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_16712eb361adbbb91b2f305e3f9d3903 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5fafcc00a3400f2eb5fee832114b3fcc = $(`<div id="html_5fafcc00a3400f2eb5fee832114b3fcc" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 296<br><b>Cve_Fuente:</b> 9559<br><b>Nombre Fuente:</b> MINI SUPER LOS AMIGOS<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_16712eb361adbbb91b2f305e3f9d3903.setContent(html_5fafcc00a3400f2eb5fee832114b3fcc);
+            
+        
+
+        marker_d803e0a38f9a19123d75acd7d6f5fcb5.bindPopup(popup_16712eb361adbbb91b2f305e3f9d3903)
+        ;
+
+        
+    
+    
+                marker_d803e0a38f9a19123d75acd7d6f5fcb5.setIcon(icon_62ce48f0ad29e6c1045a7894fdab9c3c);
+            
+    
+            var marker_12a1d429c99d344e58237ebf392f86ab = L.marker(
+                [24.03070891, -104.65900411],
+                {
+}
+            ).addTo(feature_group_34f180dc2f930c5b6d4e267b258f58fd);
+        
+    
+            var icon_424cd8eea9ae0497344b027d464366ab = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-m",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_de36859f13c2de4b56dd2dc379f05f7a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2dca11d6979270373aedf04f9369791a = $(`<div id="html_2dca11d6979270373aedf04f9369791a" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 269<br><b>Cve_Fuente:</b> 1065<br><b>Nombre Fuente:</b> MISCELANEA LA ESTRELLA<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_de36859f13c2de4b56dd2dc379f05f7a.setContent(html_2dca11d6979270373aedf04f9369791a);
+            
+        
+
+        marker_12a1d429c99d344e58237ebf392f86ab.bindPopup(popup_de36859f13c2de4b56dd2dc379f05f7a)
+        ;
+
+        
+    
+    
+                marker_12a1d429c99d344e58237ebf392f86ab.setIcon(icon_424cd8eea9ae0497344b027d464366ab);
+            
+    
+            var marker_451fb1f6cdd1d2ab95deedee73dd93c5 = L.marker(
+                [24.03077814, -104.66308479],
+                {
+}
+            ).addTo(feature_group_34f180dc2f930c5b6d4e267b258f58fd);
+        
+    
+            var icon_4c6d998c5b333cdfa3698fe1aabfb4c7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-m",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_27ce1c7ecb427a43a0f56c168f59ddde = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3fd329ecd7d399b43ddd845a3e20c18e = $(`<div id="html_3fd329ecd7d399b43ddd845a3e20c18e" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 297<br><b>Cve_Fuente:</b> 1157<br><b>Nombre Fuente:</b> MINI SUPER MARQUEZ<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_27ce1c7ecb427a43a0f56c168f59ddde.setContent(html_3fd329ecd7d399b43ddd845a3e20c18e);
+            
+        
+
+        marker_451fb1f6cdd1d2ab95deedee73dd93c5.bindPopup(popup_27ce1c7ecb427a43a0f56c168f59ddde)
+        ;
+
+        
+    
+    
+                marker_451fb1f6cdd1d2ab95deedee73dd93c5.setIcon(icon_4c6d998c5b333cdfa3698fe1aabfb4c7);
+            
+    
+            var marker_974d5eede0a641beddb4ac10d7678e2e = L.marker(
+                [24.03218322, -104.64066612],
+                {
+}
+            ).addTo(feature_group_34f180dc2f930c5b6d4e267b258f58fd);
+        
+    
+            var icon_6277bd17262e97a563494ed64361aa0a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "fa-v",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2f3314c48193c61c8a43f1e8bd62e16f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_74f619b2d28eb02d8c02de32d1f9d4d3 = $(`<div id="html_74f619b2d28eb02d8c02de32d1f9d4d3" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 109<br><b>Cve_Fuente:</b> 1164<br><b>Nombre Fuente:</b> ROSTICERIA NAPOLES<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 21</div>`)[0];
+                popup_2f3314c48193c61c8a43f1e8bd62e16f.setContent(html_74f619b2d28eb02d8c02de32d1f9d4d3);
+            
+        
+
+        marker_974d5eede0a641beddb4ac10d7678e2e.bindPopup(popup_2f3314c48193c61c8a43f1e8bd62e16f)
+        ;
+
+        
+    
+    
+                marker_974d5eede0a641beddb4ac10d7678e2e.setIcon(icon_6277bd17262e97a563494ed64361aa0a);
+            
+    
+            var marker_2e5fe0f4e24f36938bc3291ce6e7c0c4 = L.marker(
+                [24.03498334, -104.69183228],
+                {
+}
+            ).addTo(feature_group_34f180dc2f930c5b6d4e267b258f58fd);
+        
+    
+            var icon_b16e47e789938d48254d4dff4e532527 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-w",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_958c4597cac3753b3b3e136eb01992f4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e37432dc63eee0216bc23b27623686af = $(`<div id="html_e37432dc63eee0216bc23b27623686af" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 316<br><b>Cve_Fuente:</b> 1124<br><b>Nombre Fuente:</b> MISCELANEA CORIA<br><b>Número de Específicos:</b> 2<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_958c4597cac3753b3b3e136eb01992f4.setContent(html_e37432dc63eee0216bc23b27623686af);
+            
+        
+
+        marker_2e5fe0f4e24f36938bc3291ce6e7c0c4.bindPopup(popup_958c4597cac3753b3b3e136eb01992f4)
+        ;
+
+        
+    
+    
+                marker_2e5fe0f4e24f36938bc3291ce6e7c0c4.setIcon(icon_b16e47e789938d48254d4dff4e532527);
+            
+    
+            var marker_87da2f1abd54c8b1361ee810e15afbc1 = L.marker(
+                [24.03624428, -104.62738701],
+                {
+}
+            ).addTo(feature_group_34f180dc2f930c5b6d4e267b258f58fd);
+        
+    
+            var icon_c8ad2c2f70690653504a3c261995115e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "fa-v",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_13d1ec94ae57733de7e70909c8d488f5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_77a1ad5fb95f85b89d39ff691c60cd1f = $(`<div id="html_77a1ad5fb95f85b89d39ff691c60cd1f" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 28<br><b>Cve_Fuente:</b> 1137<br><b>Nombre Fuente:</b> MISCELANEA MARINA<br><b>Número de Específicos:</b> 2<br><b>Cve_Cotizador:</b> 21</div>`)[0];
+                popup_13d1ec94ae57733de7e70909c8d488f5.setContent(html_77a1ad5fb95f85b89d39ff691c60cd1f);
+            
+        
+
+        marker_87da2f1abd54c8b1361ee810e15afbc1.bindPopup(popup_13d1ec94ae57733de7e70909c8d488f5)
+        ;
+
+        
+    
+    
+                marker_87da2f1abd54c8b1361ee810e15afbc1.setIcon(icon_c8ad2c2f70690653504a3c261995115e);
+            
+    
+            var marker_b08051e034c6ac713f8b877ad09ca10f = L.marker(
+                [24.03967282, -104.67583374],
+                {
+}
+            ).addTo(feature_group_34f180dc2f930c5b6d4e267b258f58fd);
+        
+    
+            var icon_74e6cfcef9c27c67d3b534c26ac94e41 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-j",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c46f58de3a30339057ec6d5ee1287a3d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8a367888bd1392ae1a2a2dfc73bfda6f = $(`<div id="html_8a367888bd1392ae1a2a2dfc73bfda6f" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 294<br><b>Cve_Fuente:</b> 1061<br><b>Nombre Fuente:</b> MINI SUPER 501<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_c46f58de3a30339057ec6d5ee1287a3d.setContent(html_8a367888bd1392ae1a2a2dfc73bfda6f);
+            
+        
+
+        marker_b08051e034c6ac713f8b877ad09ca10f.bindPopup(popup_c46f58de3a30339057ec6d5ee1287a3d)
+        ;
+
+        
+    
+    
+                marker_b08051e034c6ac713f8b877ad09ca10f.setIcon(icon_74e6cfcef9c27c67d3b534c26ac94e41);
+            
+    
+            var marker_8b28db690d740d32ce424f2fe2245a2f = L.marker(
+                [24.04162437, -104.66430344],
+                {
+}
+            ).addTo(feature_group_34f180dc2f930c5b6d4e267b258f58fd);
+        
+    
+            var icon_bc2cc74ec5eb67e20647a9a3bce2b6f4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-j",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b9de81232e141f958f4b00f83b719fca = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d39209fe7b07bdc1fef2874e9ba17bd7 = $(`<div id="html_d39209fe7b07bdc1fef2874e9ba17bd7" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 158<br><b>Cve_Fuente:</b> 0192<br><b>Nombre Fuente:</b> FRUTERIA EL CUERNO DE LA ABUNDANCIA<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_b9de81232e141f958f4b00f83b719fca.setContent(html_d39209fe7b07bdc1fef2874e9ba17bd7);
+            
+        
+
+        marker_8b28db690d740d32ce424f2fe2245a2f.bindPopup(popup_b9de81232e141f958f4b00f83b719fca)
+        ;
+
+        
+    
+    
+                marker_8b28db690d740d32ce424f2fe2245a2f.setIcon(icon_bc2cc74ec5eb67e20647a9a3bce2b6f4);
+            
+    
+            var marker_5ad04b10ad5a3b12a2684dfaa753f53d = L.marker(
+                [24.04731056, -104.6228988],
+                {
+}
+            ).addTo(feature_group_34f180dc2f930c5b6d4e267b258f58fd);
+        
+    
+            var icon_e3c7c5678c3e80afd90fdf2b2af9e381 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "fa-m",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fda2f21637bdd7f33f030b12bcb5a702 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ad75758e33d43849941b5893bf29acc0 = $(`<div id="html_ad75758e33d43849941b5893bf29acc0" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 42<br><b>Cve_Fuente:</b> 1125<br><b>Nombre Fuente:</b> CHEDRAUI DURANGO PORTAL T192<br><b>Número de Específicos:</b> 6<br><b>Cve_Cotizador:</b> 21</div>`)[0];
+                popup_fda2f21637bdd7f33f030b12bcb5a702.setContent(html_ad75758e33d43849941b5893bf29acc0);
+            
+        
+
+        marker_5ad04b10ad5a3b12a2684dfaa753f53d.bindPopup(popup_fda2f21637bdd7f33f030b12bcb5a702)
+        ;
+
+        
+    
+    
+                marker_5ad04b10ad5a3b12a2684dfaa753f53d.setIcon(icon_e3c7c5678c3e80afd90fdf2b2af9e381);
+            
+    
+            var marker_a05a15671321304b6def034a37861bd1 = L.marker(
+                [24.04895579, -104.6489491],
+                {
+}
+            ).addTo(feature_group_34f180dc2f930c5b6d4e267b258f58fd);
+        
+    
+            var icon_62e17952e0ad038a666a891a749bc09a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_46b01aaf6ef3448ba1e4fd3bef0e60da = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_911211fb3b5a77bd088d291108f8741d = $(`<div id="html_911211fb3b5a77bd088d291108f8741d" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 26<br><b>Cve_Fuente:</b> 1109<br><b>Nombre Fuente:</b> FRUTERIA GUADALUPE<br><b>Número de Específicos:</b> 2<br><b>Cve_Cotizador:</b> 21</div>`)[0];
+                popup_46b01aaf6ef3448ba1e4fd3bef0e60da.setContent(html_911211fb3b5a77bd088d291108f8741d);
+            
+        
+
+        marker_a05a15671321304b6def034a37861bd1.bindPopup(popup_46b01aaf6ef3448ba1e4fd3bef0e60da)
+        ;
+
+        
+    
+    
+                marker_a05a15671321304b6def034a37861bd1.setIcon(icon_62e17952e0ad038a666a891a749bc09a);
+            
+    
+            var marker_14aabaa2dcdcb1c8af237c5dad0222f6 = L.marker(
+                [24.04988456, -104.64763128],
+                {
+}
+            ).addTo(feature_group_34f180dc2f930c5b6d4e267b258f58fd);
+        
+    
+            var icon_844412712195d4ed359b44e98467e267 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c5611204a6d05c88464b8c17e184e22a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9a5c7b1dd2b4b6f2cbd86a5c59b37d52 = $(`<div id="html_9a5c7b1dd2b4b6f2cbd86a5c59b37d52" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 24<br><b>Cve_Fuente:</b> 1132<br><b>Nombre Fuente:</b> CARNICERIA ZAVALA<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 21</div>`)[0];
+                popup_c5611204a6d05c88464b8c17e184e22a.setContent(html_9a5c7b1dd2b4b6f2cbd86a5c59b37d52);
+            
+        
+
+        marker_14aabaa2dcdcb1c8af237c5dad0222f6.bindPopup(popup_c5611204a6d05c88464b8c17e184e22a)
+        ;
+
+        
+    
+    
+                marker_14aabaa2dcdcb1c8af237c5dad0222f6.setIcon(icon_844412712195d4ed359b44e98467e267);
+            
+    
+            feature_group_34f180dc2f930c5b6d4e267b258f58fd.addTo(map_8a3da6721bf6c198fa87705f0d62ece6);
+        
+    
+            var feature_group_f858f70fd0dd25ed89012d78203ec044 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_962baa50c825900aaa18ae0fadc98e6e = L.marker(
+                [24.01153806, -104.70011255],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_8dfc9d2db826f609f6f55315be070c6a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ce29edcb161f3c25eaabd1d9eb32f646 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cfa66362e58cae2eff04ee4ea4e5bc13 = $(`<div id="html_cfa66362e58cae2eff04ee4ea4e5bc13" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 305<br><b>Cve_Fuente:</b> 1043<br><b>Nombre Fuente:</b> ESTETICA CANINA LUCK<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_ce29edcb161f3c25eaabd1d9eb32f646.setContent(html_cfa66362e58cae2eff04ee4ea4e5bc13);
+            
+        
+
+        marker_962baa50c825900aaa18ae0fadc98e6e.bindPopup(popup_ce29edcb161f3c25eaabd1d9eb32f646)
+        ;
+
+        
+    
+    
+                marker_962baa50c825900aaa18ae0fadc98e6e.setIcon(icon_8dfc9d2db826f609f6f55315be070c6a);
+            
+    
+            var marker_7640c72629658de593fd5adb4e5cccd1 = L.marker(
+                [24.01947665, -104.66730947],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_95f5447dd82190369ccea4fcff961082 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5f0dd9dbdf33182f46ac099420e6ebbc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ab4faef8233b5f56cefabdaa6d5b8161 = $(`<div id="html_ab4faef8233b5f56cefabdaa6d5b8161" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 687<br><b>Cve_Fuente:</b> 1071<br><b>Nombre Fuente:</b> MARCEL MUEBLERIA<br><b>Número de Específicos:</b> 5<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_5f0dd9dbdf33182f46ac099420e6ebbc.setContent(html_ab4faef8233b5f56cefabdaa6d5b8161);
+            
+        
+
+        marker_7640c72629658de593fd5adb4e5cccd1.bindPopup(popup_5f0dd9dbdf33182f46ac099420e6ebbc)
+        ;
+
+        
+    
+    
+                marker_7640c72629658de593fd5adb4e5cccd1.setIcon(icon_95f5447dd82190369ccea4fcff961082);
+            
+    
+            var marker_d63908b99a452552f93027c1705c9c1b = L.marker(
+                [24.0200096, -104.65294419],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_b95b5671fe5a83e27a6ca4179da41409 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_249105dac7762959c4a23f9d18a56a23 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cb527455cfda0ffb633e495dcfd646e6 = $(`<div id="html_cb527455cfda0ffb633e495dcfd646e6" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 148<br><b>Cve_Fuente:</b> 1110<br><b>Nombre Fuente:</b> MULTISERVICIOS AUTOMOTRICES CENTAURO<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_249105dac7762959c4a23f9d18a56a23.setContent(html_cb527455cfda0ffb633e495dcfd646e6);
+            
+        
+
+        marker_d63908b99a452552f93027c1705c9c1b.bindPopup(popup_249105dac7762959c4a23f9d18a56a23)
+        ;
+
+        
+    
+    
+                marker_d63908b99a452552f93027c1705c9c1b.setIcon(icon_b95b5671fe5a83e27a6ca4179da41409);
+            
+    
+            var marker_699aeaa7131ac887cdedf10f3f070a7b = L.marker(
+                [24.02029163, -104.66790737],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_fb614acfe2782962676e5194d003236c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d369e72887f62768758020e6dae0402a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5254ee0b58fb74f6a88f0cc1faaa4c11 = $(`<div id="html_5254ee0b58fb74f6a88f0cc1faaa4c11" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 45<br><b>Cve_Fuente:</b> 1148<br><b>Nombre Fuente:</b> COPPEL ALAMEDA 61<br><b>Número de Específicos:</b> 2<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_d369e72887f62768758020e6dae0402a.setContent(html_5254ee0b58fb74f6a88f0cc1faaa4c11);
+            
+        
+
+        marker_699aeaa7131ac887cdedf10f3f070a7b.bindPopup(popup_d369e72887f62768758020e6dae0402a)
+        ;
+
+        
+    
+    
+                marker_699aeaa7131ac887cdedf10f3f070a7b.setIcon(icon_fb614acfe2782962676e5194d003236c);
+            
+    
+            var marker_b984427c67e08a9d65961490b26a2e45 = L.marker(
+                [24.02109677, -104.67848721],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_338254f3e8157be63512958cae9f6f04 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-v",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9a543a566f332684a908161de0833bea = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6d87885317e626ccedf4717a0ec3625e = $(`<div id="html_6d87885317e626ccedf4717a0ec3625e" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 457<br><b>Cve_Fuente:</b> 1077<br><b>Nombre Fuente:</b> LIBRERIA MEDICA<br><b>Número de Específicos:</b> 3<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_9a543a566f332684a908161de0833bea.setContent(html_6d87885317e626ccedf4717a0ec3625e);
+            
+        
+
+        marker_b984427c67e08a9d65961490b26a2e45.bindPopup(popup_9a543a566f332684a908161de0833bea)
+        ;
+
+        
+    
+    
+                marker_b984427c67e08a9d65961490b26a2e45.setIcon(icon_338254f3e8157be63512958cae9f6f04);
+            
+    
+            var marker_118294bf48b8ed07f9518b6536863223 = L.marker(
+                [24.02127626, -104.66676491],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_4b094f16926d2fe69868490b8746096f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a2917209282ee8659e86dcd8c8ff4394 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_68282c993761750e154bfa92989079fa = $(`<div id="html_68282c993761750e154bfa92989079fa" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 257<br><b>Cve_Fuente:</b> 0341<br><b>Nombre Fuente:</b> BONETERIA<br><b>Número de Específicos:</b> 2<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_a2917209282ee8659e86dcd8c8ff4394.setContent(html_68282c993761750e154bfa92989079fa);
+            
+        
+
+        marker_118294bf48b8ed07f9518b6536863223.bindPopup(popup_a2917209282ee8659e86dcd8c8ff4394)
+        ;
+
+        
+    
+    
+                marker_118294bf48b8ed07f9518b6536863223.setIcon(icon_4b094f16926d2fe69868490b8746096f);
+            
+    
+            var marker_2b6339f9ba3820538b4afbeb04557ad8 = L.marker(
+                [24.02163959, -104.65218749],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_d9d563c7f2d892265ebf8465c2e9e9cd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b0624939c380d0f7e64b37ab4bb19bc4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_55a0fcb28be93a624998df0232c24fca = $(`<div id="html_55a0fcb28be93a624998df0232c24fca" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 480<br><b>Cve_Fuente:</b> 0439<br><b>Nombre Fuente:</b> EL COLCHON REAL<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_b0624939c380d0f7e64b37ab4bb19bc4.setContent(html_55a0fcb28be93a624998df0232c24fca);
+            
+        
+
+        marker_2b6339f9ba3820538b4afbeb04557ad8.bindPopup(popup_b0624939c380d0f7e64b37ab4bb19bc4)
+        ;
+
+        
+    
+    
+                marker_2b6339f9ba3820538b4afbeb04557ad8.setIcon(icon_d9d563c7f2d892265ebf8465c2e9e9cd);
+            
+    
+            var marker_f30fe1f5ae3f8e1ab6a9b9f6625041be = L.marker(
+                [24.02167404, -104.6667053],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_85a934c0a4f753a3c18e12dec0ed43c0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fe6703e778b0b9c059cafb7b05adc8a2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f8ef54148b66b52ec7ec52a043a5d9b8 = $(`<div id="html_f8ef54148b66b52ec7ec52a043a5d9b8" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 189<br><b>Cve_Fuente:</b> 0209<br><b>Nombre Fuente:</b> TURISMOS BATRES<br><b>Número de Específicos:</b> 2<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_fe6703e778b0b9c059cafb7b05adc8a2.setContent(html_f8ef54148b66b52ec7ec52a043a5d9b8);
+            
+        
+
+        marker_f30fe1f5ae3f8e1ab6a9b9f6625041be.bindPopup(popup_fe6703e778b0b9c059cafb7b05adc8a2)
+        ;
+
+        
+    
+    
+                marker_f30fe1f5ae3f8e1ab6a9b9f6625041be.setIcon(icon_85a934c0a4f753a3c18e12dec0ed43c0);
+            
+    
+            var marker_c5194e8e2710d17f3a49a47b7a8a1f9c = L.marker(
+                [24.02196034, -104.67327744],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_f5949202d987b339322fec55b8c7a05b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-v",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f316492b9b719072580785adf26cfad3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e4625e76cc9d2c0bfd89f5806dc4d17d = $(`<div id="html_e4625e76cc9d2c0bfd89f5806dc4d17d" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 319<br><b>Cve_Fuente:</b> 1162<br><b>Nombre Fuente:</b> ANALISIS URGENTES QUIMAR<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_f316492b9b719072580785adf26cfad3.setContent(html_e4625e76cc9d2c0bfd89f5806dc4d17d);
+            
+        
+
+        marker_c5194e8e2710d17f3a49a47b7a8a1f9c.bindPopup(popup_f316492b9b719072580785adf26cfad3)
+        ;
+
+        
+    
+    
+                marker_c5194e8e2710d17f3a49a47b7a8a1f9c.setIcon(icon_f5949202d987b339322fec55b8c7a05b);
+            
+    
+            var marker_02186af3a19ee974836b70dc55b4296e = L.marker(
+                [24.02211573, -104.66664439],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_b94539cd53c1d96e0034292ede817cbb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5dcf43e41f425d8545ec2d6886bb9259 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fd5a70f681d27a23f9dd1f1b7e53e200 = $(`<div id="html_fd5a70f681d27a23f9dd1f1b7e53e200" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 99<br><b>Cve_Fuente:</b> 1099<br><b>Nombre Fuente:</b> CRISTALERIA, LOZA Y UTENSILIOS DE COCINA SNOMBRE<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_5dcf43e41f425d8545ec2d6886bb9259.setContent(html_fd5a70f681d27a23f9dd1f1b7e53e200);
+            
+        
+
+        marker_02186af3a19ee974836b70dc55b4296e.bindPopup(popup_5dcf43e41f425d8545ec2d6886bb9259)
+        ;
+
+        
+    
+    
+                marker_02186af3a19ee974836b70dc55b4296e.setIcon(icon_b94539cd53c1d96e0034292ede817cbb);
+            
+    
+            var marker_2c48271612049b741873d26af43feda8 = L.marker(
+                [24.0221786, -104.652007],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_ef109a8b2389ce5243f597d1a90ff87f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b8af3446fa708b83863e444f46fecbc2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ea5d9413df484ab810cd030d94bee514 = $(`<div id="html_ea5d9413df484ab810cd030d94bee514" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 176<br><b>Cve_Fuente:</b> 0411<br><b>Nombre Fuente:</b> FARMACIA GUADIANA<br><b>Número de Específicos:</b> 3<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_b8af3446fa708b83863e444f46fecbc2.setContent(html_ea5d9413df484ab810cd030d94bee514);
+            
+        
+
+        marker_2c48271612049b741873d26af43feda8.bindPopup(popup_b8af3446fa708b83863e444f46fecbc2)
+        ;
+
+        
+    
+    
+                marker_2c48271612049b741873d26af43feda8.setIcon(icon_ef109a8b2389ce5243f597d1a90ff87f);
+            
+    
+            var marker_cb963a60f7bc8fa152d8d07386ce319d = L.marker(
+                [24.02234799, -104.66875652],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_82b2ca95eff950beedabe4c86bbb6435 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8c7f2c7c8cacc7b0630641d5236d67e6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6103eac9cfbe1f7bd17f2bb1a8b0d928 = $(`<div id="html_6103eac9cfbe1f7bd17f2bb1a8b0d928" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 248<br><b>Cve_Fuente:</b> 0240<br><b>Nombre Fuente:</b> ESTACIONAMIENTO MONTERREY<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_8c7f2c7c8cacc7b0630641d5236d67e6.setContent(html_6103eac9cfbe1f7bd17f2bb1a8b0d928);
+            
+        
+
+        marker_cb963a60f7bc8fa152d8d07386ce319d.bindPopup(popup_8c7f2c7c8cacc7b0630641d5236d67e6)
+        ;
+
+        
+    
+    
+                marker_cb963a60f7bc8fa152d8d07386ce319d.setIcon(icon_82b2ca95eff950beedabe4c86bbb6435);
+            
+    
+            var marker_d88c88ccd228dd3e3f42c79492538317 = L.marker(
+                [24.02304162, -104.6646355],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_be457b9bdaf89799ab60dcdcc43c754c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_958ecfc72152cce6c8ebaaa5d515e4b6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fd09c99fd208f50e9b67d3a7d392df1d = $(`<div id="html_fd09c99fd208f50e9b67d3a7d392df1d" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 349<br><b>Cve_Fuente:</b> 1066<br><b>Nombre Fuente:</b> MUEBLERIA CARLOS LEON<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_958ecfc72152cce6c8ebaaa5d515e4b6.setContent(html_fd09c99fd208f50e9b67d3a7d392df1d);
+            
+        
+
+        marker_d88c88ccd228dd3e3f42c79492538317.bindPopup(popup_958ecfc72152cce6c8ebaaa5d515e4b6)
+        ;
+
+        
+    
+    
+                marker_d88c88ccd228dd3e3f42c79492538317.setIcon(icon_be457b9bdaf89799ab60dcdcc43c754c);
+            
+    
+            var marker_be8d8d5ba6f24ab22c70896a32006a60 = L.marker(
+                [24.02307801, -104.663709],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_06650108826f15722fd05981917a2596 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d82183a3c26ae283cd495ad74ac47eaf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ba9e1246f7d93d49ca73d6f32c8306f4 = $(`<div id="html_ba9e1246f7d93d49ca73d6f32c8306f4" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 258<br><b>Cve_Fuente:</b> 0381<br><b>Nombre Fuente:</b> GRUPO VLAIM DIVISION UNIFORMES<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_d82183a3c26ae283cd495ad74ac47eaf.setContent(html_ba9e1246f7d93d49ca73d6f32c8306f4);
+            
+        
+
+        marker_be8d8d5ba6f24ab22c70896a32006a60.bindPopup(popup_d82183a3c26ae283cd495ad74ac47eaf)
+        ;
+
+        
+    
+    
+                marker_be8d8d5ba6f24ab22c70896a32006a60.setIcon(icon_06650108826f15722fd05981917a2596);
+            
+    
+            var marker_ea325e692cf8d775fc60e014641771d5 = L.marker(
+                [24.02308385, -104.66547463],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_7f22e3ebee0286cbb7df353a8edd4410 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5bd100697b42231f72dc7622d5b42d1c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fbcfcd8dbf438afd93e9fc81f8858dd9 = $(`<div id="html_fbcfcd8dbf438afd93e9fc81f8858dd9" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 260<br><b>Cve_Fuente:</b> 0317<br><b>Nombre Fuente:</b> SECRETOS LENCERIA VENTA DE LENCERIA<br><b>Número de Específicos:</b> 2<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_5bd100697b42231f72dc7622d5b42d1c.setContent(html_fbcfcd8dbf438afd93e9fc81f8858dd9);
+            
+        
+
+        marker_ea325e692cf8d775fc60e014641771d5.bindPopup(popup_5bd100697b42231f72dc7622d5b42d1c)
+        ;
+
+        
+    
+    
+                marker_ea325e692cf8d775fc60e014641771d5.setIcon(icon_7f22e3ebee0286cbb7df353a8edd4410);
+            
+    
+            var marker_aa4d083e16038f366c9480ab8411e783 = L.marker(
+                [24.02311607, -104.671578],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_78e9f9b4cd0183c04c65ed230b482af1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-v",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fadba96cd2c493dd9588824d89134982 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9badba6c0284db5f15c1e272aa475d35 = $(`<div id="html_9badba6c0284db5f15c1e272aa475d35" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 83<br><b>Cve_Fuente:</b> 0393<br><b>Nombre Fuente:</b> MUSEO FRANCISCO VILLA<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_fadba96cd2c493dd9588824d89134982.setContent(html_9badba6c0284db5f15c1e272aa475d35);
+            
+        
+
+        marker_aa4d083e16038f366c9480ab8411e783.bindPopup(popup_fadba96cd2c493dd9588824d89134982)
+        ;
+
+        
+    
+    
+                marker_aa4d083e16038f366c9480ab8411e783.setIcon(icon_78e9f9b4cd0183c04c65ed230b482af1);
+            
+    
+            var marker_9680506b2ea7568dbf0f46ebeb05a214 = L.marker(
+                [24.02336596, -104.66629254],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_fa6e2c1f3280f155847becf9bf926c72 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8e76c33b958cf64bc0f712925d82f4d5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7110e227c48659457ec611dbc5681483 = $(`<div id="html_7110e227c48659457ec611dbc5681483" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 84<br><b>Cve_Fuente:</b> 1127<br><b>Nombre Fuente:</b> CREACIONES ERICKA VENTA ROPA PARA NIÑOS Y BEBES<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_8e76c33b958cf64bc0f712925d82f4d5.setContent(html_7110e227c48659457ec611dbc5681483);
+            
+        
+
+        marker_9680506b2ea7568dbf0f46ebeb05a214.bindPopup(popup_8e76c33b958cf64bc0f712925d82f4d5)
+        ;
+
+        
+    
+    
+                marker_9680506b2ea7568dbf0f46ebeb05a214.setIcon(icon_fa6e2c1f3280f155847becf9bf926c72);
+            
+    
+            var marker_f9be1763af712bde2e3060a50e18118a = L.marker(
+                [24.02368211, -104.6684876],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_f62c70b2b6a7b7072d703e61febe7142 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c6d9bdbcf72d11a2cb154b4547a574cd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a9fb643a801798004099675a414b7bfb = $(`<div id="html_a9fb643a801798004099675a414b7bfb" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 639<br><b>Cve_Fuente:</b> 1070<br><b>Nombre Fuente:</b> ZAPATERIA MODERNA SPORT<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_c6d9bdbcf72d11a2cb154b4547a574cd.setContent(html_a9fb643a801798004099675a414b7bfb);
+            
+        
+
+        marker_f9be1763af712bde2e3060a50e18118a.bindPopup(popup_c6d9bdbcf72d11a2cb154b4547a574cd)
+        ;
+
+        
+    
+    
+                marker_f9be1763af712bde2e3060a50e18118a.setIcon(icon_f62c70b2b6a7b7072d703e61febe7142);
+            
+    
+            var marker_32a8c5ee2501e16775da45e168bb4f5f = L.marker(
+                [24.02371345, -104.66414523],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_5fe1716caceba5aabc8e2a2dd08ac234 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_af5556d93d38aa96b10f2164b1e75ac1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1f59da8d5fee329aaa1021d25a5ac931 = $(`<div id="html_1f59da8d5fee329aaa1021d25a5ac931" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 314<br><b>Cve_Fuente:</b> 1115<br><b>Nombre Fuente:</b> BODEGA<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_af5556d93d38aa96b10f2164b1e75ac1.setContent(html_1f59da8d5fee329aaa1021d25a5ac931);
+            
+        
+
+        marker_32a8c5ee2501e16775da45e168bb4f5f.bindPopup(popup_af5556d93d38aa96b10f2164b1e75ac1)
+        ;
+
+        
+    
+    
+                marker_32a8c5ee2501e16775da45e168bb4f5f.setIcon(icon_5fe1716caceba5aabc8e2a2dd08ac234);
+            
+    
+            var marker_3cce934e31d363b3afa5abf07e484703 = L.marker(
+                [24.02383192, -104.64992353],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_fa65d627d485432614429ddb72110e13 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-j",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e1199989cffb80000bf5582b1d03c842 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_834c8ffad656c6ebd64cb848627518ba = $(`<div id="html_834c8ffad656c6ebd64cb848627518ba" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 458<br><b>Cve_Fuente:</b> 1105<br><b>Nombre Fuente:</b> HOSPITAL REFORMA<br><b>Número de Específicos:</b> 2<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_e1199989cffb80000bf5582b1d03c842.setContent(html_834c8ffad656c6ebd64cb848627518ba);
+            
+        
+
+        marker_3cce934e31d363b3afa5abf07e484703.bindPopup(popup_e1199989cffb80000bf5582b1d03c842)
+        ;
+
+        
+    
+    
+                marker_3cce934e31d363b3afa5abf07e484703.setIcon(icon_fa65d627d485432614429ddb72110e13);
+            
+    
+            var marker_8a40e5222308a40cb200659e2687a68e = L.marker(
+                [24.02386009, -104.66761317],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_e7d06bc6f450dfbf4b8eff0893451271 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0adec1c8b3275fb88981dae940ffc611 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_78df71c6ecc9f009edfe7036947e5111 = $(`<div id="html_78df71c6ecc9f009edfe7036947e5111" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 663<br><b>Cve_Fuente:</b> 1126<br><b>Nombre Fuente:</b> TIENDAS ALKA SA DE CV DURANGO 2039<br><b>Número de Específicos:</b> 2<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_0adec1c8b3275fb88981dae940ffc611.setContent(html_78df71c6ecc9f009edfe7036947e5111);
+            
+        
+
+        marker_8a40e5222308a40cb200659e2687a68e.bindPopup(popup_0adec1c8b3275fb88981dae940ffc611)
+        ;
+
+        
+    
+    
+                marker_8a40e5222308a40cb200659e2687a68e.setIcon(icon_e7d06bc6f450dfbf4b8eff0893451271);
+            
+    
+            var marker_6851216bad532bf497bba6335dd0b308 = L.marker(
+                [24.02403089, -104.66588995],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_cd4d772cd62155f6e8a35243a71ad83f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_49c235cbc3eb73a2140ca36e8ccf97cc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_71284590ae86165f53533792593ccdc1 = $(`<div id="html_71284590ae86165f53533792593ccdc1" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 262<br><b>Cve_Fuente:</b> 0328<br><b>Nombre Fuente:</b> CORSETERIA ZOE VENTA DE ROPA INTERIOR<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_49c235cbc3eb73a2140ca36e8ccf97cc.setContent(html_71284590ae86165f53533792593ccdc1);
+            
+        
+
+        marker_6851216bad532bf497bba6335dd0b308.bindPopup(popup_49c235cbc3eb73a2140ca36e8ccf97cc)
+        ;
+
+        
+    
+    
+                marker_6851216bad532bf497bba6335dd0b308.setIcon(icon_cd4d772cd62155f6e8a35243a71ad83f);
+            
+    
+            var marker_3d009c1f99aade34d6e1c8b2ede32bff = L.marker(
+                [24.02406683, -104.66975114],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_7c20841b7fecc2a1b3e03d83880b4a33 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bd3060b020b031e338a31bd7a39798eb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eea036787fd1b6bf30cc791ae75f8cdc = $(`<div id="html_eea036787fd1b6bf30cc791ae75f8cdc" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 245<br><b>Cve_Fuente:</b> 0011<br><b>Nombre Fuente:</b> FARMACIA BENAVIDES JUAREZ<br><b>Número de Específicos:</b> 13<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_bd3060b020b031e338a31bd7a39798eb.setContent(html_eea036787fd1b6bf30cc791ae75f8cdc);
+            
+        
+
+        marker_3d009c1f99aade34d6e1c8b2ede32bff.bindPopup(popup_bd3060b020b031e338a31bd7a39798eb)
+        ;
+
+        
+    
+    
+                marker_3d009c1f99aade34d6e1c8b2ede32bff.setIcon(icon_7c20841b7fecc2a1b3e03d83880b4a33);
+            
+    
+            var marker_307aa9cff1a9671e6700e58e1a66a787 = L.marker(
+                [24.02424131, -104.66518383],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_69eee9a7706f01d66c5b415b05c6289d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_11a43f734479daa59ebf3d04cc7106a5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7c75ad51555256ac69146b883c21b8d0 = $(`<div id="html_7c75ad51555256ac69146b883c21b8d0" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 667<br><b>Cve_Fuente:</b> 1117<br><b>Nombre Fuente:</b> 2930 ELEKTRA DEL MILENIO<br><b>Número de Específicos:</b> 3<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_11a43f734479daa59ebf3d04cc7106a5.setContent(html_7c75ad51555256ac69146b883c21b8d0);
+            
+        
+
+        marker_307aa9cff1a9671e6700e58e1a66a787.bindPopup(popup_11a43f734479daa59ebf3d04cc7106a5)
+        ;
+
+        
+    
+    
+                marker_307aa9cff1a9671e6700e58e1a66a787.setIcon(icon_69eee9a7706f01d66c5b415b05c6289d);
+            
+    
+            var marker_117a67858e101ef0081337e06f338bd2 = L.marker(
+                [24.02439609, -104.66420942],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_3fe270e669f2636c0e79f7bb02e0473b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a4933454dd124c7c6c1c82735f2b4ea9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5582498df62c02c46437c05cabc78f77 = $(`<div id="html_5582498df62c02c46437c05cabc78f77" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 52<br><b>Cve_Fuente:</b> 1152<br><b>Nombre Fuente:</b> 3445 MILANO<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_a4933454dd124c7c6c1c82735f2b4ea9.setContent(html_5582498df62c02c46437c05cabc78f77);
+            
+        
+
+        marker_117a67858e101ef0081337e06f338bd2.bindPopup(popup_a4933454dd124c7c6c1c82735f2b4ea9)
+        ;
+
+        
+    
+    
+                marker_117a67858e101ef0081337e06f338bd2.setIcon(icon_3fe270e669f2636c0e79f7bb02e0473b);
+            
+    
+            var marker_b16f8205b46f255b8a9db64e29c8f788 = L.marker(
+                [24.02451654, -104.66567675],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_06cb5c51c76b58816861d28c2336dc41 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cc5aa932681ca6a9636fc6d4bf1f9ea5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7e60f6a67f71b52ed5586809755ee5d2 = $(`<div id="html_7e60f6a67f71b52ed5586809755ee5d2" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 568<br><b>Cve_Fuente:</b> 0373<br><b>Nombre Fuente:</b> T. ROPA FABRICAS DE MEXICO<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_cc5aa932681ca6a9636fc6d4bf1f9ea5.setContent(html_7e60f6a67f71b52ed5586809755ee5d2);
+            
+        
+
+        marker_b16f8205b46f255b8a9db64e29c8f788.bindPopup(popup_cc5aa932681ca6a9636fc6d4bf1f9ea5)
+        ;
+
+        
+    
+    
+                marker_b16f8205b46f255b8a9db64e29c8f788.setIcon(icon_06cb5c51c76b58816861d28c2336dc41);
+            
+    
+            var marker_c980a35a11bbdaeaad277d26c0575f6b = L.marker(
+                [24.0248757, -104.66748448],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_37eb062cbfe134cbfdbf283a222b454d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8ee46c1cf120076506f5368aecf07a85 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b555c3c850f33094b1dfe0eca5be460a = $(`<div id="html_b555c3c850f33094b1dfe0eca5be460a" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 665<br><b>Cve_Fuente:</b> 1113<br><b>Nombre Fuente:</b> LAS PRIMAVERAS<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_8ee46c1cf120076506f5368aecf07a85.setContent(html_b555c3c850f33094b1dfe0eca5be460a);
+            
+        
+
+        marker_c980a35a11bbdaeaad277d26c0575f6b.bindPopup(popup_8ee46c1cf120076506f5368aecf07a85)
+        ;
+
+        
+    
+    
+                marker_c980a35a11bbdaeaad277d26c0575f6b.setIcon(icon_37eb062cbfe134cbfdbf283a222b454d);
+            
+    
+            var marker_ea573e4f17dd974b8e0adeb65092fa10 = L.marker(
+                [24.02504178, -104.64211676],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_f331841cc2716948eeecfb73b2d75440 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-v",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e527f435392bb607367ac7bca40cb74f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c29ab02a1e9c6097f5df887e7cf590d9 = $(`<div id="html_c29ab02a1e9c6097f5df887e7cf590d9" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 53<br><b>Cve_Fuente:</b> 1161<br><b>Nombre Fuente:</b> REFACCIONARIA MADRID<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_e527f435392bb607367ac7bca40cb74f.setContent(html_c29ab02a1e9c6097f5df887e7cf590d9);
+            
+        
+
+        marker_ea573e4f17dd974b8e0adeb65092fa10.bindPopup(popup_e527f435392bb607367ac7bca40cb74f)
+        ;
+
+        
+    
+    
+                marker_ea573e4f17dd974b8e0adeb65092fa10.setIcon(icon_f331841cc2716948eeecfb73b2d75440);
+            
+    
+            var marker_a4b03db36abeb8c46ffd2297f1b0cc1d = L.marker(
+                [24.0250899, -104.68110982],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_80b3fd90fd97c580e77066af3bc2840e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-v",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f98b0d8a30972956191c4c6cb20413d1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_04d2b68de0a876d8714897c9349552b4 = $(`<div id="html_04d2b68de0a876d8714897c9349552b4" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 313<br><b>Cve_Fuente:</b> 1064<br><b>Nombre Fuente:</b> CAFE CUCURUMBE<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_f98b0d8a30972956191c4c6cb20413d1.setContent(html_04d2b68de0a876d8714897c9349552b4);
+            
+        
+
+        marker_a4b03db36abeb8c46ffd2297f1b0cc1d.bindPopup(popup_f98b0d8a30972956191c4c6cb20413d1)
+        ;
+
+        
+    
+    
+                marker_a4b03db36abeb8c46ffd2297f1b0cc1d.setIcon(icon_80b3fd90fd97c580e77066af3bc2840e);
+            
+    
+            var marker_1ec98b261642721e9a1b6ea0fd9a44ed = L.marker(
+                [24.02520565, -104.66926523],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_3a194aa78168464e08bcd4c553ef7595 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0c58ca4400ebf03d4cd3d4e096eb80e7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a10bb6b5f981a88af2ce986cc3bcaf7c = $(`<div id="html_a10bb6b5f981a88af2ce986cc3bcaf7c" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 40<br><b>Cve_Fuente:</b> 1154<br><b>Nombre Fuente:</b> LA CASA DEL CHEF UTENCILIOS PARA COCINA<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_0c58ca4400ebf03d4cd3d4e096eb80e7.setContent(html_a10bb6b5f981a88af2ce986cc3bcaf7c);
+            
+        
+
+        marker_1ec98b261642721e9a1b6ea0fd9a44ed.bindPopup(popup_0c58ca4400ebf03d4cd3d4e096eb80e7)
+        ;
+
+        
+    
+    
+                marker_1ec98b261642721e9a1b6ea0fd9a44ed.setIcon(icon_3a194aa78168464e08bcd4c553ef7595);
+            
+    
+            var marker_dfe6c52017636a74a1de1fce738950e6 = L.marker(
+                [24.02521763, -104.65921729],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_e371e86bc749586fcba63a4060491fa0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ae84682a6b61c9c4afad1b1395e9aaa6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_10a2a0303d12ce3f079f9adc4ac700d3 = $(`<div id="html_10a2a0303d12ce3f079f9adc4ac700d3" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 320<br><b>Cve_Fuente:</b> 1166<br><b>Nombre Fuente:</b> CICRO CLINIC LABORATORIO DE ANALISIS CLINICOS<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_ae84682a6b61c9c4afad1b1395e9aaa6.setContent(html_10a2a0303d12ce3f079f9adc4ac700d3);
+            
+        
+
+        marker_dfe6c52017636a74a1de1fce738950e6.bindPopup(popup_ae84682a6b61c9c4afad1b1395e9aaa6)
+        ;
+
+        
+    
+    
+                marker_dfe6c52017636a74a1de1fce738950e6.setIcon(icon_e371e86bc749586fcba63a4060491fa0);
+            
+    
+            var marker_c51de06524a3d38eb595eaab8f55221b = L.marker(
+                [24.02590178, -104.66681055],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_c9d872eda4557b5d2722cf9f8ce976e6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_456ffa807c58c05e6fb7307a67767e3f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ca5c30993bd9d5dfd8a381ac70a95c76 = $(`<div id="html_ca5c30993bd9d5dfd8a381ac70a95c76" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 95<br><b>Cve_Fuente:</b> 1098<br><b>Nombre Fuente:</b> COPPEL PATONI 23<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_456ffa807c58c05e6fb7307a67767e3f.setContent(html_ca5c30993bd9d5dfd8a381ac70a95c76);
+            
+        
+
+        marker_c51de06524a3d38eb595eaab8f55221b.bindPopup(popup_456ffa807c58c05e6fb7307a67767e3f)
+        ;
+
+        
+    
+    
+                marker_c51de06524a3d38eb595eaab8f55221b.setIcon(icon_c9d872eda4557b5d2722cf9f8ce976e6);
+            
+    
+            var marker_a5cfcc82b5eaeee95576a794cf1d20d3 = L.marker(
+                [24.0261227392116, -104.649915579573],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_f37330f1269657f8e5770df0e2399163 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-j",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f4894fe480563bac47ca2f7f9722ea97 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_700dffe56d7f8fb2438742e808ee9d25 = $(`<div id="html_700dffe56d7f8fb2438742e808ee9d25" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 351<br><b>Cve_Fuente:</b> 1060<br><b>Nombre Fuente:</b> NOTARÍA PUBLICA 25<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_f4894fe480563bac47ca2f7f9722ea97.setContent(html_700dffe56d7f8fb2438742e808ee9d25);
+            
+        
+
+        marker_a5cfcc82b5eaeee95576a794cf1d20d3.bindPopup(popup_f4894fe480563bac47ca2f7f9722ea97)
+        ;
+
+        
+    
+    
+                marker_a5cfcc82b5eaeee95576a794cf1d20d3.setIcon(icon_f37330f1269657f8e5770df0e2399163);
+            
+    
+            var marker_07ab89367f794541308ee6f4cf4df96f = L.marker(
+                [24.02642883, -104.64213452],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_e38162ea188a8c42cd4046b36e63e12f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-v",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f9521c3ae1eb318131235bdaee3e3e65 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7ce0bc9a84bd22519574982946ec8f83 = $(`<div id="html_7ce0bc9a84bd22519574982946ec8f83" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 337<br><b>Cve_Fuente:</b> 0213<br><b>Nombre Fuente:</b> FLORERIA GARDENIAS<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_f9521c3ae1eb318131235bdaee3e3e65.setContent(html_7ce0bc9a84bd22519574982946ec8f83);
+            
+        
+
+        marker_07ab89367f794541308ee6f4cf4df96f.bindPopup(popup_f9521c3ae1eb318131235bdaee3e3e65)
+        ;
+
+        
+    
+    
+                marker_07ab89367f794541308ee6f4cf4df96f.setIcon(icon_e38162ea188a8c42cd4046b36e63e12f);
+            
+    
+            var marker_7284d49c78167305e9792ffa8c0b2bef = L.marker(
+                [24.02695291, -104.62995308],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_8a7766ee9a7124cdfc8b5b07f1565af5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-m",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c3ce4877ef0832394caceaa758dc0662 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4ae0e9ae634a36388baa01d37d76b294 = $(`<div id="html_4ae0e9ae634a36388baa01d37d76b294" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 217<br><b>Cve_Fuente:</b> 1097<br><b>Nombre Fuente:</b> BODEGA DURANGO  3561<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_c3ce4877ef0832394caceaa758dc0662.setContent(html_4ae0e9ae634a36388baa01d37d76b294);
+            
+        
+
+        marker_7284d49c78167305e9792ffa8c0b2bef.bindPopup(popup_c3ce4877ef0832394caceaa758dc0662)
+        ;
+
+        
+    
+    
+                marker_7284d49c78167305e9792ffa8c0b2bef.setIcon(icon_8a7766ee9a7124cdfc8b5b07f1565af5);
+            
+    
+            var marker_504b0b2e9f897df6dae67cf84e448ecb = L.marker(
+                [24.02717248, -104.6566613],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_4174ed8ce3d0e1ba1637c0c2d212890b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-m",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c7f030274e0846394a7c44e0824974b4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_db4bcf23809898fa4a9bcc3e7d410dd0 = $(`<div id="html_db4bcf23809898fa4a9bcc3e7d410dd0" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 455<br><b>Cve_Fuente:</b> 1128<br><b>Nombre Fuente:</b> LA PULGA<br><b>Número de Específicos:</b> 2<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_c7f030274e0846394a7c44e0824974b4.setContent(html_db4bcf23809898fa4a9bcc3e7d410dd0);
+            
+        
+
+        marker_504b0b2e9f897df6dae67cf84e448ecb.bindPopup(popup_c7f030274e0846394a7c44e0824974b4)
+        ;
+
+        
+    
+    
+                marker_504b0b2e9f897df6dae67cf84e448ecb.setIcon(icon_4174ed8ce3d0e1ba1637c0c2d212890b);
+            
+    
+            var marker_5132e6b251efe5ee0971d574e19da46d = L.marker(
+                [24.02729906, -104.65477969],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_50e62d22188e979871f5608353f89ab6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-j",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ed1830c05cab1252b97aa6a7ef8d01b0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0eddcb63cb02e48902c045296bf71f62 = $(`<div id="html_0eddcb63cb02e48902c045296bf71f62" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 259<br><b>Cve_Fuente:</b> 1150<br><b>Nombre Fuente:</b> CORPORATIVO FAZ<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_ed1830c05cab1252b97aa6a7ef8d01b0.setContent(html_0eddcb63cb02e48902c045296bf71f62);
+            
+        
+
+        marker_5132e6b251efe5ee0971d574e19da46d.bindPopup(popup_ed1830c05cab1252b97aa6a7ef8d01b0)
+        ;
+
+        
+    
+    
+                marker_5132e6b251efe5ee0971d574e19da46d.setIcon(icon_50e62d22188e979871f5608353f89ab6);
+            
+    
+            var marker_27a6fa0a3f5e38da5e4cef5fe4773f71 = L.marker(
+                [24.02871699, -104.66585814],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_2c100dd51678caf5a65eed0ea557df87 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e7768d92100679ab64911417da44330f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_17e5337688b90622378f4e74ba349473 = $(`<div id="html_17e5337688b90622378f4e74ba349473" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 15<br><b>Cve_Fuente:</b> 9555<br><b>Nombre Fuente:</b> RESTAURAN LA CASA ABUELA<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_e7768d92100679ab64911417da44330f.setContent(html_17e5337688b90622378f4e74ba349473);
+            
+        
+
+        marker_27a6fa0a3f5e38da5e4cef5fe4773f71.bindPopup(popup_e7768d92100679ab64911417da44330f)
+        ;
+
+        
+    
+    
+                marker_27a6fa0a3f5e38da5e4cef5fe4773f71.setIcon(icon_2c100dd51678caf5a65eed0ea557df87);
+            
+    
+            var marker_839ffa827a1cc9ceb9f22c6e5d1e42af = L.marker(
+                [24.03019879, -104.64829851],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_7324a8a75bd0badc4b172ab23427f109 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-j",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3c7cb4c9a1d876439c349ac8124ad067 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_906c9b62f3f10dc6ed8534fa306700fa = $(`<div id="html_906c9b62f3f10dc6ed8534fa306700fa" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 104<br><b>Cve_Fuente:</b> 0343<br><b>Nombre Fuente:</b> PORTE JUNIORS<br><b>Número de Específicos:</b> 3<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_3c7cb4c9a1d876439c349ac8124ad067.setContent(html_906c9b62f3f10dc6ed8534fa306700fa);
+            
+        
+
+        marker_839ffa827a1cc9ceb9f22c6e5d1e42af.bindPopup(popup_3c7cb4c9a1d876439c349ac8124ad067)
+        ;
+
+        
+    
+    
+                marker_839ffa827a1cc9ceb9f22c6e5d1e42af.setIcon(icon_7324a8a75bd0badc4b172ab23427f109);
+            
+    
+            var marker_b9063d5ec898e4b5acc1fff67e7a5b58 = L.marker(
+                [24.03053184, -104.649125],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_8077fbf68a3abe3d3add77df762c5b23 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-j",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2598ef6ce738f36786783406294d6dd2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e7a1972f57e3539c29f8f332aeb0a5f0 = $(`<div id="html_e7a1972f57e3539c29f8f332aeb0a5f0" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 216<br><b>Cve_Fuente:</b> 0427<br><b>Nombre Fuente:</b> NEVVAR<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_2598ef6ce738f36786783406294d6dd2.setContent(html_e7a1972f57e3539c29f8f332aeb0a5f0);
+            
+        
+
+        marker_b9063d5ec898e4b5acc1fff67e7a5b58.bindPopup(popup_2598ef6ce738f36786783406294d6dd2)
+        ;
+
+        
+    
+    
+                marker_b9063d5ec898e4b5acc1fff67e7a5b58.setIcon(icon_8077fbf68a3abe3d3add77df762c5b23);
+            
+    
+            var marker_aa5b03ca9973a29ec22ef5665c50554c = L.marker(
+                [24.03308432, -104.6369139],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_38070031ef45b7eea0ea557fea655c2c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "fa-v",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6ff5dc3f4704c97c5fa45a07b7e998c0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_28bcd1e06050241aee84904df52901b8 = $(`<div id="html_28bcd1e06050241aee84904df52901b8" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 3<br><b>Cve_Fuente:</b> 0378<br><b>Nombre Fuente:</b> C. MATERIALES DON PISO CESANTONI MATRIZ<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 21</div>`)[0];
+                popup_6ff5dc3f4704c97c5fa45a07b7e998c0.setContent(html_28bcd1e06050241aee84904df52901b8);
+            
+        
+
+        marker_aa5b03ca9973a29ec22ef5665c50554c.bindPopup(popup_6ff5dc3f4704c97c5fa45a07b7e998c0)
+        ;
+
+        
+    
+    
+                marker_aa5b03ca9973a29ec22ef5665c50554c.setIcon(icon_38070031ef45b7eea0ea557fea655c2c);
+            
+    
+            var marker_b89c896b747497aa43d501dea9f7f2e8 = L.marker(
+                [24.03467834, -104.65072768],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_25a5b6dd1e0d6a2dde25f2a9f3b42539 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "fa-j",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_82cc8345180d893776f4141a695d86e0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7eac6d811a6e89f17e2c1280d55b0bb1 = $(`<div id="html_7eac6d811a6e89f17e2c1280d55b0bb1" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 322<br><b>Cve_Fuente:</b> 1121<br><b>Nombre Fuente:</b> CINEMEX DURANGO<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 21</div>`)[0];
+                popup_82cc8345180d893776f4141a695d86e0.setContent(html_7eac6d811a6e89f17e2c1280d55b0bb1);
+            
+        
+
+        marker_b89c896b747497aa43d501dea9f7f2e8.bindPopup(popup_82cc8345180d893776f4141a695d86e0)
+        ;
+
+        
+    
+    
+                marker_b89c896b747497aa43d501dea9f7f2e8.setIcon(icon_25a5b6dd1e0d6a2dde25f2a9f3b42539);
+            
+    
+            var marker_36bb2fbcb89e3cea2ef5931ba2affdf6 = L.marker(
+                [24.03471869, -104.65109577],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_b5380723a156a115248e6d6c0d415c0d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "fa-j",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a0356806fd832529ac43a178964b5dbf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_53b8adeead64e898fb48f5aaf64544b5 = $(`<div id="html_53b8adeead64e898fb48f5aaf64544b5" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 157<br><b>Cve_Fuente:</b> 1169<br><b>Nombre Fuente:</b> OPTICAS DEVLYN SUCURSAL 292<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 21</div>`)[0];
+                popup_a0356806fd832529ac43a178964b5dbf.setContent(html_53b8adeead64e898fb48f5aaf64544b5);
+            
+        
+
+        marker_36bb2fbcb89e3cea2ef5931ba2affdf6.bindPopup(popup_a0356806fd832529ac43a178964b5dbf)
+        ;
+
+        
+    
+    
+                marker_36bb2fbcb89e3cea2ef5931ba2affdf6.setIcon(icon_b5380723a156a115248e6d6c0d415c0d);
+            
+    
+            var marker_3525f0e82ad66c37c232e991c2022a39 = L.marker(
+                [24.03474438, -104.65166962],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_37f870f4bc7d255e78a2fba6465ff111 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "fa-j",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b741b5315aae5ac898f31357d078b606 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_423aa833d356d2c56848b0699d8e3c40 = $(`<div id="html_423aa833d356d2c56848b0699d8e3c40" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 154<br><b>Cve_Fuente:</b> 0473<br><b>Nombre Fuente:</b> T. ROPA MEN´S FASHION<br><b>Número de Específicos:</b> 5<br><b>Cve_Cotizador:</b> 21</div>`)[0];
+                popup_b741b5315aae5ac898f31357d078b606.setContent(html_423aa833d356d2c56848b0699d8e3c40);
+            
+        
+
+        marker_3525f0e82ad66c37c232e991c2022a39.bindPopup(popup_b741b5315aae5ac898f31357d078b606)
+        ;
+
+        
+    
+    
+                marker_3525f0e82ad66c37c232e991c2022a39.setIcon(icon_37f870f4bc7d255e78a2fba6465ff111);
+            
+    
+            var marker_f74b9a2579ab552659836e5998edad81 = L.marker(
+                [24.0348205, -104.6519644],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_eedb703fa564ea18864ffe70fe705da2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "fa-j",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0ce698c53bcafb9617de28fb3d3c4566 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a301d5bd3f44974871756dec6d8b6a1e = $(`<div id="html_a301d5bd3f44974871756dec6d8b6a1e" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 348<br><b>Cve_Fuente:</b> 1067<br><b>Nombre Fuente:</b> SEARS PASEO DURANGO 243<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 21</div>`)[0];
+                popup_0ce698c53bcafb9617de28fb3d3c4566.setContent(html_a301d5bd3f44974871756dec6d8b6a1e);
+            
+        
+
+        marker_f74b9a2579ab552659836e5998edad81.bindPopup(popup_0ce698c53bcafb9617de28fb3d3c4566)
+        ;
+
+        
+    
+    
+                marker_f74b9a2579ab552659836e5998edad81.setIcon(icon_eedb703fa564ea18864ffe70fe705da2);
+            
+    
+            var marker_bb091639330523d9a54360a0afffa965 = L.marker(
+                [24.03492642, -104.65299862],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_89f31d6eab3ab81ad461d9a05d7247f6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "fa-j",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_27bd92b671a4becc1a2075ba4f55a546 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_440b5b547b89bb5691d7129314da0d8c = $(`<div id="html_440b5b547b89bb5691d7129314da0d8c" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 134<br><b>Cve_Fuente:</b> 0347<br><b>Nombre Fuente:</b> T. MAQUILLAJE, SALLY BEAUTY SUPPLY<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 21</div>`)[0];
+                popup_27bd92b671a4becc1a2075ba4f55a546.setContent(html_440b5b547b89bb5691d7129314da0d8c);
+            
+        
+
+        marker_bb091639330523d9a54360a0afffa965.bindPopup(popup_27bd92b671a4becc1a2075ba4f55a546)
+        ;
+
+        
+    
+    
+                marker_bb091639330523d9a54360a0afffa965.setIcon(icon_89f31d6eab3ab81ad461d9a05d7247f6);
+            
+    
+            var marker_2109af86eb960ebfe68ca67568d142db = L.marker(
+                [24.04185267, -104.65784369],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_59a52323bff66a5fc3303271b0c9872e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "fa-j",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a26e70a5a29efa844fe39b48d73ce0a4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_843d3df39854ad3a5c6eaf82bd491548 = $(`<div id="html_843d3df39854ad3a5c6eaf82bd491548" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 304<br><b>Cve_Fuente:</b> 1091<br><b>Nombre Fuente:</b> REFACCIONARIA EL PASO<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 21</div>`)[0];
+                popup_a26e70a5a29efa844fe39b48d73ce0a4.setContent(html_843d3df39854ad3a5c6eaf82bd491548);
+            
+        
+
+        marker_2109af86eb960ebfe68ca67568d142db.bindPopup(popup_a26e70a5a29efa844fe39b48d73ce0a4)
+        ;
+
+        
+    
+    
+                marker_2109af86eb960ebfe68ca67568d142db.setIcon(icon_59a52323bff66a5fc3303271b0c9872e);
+            
+    
+            var marker_b12343e4a703061663cc0d187c41e5e1 = L.marker(
+                [24.04791692, -104.65106088],
+                {
+}
+            ).addTo(feature_group_f858f70fd0dd25ed89012d78203ec044);
+        
+    
+            var icon_0847ae215aa9e614fa0f74ff53ad16be = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4f067c530801801aa15e348e9c69ab1c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d75d44b6fb808c2297cdd7b779d22576 = $(`<div id="html_d75d44b6fb808c2297cdd7b779d22576" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 32<br><b>Cve_Fuente:</b> 1167<br><b>Nombre Fuente:</b> LLANTAS Y CAMARAS BARRA<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 21</div>`)[0];
+                popup_4f067c530801801aa15e348e9c69ab1c.setContent(html_d75d44b6fb808c2297cdd7b779d22576);
+            
+        
+
+        marker_b12343e4a703061663cc0d187c41e5e1.bindPopup(popup_4f067c530801801aa15e348e9c69ab1c)
+        ;
+
+        
+    
+    
+                marker_b12343e4a703061663cc0d187c41e5e1.setIcon(icon_0847ae215aa9e614fa0f74ff53ad16be);
+            
+    
+            feature_group_f858f70fd0dd25ed89012d78203ec044.addTo(map_8a3da6721bf6c198fa87705f0d62ece6);
+        
+    
+            var feature_group_5a34b34327c6972e3fc42288be405370 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_33a89929d68028c9af223d6db92fd2c8 = L.marker(
+                [23.99693644, -104.63861174],
+                {
+}
+            ).addTo(feature_group_5a34b34327c6972e3fc42288be405370);
+        
+    
+            var icon_8e8e556eedfa18863a4d6a9ddb9b7a69 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-w",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_83fd9e2fe4e0db189454292714b01353 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8d1be1433f8df03ace1c1feed59d6199 = $(`<div id="html_8d1be1433f8df03ace1c1feed59d6199" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 215<br><b>Cve_Fuente:</b> 1159<br><b>Nombre Fuente:</b> PANCHOS TIRES LLANTAS Y RINES<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_83fd9e2fe4e0db189454292714b01353.setContent(html_8d1be1433f8df03ace1c1feed59d6199);
+            
+        
+
+        marker_33a89929d68028c9af223d6db92fd2c8.bindPopup(popup_83fd9e2fe4e0db189454292714b01353)
+        ;
+
+        
+    
+    
+                marker_33a89929d68028c9af223d6db92fd2c8.setIcon(icon_8e8e556eedfa18863a4d6a9ddb9b7a69);
+            
+    
+            var marker_a4f7a1b1fdc787b631cfcbd574f874e9 = L.marker(
+                [23.99889654, -104.66430583],
+                {
+}
+            ).addTo(feature_group_5a34b34327c6972e3fc42288be405370);
+        
+    
+            var icon_26faebd033f17ad98e238663fba22927 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-j",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1aabb2c66fd4b9937dc2d4634173a239 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_954d9b0203ddbc463e7f1f2a32fa8a37 = $(`<div id="html_954d9b0203ddbc463e7f1f2a32fa8a37" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 459<br><b>Cve_Fuente:</b> 0180<br><b>Nombre Fuente:</b> LAVANDERIA Y PLANCHADURIA KARYME<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_1aabb2c66fd4b9937dc2d4634173a239.setContent(html_954d9b0203ddbc463e7f1f2a32fa8a37);
+            
+        
+
+        marker_a4f7a1b1fdc787b631cfcbd574f874e9.bindPopup(popup_1aabb2c66fd4b9937dc2d4634173a239)
+        ;
+
+        
+    
+    
+                marker_a4f7a1b1fdc787b631cfcbd574f874e9.setIcon(icon_26faebd033f17ad98e238663fba22927);
+            
+    
+            var marker_f96a3a9250199814d5442bbc4fef1e56 = L.marker(
+                [24.00391082, -104.65009939],
+                {
+}
+            ).addTo(feature_group_5a34b34327c6972e3fc42288be405370);
+        
+    
+            var icon_498564a0a289efc7f7926624a5221a66 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-w",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_82e3f8ad6df78ab24bb825a14ad29e94 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3b68dc24242bf9fa67bf59116260a820 = $(`<div id="html_3b68dc24242bf9fa67bf59116260a820" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 674<br><b>Cve_Fuente:</b> 0310<br><b>Nombre Fuente:</b> LUBRICANTES Y FILTROS MAFER<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_82e3f8ad6df78ab24bb825a14ad29e94.setContent(html_3b68dc24242bf9fa67bf59116260a820);
+            
+        
+
+        marker_f96a3a9250199814d5442bbc4fef1e56.bindPopup(popup_82e3f8ad6df78ab24bb825a14ad29e94)
+        ;
+
+        
+    
+    
+                marker_f96a3a9250199814d5442bbc4fef1e56.setIcon(icon_498564a0a289efc7f7926624a5221a66);
+            
+    
+            var marker_3c96776571c106c3ed95ae48cead1071 = L.marker(
+                [24.00457494, -104.66468926],
+                {
+}
+            ).addTo(feature_group_5a34b34327c6972e3fc42288be405370);
+        
+    
+            var icon_30cee89fe8548cb6fe5b19d8112126d5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-j",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f6d65b7ae0d0f8193276e6c1333ea106 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0a4e2225436a36790951050b4ec544ae = $(`<div id="html_0a4e2225436a36790951050b4ec544ae" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 295<br><b>Cve_Fuente:</b> 0073<br><b>Nombre Fuente:</b> MISCELANEA CARMELITA<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_f6d65b7ae0d0f8193276e6c1333ea106.setContent(html_0a4e2225436a36790951050b4ec544ae);
+            
+        
+
+        marker_3c96776571c106c3ed95ae48cead1071.bindPopup(popup_f6d65b7ae0d0f8193276e6c1333ea106)
+        ;
+
+        
+    
+    
+                marker_3c96776571c106c3ed95ae48cead1071.setIcon(icon_30cee89fe8548cb6fe5b19d8112126d5);
+            
+    
+            var marker_119c008f95912cbd0dd31142843c1c75 = L.marker(
+                [24.00763733, -104.67945904],
+                {
+}
+            ).addTo(feature_group_5a34b34327c6972e3fc42288be405370);
+        
+    
+            var icon_ef0bb2441225acbf2e38532d1d0ac847 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-m",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_57a1813d4948a57f808a0c7b960a2df9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a3f7003d664c2692f172fcf739297040 = $(`<div id="html_a3f7003d664c2692f172fcf739297040" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 321<br><b>Cve_Fuente:</b> 1160<br><b>Nombre Fuente:</b> COSITAS DE 5<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_57a1813d4948a57f808a0c7b960a2df9.setContent(html_a3f7003d664c2692f172fcf739297040);
+            
+        
+
+        marker_119c008f95912cbd0dd31142843c1c75.bindPopup(popup_57a1813d4948a57f808a0c7b960a2df9)
+        ;
+
+        
+    
+    
+                marker_119c008f95912cbd0dd31142843c1c75.setIcon(icon_ef0bb2441225acbf2e38532d1d0ac847);
+            
+    
+            var marker_96768be8f42b446358da5b9caea564e8 = L.marker(
+                [24.01068897, -104.67521583],
+                {
+}
+            ).addTo(feature_group_5a34b34327c6972e3fc42288be405370);
+        
+    
+            var icon_75d717231090a05201a724006f27e077 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-m",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7c83b3614534aa4252499c24e1b2422c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_be7dbad7677af9eb05113181d18dbc77 = $(`<div id="html_be7dbad7677af9eb05113181d18dbc77" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 48<br><b>Cve_Fuente:</b> 0415<br><b>Nombre Fuente:</b> LAVANDERIA LA LAVADORA<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_7c83b3614534aa4252499c24e1b2422c.setContent(html_be7dbad7677af9eb05113181d18dbc77);
+            
+        
+
+        marker_96768be8f42b446358da5b9caea564e8.bindPopup(popup_7c83b3614534aa4252499c24e1b2422c)
+        ;
+
+        
+    
+    
+                marker_96768be8f42b446358da5b9caea564e8.setIcon(icon_75d717231090a05201a724006f27e077);
+            
+    
+            var marker_2bcbd163928e29425e206f0e165ce35b = L.marker(
+                [24.01130348, -104.64033616],
+                {
+}
+            ).addTo(feature_group_5a34b34327c6972e3fc42288be405370);
+        
+    
+            var icon_b5f805e58e3ee02b7411e05e22a1aef8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c1209e8326c4d04819b1b3fe22ffdecf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5c60510d88cc8241efb78c4c2fb175a3 = $(`<div id="html_5c60510d88cc8241efb78c4c2fb175a3" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 159<br><b>Cve_Fuente:</b> 1123<br><b>Nombre Fuente:</b> MISCELÁNEA ROSY<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_c1209e8326c4d04819b1b3fe22ffdecf.setContent(html_5c60510d88cc8241efb78c4c2fb175a3);
+            
+        
+
+        marker_2bcbd163928e29425e206f0e165ce35b.bindPopup(popup_c1209e8326c4d04819b1b3fe22ffdecf)
+        ;
+
+        
+    
+    
+                marker_2bcbd163928e29425e206f0e165ce35b.setIcon(icon_b5f805e58e3ee02b7411e05e22a1aef8);
+            
+    
+            var marker_aea6089f4b378cd332113904ca3a3548 = L.marker(
+                [24.01511533, -104.6700913],
+                {
+}
+            ).addTo(feature_group_5a34b34327c6972e3fc42288be405370);
+        
+    
+            var icon_605c64d3a9b8f2c173202821acdede1c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-v",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fd8566bd2343e010316a3a5bbf6155b0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b86cfa1ec7128f01ab7bc55687805426 = $(`<div id="html_b86cfa1ec7128f01ab7bc55687805426" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 502<br><b>Cve_Fuente:</b> 0420<br><b>Nombre Fuente:</b> S. FIESTAS ANANDA<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_fd8566bd2343e010316a3a5bbf6155b0.setContent(html_b86cfa1ec7128f01ab7bc55687805426);
+            
+        
+
+        marker_aea6089f4b378cd332113904ca3a3548.bindPopup(popup_fd8566bd2343e010316a3a5bbf6155b0)
+        ;
+
+        
+    
+    
+                marker_aea6089f4b378cd332113904ca3a3548.setIcon(icon_605c64d3a9b8f2c173202821acdede1c);
+            
+    
+            var marker_595ccd35a43581d79d3e905b78c2f661 = L.marker(
+                [24.01516913, -104.655835],
+                {
+}
+            ).addTo(feature_group_5a34b34327c6972e3fc42288be405370);
+        
+    
+            var icon_4a65c0a041be42c9a0c12ee30e3e29a9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b98695bb217ceb9e5b240049d32ea484 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dae52b9341ef89f455846a0da39fc90d = $(`<div id="html_dae52b9341ef89f455846a0da39fc90d" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 671<br><b>Cve_Fuente:</b> 0193<br><b>Nombre Fuente:</b> REFACCIONARIA JL<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_b98695bb217ceb9e5b240049d32ea484.setContent(html_dae52b9341ef89f455846a0da39fc90d);
+            
+        
+
+        marker_595ccd35a43581d79d3e905b78c2f661.bindPopup(popup_b98695bb217ceb9e5b240049d32ea484)
+        ;
+
+        
+    
+    
+                marker_595ccd35a43581d79d3e905b78c2f661.setIcon(icon_4a65c0a041be42c9a0c12ee30e3e29a9);
+            
+    
+            var marker_f6c65d80bc4ab8684516470976369e0b = L.marker(
+                [24.01649536, -104.65806564],
+                {
+}
+            ).addTo(feature_group_5a34b34327c6972e3fc42288be405370);
+        
+    
+            var icon_e1b5932597784e537df9d5285fd40763 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9aed54c533b58d55f2378c724939f15a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_faf21b779f79f80818dc1dcacce06047 = $(`<div id="html_faf21b779f79f80818dc1dcacce06047" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 181<br><b>Cve_Fuente:</b> 1136<br><b>Nombre Fuente:</b> CACTUS STORE<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_9aed54c533b58d55f2378c724939f15a.setContent(html_faf21b779f79f80818dc1dcacce06047);
+            
+        
+
+        marker_f6c65d80bc4ab8684516470976369e0b.bindPopup(popup_9aed54c533b58d55f2378c724939f15a)
+        ;
+
+        
+    
+    
+                marker_f6c65d80bc4ab8684516470976369e0b.setIcon(icon_e1b5932597784e537df9d5285fd40763);
+            
+    
+            var marker_6686f774b2c533597fa2813349723f85 = L.marker(
+                [24.01847382, -104.6542843],
+                {
+}
+            ).addTo(feature_group_5a34b34327c6972e3fc42288be405370);
+        
+    
+            var icon_ca20977e516c88279259e94d6ea48354 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4f5721e76c25e0d19b11503c775d72b9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0627e60de9e8215c02940ffa4b2adbd9 = $(`<div id="html_0627e60de9e8215c02940ffa4b2adbd9" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 338<br><b>Cve_Fuente:</b> 0211<br><b>Nombre Fuente:</b> HOSPITAL CRISTIANO ABC<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_4f5721e76c25e0d19b11503c775d72b9.setContent(html_0627e60de9e8215c02940ffa4b2adbd9);
+            
+        
+
+        marker_6686f774b2c533597fa2813349723f85.bindPopup(popup_4f5721e76c25e0d19b11503c775d72b9)
+        ;
+
+        
+    
+    
+                marker_6686f774b2c533597fa2813349723f85.setIcon(icon_ca20977e516c88279259e94d6ea48354);
+            
+    
+            var marker_2901b62c118f0d5292665ff01dfe1216 = L.marker(
+                [24.03172566, -104.6729591],
+                {
+}
+            ).addTo(feature_group_5a34b34327c6972e3fc42288be405370);
+        
+    
+            var icon_56fb15931e4a811377db5bbe2d7455fe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-j",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_62b5c211183bae84914675bcce6959c7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5004360373ee26a77fadf86b1b6511f7 = $(`<div id="html_5004360373ee26a77fadf86b1b6511f7" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 274<br><b>Cve_Fuente:</b> 0352<br><b>Nombre Fuente:</b> HOSPITAL Y CLINICA VETERINARIA<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_62b5c211183bae84914675bcce6959c7.setContent(html_5004360373ee26a77fadf86b1b6511f7);
+            
+        
+
+        marker_2901b62c118f0d5292665ff01dfe1216.bindPopup(popup_62b5c211183bae84914675bcce6959c7)
+        ;
+
+        
+    
+    
+                marker_2901b62c118f0d5292665ff01dfe1216.setIcon(icon_56fb15931e4a811377db5bbe2d7455fe);
+            
+    
+            var marker_8e834f809f9677dd4df600cf5c3f87fd = L.marker(
+                [24.03321503, -104.65541485],
+                {
+}
+            ).addTo(feature_group_5a34b34327c6972e3fc42288be405370);
+        
+    
+            var icon_323850d1f81b74dfdf88cab39baed38d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-m",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ea6022bba299725feea5ce24ac1d1757 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0e7990651b738a60ae630fb38d1ae6b2 = $(`<div id="html_0e7990651b738a60ae630fb38d1ae6b2" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 107<br><b>Cve_Fuente:</b> 1168<br><b>Nombre Fuente:</b> FAJAS GUADIANA<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_ea6022bba299725feea5ce24ac1d1757.setContent(html_0e7990651b738a60ae630fb38d1ae6b2);
+            
+        
+
+        marker_8e834f809f9677dd4df600cf5c3f87fd.bindPopup(popup_ea6022bba299725feea5ce24ac1d1757)
+        ;
+
+        
+    
+    
+                marker_8e834f809f9677dd4df600cf5c3f87fd.setIcon(icon_323850d1f81b74dfdf88cab39baed38d);
+            
+    
+            var marker_f843685d47b4f34fd84bcab04ec8932a = L.marker(
+                [24.03469305, -104.66184174],
+                {
+}
+            ).addTo(feature_group_5a34b34327c6972e3fc42288be405370);
+        
+    
+            var icon_6f876e1f43dd581583349431ff118b15 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-m",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7887793ce8bb7ddcc599642eb1fc03d7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f1bb8bf2a638748a5bf8a63e083d25dc = $(`<div id="html_f1bb8bf2a638748a5bf8a63e083d25dc" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 271<br><b>Cve_Fuente:</b> 0404<br><b>Nombre Fuente:</b> HOSPITAL DE ESPECIALIDADES AMCCI<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_7887793ce8bb7ddcc599642eb1fc03d7.setContent(html_f1bb8bf2a638748a5bf8a63e083d25dc);
+            
+        
+
+        marker_f843685d47b4f34fd84bcab04ec8932a.bindPopup(popup_7887793ce8bb7ddcc599642eb1fc03d7)
+        ;
+
+        
+    
+    
+                marker_f843685d47b4f34fd84bcab04ec8932a.setIcon(icon_6f876e1f43dd581583349431ff118b15);
+            
+    
+            var marker_fa6aa91cd2a52b0614907dba8241f068 = L.marker(
+                [24.0348877, -104.66080255],
+                {
+}
+            ).addTo(feature_group_5a34b34327c6972e3fc42288be405370);
+        
+    
+            var icon_60df9653db7e7981923506806f6108bd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-m",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_513f2e6d88dc5bb46acb3696d00a7c64 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_61e022cb6e7ab0d56e005572518cbde7 = $(`<div id="html_61e022cb6e7ab0d56e005572518cbde7" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 147<br><b>Cve_Fuente:</b> 1095<br><b>Nombre Fuente:</b> LIBRERIA Y PAPELERIA BOOKS-DURANGO<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_513f2e6d88dc5bb46acb3696d00a7c64.setContent(html_61e022cb6e7ab0d56e005572518cbde7);
+            
+        
+
+        marker_fa6aa91cd2a52b0614907dba8241f068.bindPopup(popup_513f2e6d88dc5bb46acb3696d00a7c64)
+        ;
+
+        
+    
+    
+                marker_fa6aa91cd2a52b0614907dba8241f068.setIcon(icon_60df9653db7e7981923506806f6108bd);
+            
+    
+            var marker_411302ef7b7aeebfcadc19d3b2dd21b9 = L.marker(
+                [24.03509443, -104.6683892],
+                {
+}
+            ).addTo(feature_group_5a34b34327c6972e3fc42288be405370);
+        
+    
+            var icon_f6c5c89773eac1fd593e9a529578aef6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-j",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1fa2e36573e5f826cef252de338eecaa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b21ec04368bfa395ccc32ab571ce9aa0 = $(`<div id="html_b21ec04368bfa395ccc32ab571ce9aa0" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 298<br><b>Cve_Fuente:</b> 1102<br><b>Nombre Fuente:</b> SUSUKY MOTOS DURANGO<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_1fa2e36573e5f826cef252de338eecaa.setContent(html_b21ec04368bfa395ccc32ab571ce9aa0);
+            
+        
+
+        marker_411302ef7b7aeebfcadc19d3b2dd21b9.bindPopup(popup_1fa2e36573e5f826cef252de338eecaa)
+        ;
+
+        
+    
+    
+                marker_411302ef7b7aeebfcadc19d3b2dd21b9.setIcon(icon_f6c5c89773eac1fd593e9a529578aef6);
+            
+    
+            var marker_f720f6295a6a2c20d3fc21cec57bd535 = L.marker(
+                [24.03531058, -104.65989648],
+                {
+}
+            ).addTo(feature_group_5a34b34327c6972e3fc42288be405370);
+        
+    
+            var icon_78028db2ebdf48f3e0c5b32da3070022 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-m",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5a0a7bb6e74a0659c5e836df54ef6ad2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ec5ad10282a1cd98c97a39a6a9c25d92 = $(`<div id="html_ec5ad10282a1cd98c97a39a6a9c25d92" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 152<br><b>Cve_Fuente:</b> 0406<br><b>Nombre Fuente:</b> EXPO FIESTA MUEBLES<br><b>Número de Específicos:</b> 4<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_5a0a7bb6e74a0659c5e836df54ef6ad2.setContent(html_ec5ad10282a1cd98c97a39a6a9c25d92);
+            
+        
+
+        marker_f720f6295a6a2c20d3fc21cec57bd535.bindPopup(popup_5a0a7bb6e74a0659c5e836df54ef6ad2)
+        ;
+
+        
+    
+    
+                marker_f720f6295a6a2c20d3fc21cec57bd535.setIcon(icon_78028db2ebdf48f3e0c5b32da3070022);
+            
+    
+            var marker_b7855a9db0049cd6c5fac2d1b62e2854 = L.marker(
+                [24.03656297, -104.6778148],
+                {
+}
+            ).addTo(feature_group_5a34b34327c6972e3fc42288be405370);
+        
+    
+            var icon_d759626b10be401a478755a3ab1b1754 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-j",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_50d4648601937adf6d27e0b7a947bb97 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c171215921db729f95e9bfca8f4375fd = $(`<div id="html_c171215921db729f95e9bfca8f4375fd" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 323<br><b>Cve_Fuente:</b> 9553<br><b>Nombre Fuente:</b> SUPER FARMACIA LA MINIATURA SANTUARIO<br><b>Número de Específicos:</b> 9<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_50d4648601937adf6d27e0b7a947bb97.setContent(html_c171215921db729f95e9bfca8f4375fd);
+            
+        
+
+        marker_b7855a9db0049cd6c5fac2d1b62e2854.bindPopup(popup_50d4648601937adf6d27e0b7a947bb97)
+        ;
+
+        
+    
+    
+                marker_b7855a9db0049cd6c5fac2d1b62e2854.setIcon(icon_d759626b10be401a478755a3ab1b1754);
+            
+    
+            var marker_8d4e76c4358a0b479f7b024d99590d44 = L.marker(
+                [24.03839566, -104.67320687],
+                {
+}
+            ).addTo(feature_group_5a34b34327c6972e3fc42288be405370);
+        
+    
+            var icon_4bfd744035d1ec0ce61c3dcc23171d4d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-j",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1c9ef7d5706370ee8b98d355b1b8d2e3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7536a74334e9a8dec7416cbc36e050e5 = $(`<div id="html_7536a74334e9a8dec7416cbc36e050e5" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 108<br><b>Cve_Fuente:</b> 1165<br><b>Nombre Fuente:</b> LUBRICANTES LA VIÑA<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_1c9ef7d5706370ee8b98d355b1b8d2e3.setContent(html_7536a74334e9a8dec7416cbc36e050e5);
+            
+        
+
+        marker_8d4e76c4358a0b479f7b024d99590d44.bindPopup(popup_1c9ef7d5706370ee8b98d355b1b8d2e3)
+        ;
+
+        
+    
+    
+                marker_8d4e76c4358a0b479f7b024d99590d44.setIcon(icon_4bfd744035d1ec0ce61c3dcc23171d4d);
+            
+    
+            var marker_148ba17e604ae1f75a6036afe073e1bc = L.marker(
+                [24.03914555, -104.66631214],
+                {
+}
+            ).addTo(feature_group_5a34b34327c6972e3fc42288be405370);
+        
+    
+            var icon_fc7fab72d9764f44540f446572cf17b7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "fa-j",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cce3990d7b0609ddf578ddd3662a7191 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_55ebb9267ec1ad6ee26266e339d4e7a5 = $(`<div id="html_55ebb9267ec1ad6ee26266e339d4e7a5" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 148<br><b>Cve_Fuente:</b> 0303<br><b>Nombre Fuente:</b> FUNERALES EL ANGEL<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 3</div>`)[0];
+                popup_cce3990d7b0609ddf578ddd3662a7191.setContent(html_55ebb9267ec1ad6ee26266e339d4e7a5);
+            
+        
+
+        marker_148ba17e604ae1f75a6036afe073e1bc.bindPopup(popup_cce3990d7b0609ddf578ddd3662a7191)
+        ;
+
+        
+    
+    
+                marker_148ba17e604ae1f75a6036afe073e1bc.setIcon(icon_fc7fab72d9764f44540f446572cf17b7);
+            
+    
+            var marker_830b607142d797db64d98956b3ab9413 = L.marker(
+                [24.05453435, -104.614818],
+                {
+}
+            ).addTo(feature_group_5a34b34327c6972e3fc42288be405370);
+        
+    
+            var icon_d7161381db8aafa46f7f5075fbcd860b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "fa-m",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9284b6ea65319daeb4627e1059255b26 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0501a4cde00424fabecd9c349ca66416 = $(`<div id="html_0501a4cde00424fabecd9c349ca66416" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 529<br><b>Cve_Fuente:</b> 0435<br><b>Nombre Fuente:</b> AG. AUTOS BYD DURANGO<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 21</div>`)[0];
+                popup_9284b6ea65319daeb4627e1059255b26.setContent(html_0501a4cde00424fabecd9c349ca66416);
+            
+        
+
+        marker_830b607142d797db64d98956b3ab9413.bindPopup(popup_9284b6ea65319daeb4627e1059255b26)
+        ;
+
+        
+    
+    
+                marker_830b607142d797db64d98956b3ab9413.setIcon(icon_d7161381db8aafa46f7f5075fbcd860b);
+            
+    
+            var marker_c0d4f1e84639a16aea23f54f8951b70f = L.marker(
+                [24.06201703, -104.60495165],
+                {
+}
+            ).addTo(feature_group_5a34b34327c6972e3fc42288be405370);
+        
+    
+            var icon_e3b2f45f2ea88f4fe81f8f5e5e6f3736 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "fa-w",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b214debd0bbd24e6e048445d3daff6e9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3d121bc8cc91ce42227d52e2353dd002 = $(`<div id="html_3d121bc8cc91ce42227d52e2353dd002" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 45<br><b>Cve_Fuente:</b> 1163<br><b>Nombre Fuente:</b> ACEITES Y LUBRICANTES ESPAÑA<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 21</div>`)[0];
+                popup_b214debd0bbd24e6e048445d3daff6e9.setContent(html_3d121bc8cc91ce42227d52e2353dd002);
+            
+        
+
+        marker_c0d4f1e84639a16aea23f54f8951b70f.bindPopup(popup_b214debd0bbd24e6e048445d3daff6e9)
+        ;
+
+        
+    
+    
+                marker_c0d4f1e84639a16aea23f54f8951b70f.setIcon(icon_e3b2f45f2ea88f4fe81f8f5e5e6f3736);
+            
+    
+            feature_group_5a34b34327c6972e3fc42288be405370.addTo(map_8a3da6721bf6c198fa87705f0d62ece6);
+        
+    
+            var layer_control_1853bf845c869b39016e0c05e6a9276c_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_55cbcef9af436f834f14b2e3d3a490cc,
+                },
+                overlays :  {
+                    "Ambas" : feature_group_34f180dc2f930c5b6d4e267b258f58fd,
+                    "Semana 1" : feature_group_f858f70fd0dd25ed89012d78203ec044,
+                    "Semana 2" : feature_group_5a34b34327c6972e3fc42288be405370,
+                },
+            };
+            let layer_control_1853bf845c869b39016e0c05e6a9276c = L.control.layers(
+                layer_control_1853bf845c869b39016e0c05e6a9276c_layers.base_layers,
+                layer_control_1853bf845c869b39016e0c05e6a9276c_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_8a3da6721bf6c198fa87705f0d62ece6);
+
+        
+</script>
+</html>

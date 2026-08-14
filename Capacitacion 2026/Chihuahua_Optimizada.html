@@ -1,0 +1,3266 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a535e2530e7a91f3fe4d6e0c08cd9488 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a535e2530e7a91f3fe4d6e0c08cd9488" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a535e2530e7a91f3fe4d6e0c08cd9488 = L.map(
+                "map_a535e2530e7a91f3fe4d6e0c08cd9488",
+                {
+                    center: [28.5971410946206, -106.066669087934],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ab6e504a6879b16efca60eccfd712142 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_ab6e504a6879b16efca60eccfd712142.addTo(map_a535e2530e7a91f3fe4d6e0c08cd9488);
+        
+    
+            var feature_group_5b0db55936f84c4eeefc1800f55eecdc = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_f862f7e8ed7e2a9bb2c6f9f1ad1a68c2 = L.marker(
+                [28.5971410946206, -106.066669087934],
+                {
+}
+            ).addTo(feature_group_5b0db55936f84c4eeefc1800f55eecdc);
+        
+    
+            var icon_19b97d4507bd9555cffe847de08bea58 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-v",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8f9208563b3cf5e9bb40e6f2b620a203 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c1a9962f3c66452451aefd3e78e0fd61 = $(`<div id="html_c1a9962f3c66452451aefd3e78e0fd61" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 643<br><b>Cve_Fuente:</b> 0977<br><b>Nombre Fuente:</b> ABARROTES ANCHONDO<br><b>Número de Específicos:</b> 8<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_8f9208563b3cf5e9bb40e6f2b620a203.setContent(html_c1a9962f3c66452451aefd3e78e0fd61);
+            
+        
+
+        marker_f862f7e8ed7e2a9bb2c6f9f1ad1a68c2.bindPopup(popup_8f9208563b3cf5e9bb40e6f2b620a203)
+        ;
+
+        
+    
+    
+                marker_f862f7e8ed7e2a9bb2c6f9f1ad1a68c2.setIcon(icon_19b97d4507bd9555cffe847de08bea58);
+            
+    
+            var marker_36110a7a391a60bf6574f70085519401 = L.marker(
+                [28.6021072, -106.06930342],
+                {
+}
+            ).addTo(feature_group_5b0db55936f84c4eeefc1800f55eecdc);
+        
+    
+            var icon_fcd96f19585ad77b97385a3d478a75b2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-v",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eb140603b9a048220d4a7bac46a972c7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3b3d72e27385395d7126d727c74038b4 = $(`<div id="html_3b3d72e27385395d7126d727c74038b4" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 634<br><b>Cve_Fuente:</b> 1020<br><b>Nombre Fuente:</b> ABARROTES RIVERA<br><b>Número de Específicos:</b> 7<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_eb140603b9a048220d4a7bac46a972c7.setContent(html_3b3d72e27385395d7126d727c74038b4);
+            
+        
+
+        marker_36110a7a391a60bf6574f70085519401.bindPopup(popup_eb140603b9a048220d4a7bac46a972c7)
+        ;
+
+        
+    
+    
+                marker_36110a7a391a60bf6574f70085519401.setIcon(icon_fcd96f19585ad77b97385a3d478a75b2);
+            
+    
+            var marker_181f7e3137a2653625617559fe14a4a4 = L.marker(
+                [28.60639133, -106.06051452],
+                {
+}
+            ).addTo(feature_group_5b0db55936f84c4eeefc1800f55eecdc);
+        
+    
+            var icon_a8e6aa603b38fe36efac5c734904b410 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-v",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c1f60f1085e04f59e8bd682e6a968dac = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_47b8c1060b568b4b4fbdc221ef133649 = $(`<div id="html_47b8c1060b568b4b4fbdc221ef133649" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 625<br><b>Cve_Fuente:</b> 0026<br><b>Nombre Fuente:</b> MINI SUPER JERLO<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_c1f60f1085e04f59e8bd682e6a968dac.setContent(html_47b8c1060b568b4b4fbdc221ef133649);
+            
+        
+
+        marker_181f7e3137a2653625617559fe14a4a4.bindPopup(popup_c1f60f1085e04f59e8bd682e6a968dac)
+        ;
+
+        
+    
+    
+                marker_181f7e3137a2653625617559fe14a4a4.setIcon(icon_a8e6aa603b38fe36efac5c734904b410);
+            
+    
+            var marker_7d6b4544226f8375d3e42507a2ccf819 = L.marker(
+                [28.61472024, -106.03432447],
+                {
+}
+            ).addTo(feature_group_5b0db55936f84c4eeefc1800f55eecdc);
+        
+    
+            var icon_faabea6a14954b12fd42339a3e38712a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-m",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_75097628533aaf4e7e4f99481df36c9b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9fd1e5734d9e7d2a3bad4e84972d361f = $(`<div id="html_9fd1e5734d9e7d2a3bad4e84972d361f" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 675<br><b>Cve_Fuente:</b> 1112<br><b>Nombre Fuente:</b> ABARROTES MAYRA<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_75097628533aaf4e7e4f99481df36c9b.setContent(html_9fd1e5734d9e7d2a3bad4e84972d361f);
+            
+        
+
+        marker_7d6b4544226f8375d3e42507a2ccf819.bindPopup(popup_75097628533aaf4e7e4f99481df36c9b)
+        ;
+
+        
+    
+    
+                marker_7d6b4544226f8375d3e42507a2ccf819.setIcon(icon_faabea6a14954b12fd42339a3e38712a);
+            
+    
+            var marker_7a59a67ce5e0d4033761ce7db0a32c84 = L.marker(
+                [28.62596081, -106.11487341],
+                {
+}
+            ).addTo(feature_group_5b0db55936f84c4eeefc1800f55eecdc);
+        
+    
+            var icon_fcb7956501923073980e097586a9adb1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "fa-w",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_31b45156276796f1fdb915f2ecac38c7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_05378bc208b571644e8474ea94aad5ab = $(`<div id="html_05378bc208b571644e8474ea94aad5ab" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 536<br><b>Cve_Fuente:</b> 1060<br><b>Nombre Fuente:</b> SANTA FE<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 21</div>`)[0];
+                popup_31b45156276796f1fdb915f2ecac38c7.setContent(html_05378bc208b571644e8474ea94aad5ab);
+            
+        
+
+        marker_7a59a67ce5e0d4033761ce7db0a32c84.bindPopup(popup_31b45156276796f1fdb915f2ecac38c7)
+        ;
+
+        
+    
+    
+                marker_7a59a67ce5e0d4033761ce7db0a32c84.setIcon(icon_fcb7956501923073980e097586a9adb1);
+            
+    
+            var marker_b76ec8d4019c00b6663a081a32503b88 = L.marker(
+                [28.63029023, -106.12051253],
+                {
+}
+            ).addTo(feature_group_5b0db55936f84c4eeefc1800f55eecdc);
+        
+    
+            var icon_c905351a19b2ec6b329fb5b744f353f8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "fa-w",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d372a344e83fe39b58e3c00bc7cff180 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8f39dda1832f0df047139084d2de29fa = $(`<div id="html_8f39dda1832f0df047139084d2de29fa" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 326<br><b>Cve_Fuente:</b> 1068<br><b>Nombre Fuente:</b> SORIANA HIPERMART PERIFERICO DE LA JUVENTUD 524<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 21</div>`)[0];
+                popup_d372a344e83fe39b58e3c00bc7cff180.setContent(html_8f39dda1832f0df047139084d2de29fa);
+            
+        
+
+        marker_b76ec8d4019c00b6663a081a32503b88.bindPopup(popup_d372a344e83fe39b58e3c00bc7cff180)
+        ;
+
+        
+    
+    
+                marker_b76ec8d4019c00b6663a081a32503b88.setIcon(icon_c905351a19b2ec6b329fb5b744f353f8);
+            
+    
+            var marker_f4422ee8ffdee2fb6787717d266060ba = L.marker(
+                [28.63384851, -106.12131323],
+                {
+}
+            ).addTo(feature_group_5b0db55936f84c4eeefc1800f55eecdc);
+        
+    
+            var icon_f2a08df03346ea3c38b74b66bcca6311 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "fa-w",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7f2db550d2d39ee6757e79aceefd5f16 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ffb7d39ed700c1b0a3c3974825f644e2 = $(`<div id="html_ffb7d39ed700c1b0a3c3974825f644e2" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 380<br><b>Cve_Fuente:</b> 0100<br><b>Nombre Fuente:</b> SAM S CHIHUAHUA 8240<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 21</div>`)[0];
+                popup_7f2db550d2d39ee6757e79aceefd5f16.setContent(html_ffb7d39ed700c1b0a3c3974825f644e2);
+            
+        
+
+        marker_f4422ee8ffdee2fb6787717d266060ba.bindPopup(popup_7f2db550d2d39ee6757e79aceefd5f16)
+        ;
+
+        
+    
+    
+                marker_f4422ee8ffdee2fb6787717d266060ba.setIcon(icon_f2a08df03346ea3c38b74b66bcca6311);
+            
+    
+            var marker_4ce2b0ff04d0c0ce7cde3ab67e26c380 = L.marker(
+                [28.63678087, -106.06646497],
+                {
+}
+            ).addTo(feature_group_5b0db55936f84c4eeefc1800f55eecdc);
+        
+    
+            var icon_f1b45f1478a2f48041d7931fffef9c75 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_85b7ed4a15abcda7c82fb67e34bc8cf1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c83ba5fb717200f1982a18177a98fbed = $(`<div id="html_c83ba5fb717200f1982a18177a98fbed" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 271<br><b>Cve_Fuente:</b> 1021<br><b>Nombre Fuente:</b> ABARROTES CHAVA<br><b>Número de Específicos:</b> 29<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_85b7ed4a15abcda7c82fb67e34bc8cf1.setContent(html_c83ba5fb717200f1982a18177a98fbed);
+            
+        
+
+        marker_4ce2b0ff04d0c0ce7cde3ab67e26c380.bindPopup(popup_85b7ed4a15abcda7c82fb67e34bc8cf1)
+        ;
+
+        
+    
+    
+                marker_4ce2b0ff04d0c0ce7cde3ab67e26c380.setIcon(icon_f1b45f1478a2f48041d7931fffef9c75);
+            
+    
+            var marker_33b1f6ad905aeded4c34b222934afae1 = L.marker(
+                [28.63720919, -106.07918367],
+                {
+}
+            ).addTo(feature_group_5b0db55936f84c4eeefc1800f55eecdc);
+        
+    
+            var icon_f0adbd36a4b5676779173342136658c1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2430667da400ae66055dac6d748d43c5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_75c54296d8d2d5de0715801980becbc3 = $(`<div id="html_75c54296d8d2d5de0715801980becbc3" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 147<br><b>Cve_Fuente:</b> 1078<br><b>Nombre Fuente:</b> CARNICERIA EL AGUILA<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_2430667da400ae66055dac6d748d43c5.setContent(html_75c54296d8d2d5de0715801980becbc3);
+            
+        
+
+        marker_33b1f6ad905aeded4c34b222934afae1.bindPopup(popup_2430667da400ae66055dac6d748d43c5)
+        ;
+
+        
+    
+    
+                marker_33b1f6ad905aeded4c34b222934afae1.setIcon(icon_f0adbd36a4b5676779173342136658c1);
+            
+    
+            var marker_12801703766da530fad3b1692a198b4a = L.marker(
+                [28.63827954, -106.07873278],
+                {
+}
+            ).addTo(feature_group_5b0db55936f84c4eeefc1800f55eecdc);
+        
+    
+            var icon_cdc22329a53f625d15d9b28ccd21ec07 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6c5eca7dd41724c72834ee6e4e2695e2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c1cd037bbb56d2afd2cabf680badc453 = $(`<div id="html_c1cd037bbb56d2afd2cabf680badc453" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 481<br><b>Cve_Fuente:</b> 1133<br><b>Nombre Fuente:</b> SORIANA NIÑOS HÉROES<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_6c5eca7dd41724c72834ee6e4e2695e2.setContent(html_c1cd037bbb56d2afd2cabf680badc453);
+            
+        
+
+        marker_12801703766da530fad3b1692a198b4a.bindPopup(popup_6c5eca7dd41724c72834ee6e4e2695e2)
+        ;
+
+        
+    
+    
+                marker_12801703766da530fad3b1692a198b4a.setIcon(icon_cdc22329a53f625d15d9b28ccd21ec07);
+            
+    
+            var marker_e71bc5cf9c7b0f40e724296ff983acbb = L.marker(
+                [28.64376354, -106.11225514],
+                {
+}
+            ).addTo(feature_group_5b0db55936f84c4eeefc1800f55eecdc);
+        
+    
+            var icon_16ee68aedcfb5f7f642b11ca027b8a1b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "fa-m",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e5a06b830c80dce3d1a6027d83b9756d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8c630f7a525bc99d01eed8f5cab49d0b = $(`<div id="html_8c630f7a525bc99d01eed8f5cab49d0b" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 530<br><b>Cve_Fuente:</b> 1089<br><b>Nombre Fuente:</b> VISA DEL NORTE<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 21</div>`)[0];
+                popup_e5a06b830c80dce3d1a6027d83b9756d.setContent(html_8c630f7a525bc99d01eed8f5cab49d0b);
+            
+        
+
+        marker_e71bc5cf9c7b0f40e724296ff983acbb.bindPopup(popup_e5a06b830c80dce3d1a6027d83b9756d)
+        ;
+
+        
+    
+    
+                marker_e71bc5cf9c7b0f40e724296ff983acbb.setIcon(icon_16ee68aedcfb5f7f642b11ca027b8a1b);
+            
+    
+            var marker_c89bc2a8ca64754131524f5ae78f3a93 = L.marker(
+                [28.64482109, -106.067539],
+                {
+}
+            ).addTo(feature_group_5b0db55936f84c4eeefc1800f55eecdc);
+        
+    
+            var icon_ad216eb45a0f14c8d720d9da1403acef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5cce1b9970baa2ca491988726eb93800 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1817a0bcc0e5a2cd2d38cc658b710dd9 = $(`<div id="html_1817a0bcc0e5a2cd2d38cc658b710dd9" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 432<br><b>Cve_Fuente:</b> 0120<br><b>Nombre Fuente:</b> EXTRA CALLE 31<br><b>Número de Específicos:</b> 11<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_5cce1b9970baa2ca491988726eb93800.setContent(html_1817a0bcc0e5a2cd2d38cc658b710dd9);
+            
+        
+
+        marker_c89bc2a8ca64754131524f5ae78f3a93.bindPopup(popup_5cce1b9970baa2ca491988726eb93800)
+        ;
+
+        
+    
+    
+                marker_c89bc2a8ca64754131524f5ae78f3a93.setIcon(icon_ad216eb45a0f14c8d720d9da1403acef);
+            
+    
+            var marker_297d3f7ff674d98db5ac78ebf6fbd816 = L.marker(
+                [28.64664505, -106.12549317],
+                {
+}
+            ).addTo(feature_group_5b0db55936f84c4eeefc1800f55eecdc);
+        
+    
+            var icon_83d4a99d2f002a47414000134df5f41e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "fa-m",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b3b29068b5fce1689739e649072ddd18 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f9b93eeeb5a25f8928eb9927af75a746 = $(`<div id="html_f9b93eeeb5a25f8928eb9927af75a746" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 203<br><b>Cve_Fuente:</b> 1047<br><b>Nombre Fuente:</b> PASTELERIA VIENESA<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 21</div>`)[0];
+                popup_b3b29068b5fce1689739e649072ddd18.setContent(html_f9b93eeeb5a25f8928eb9927af75a746);
+            
+        
+
+        marker_297d3f7ff674d98db5ac78ebf6fbd816.bindPopup(popup_b3b29068b5fce1689739e649072ddd18)
+        ;
+
+        
+    
+    
+                marker_297d3f7ff674d98db5ac78ebf6fbd816.setIcon(icon_83d4a99d2f002a47414000134df5f41e);
+            
+    
+            var marker_9ff97758baba91581e22fb6f89653476 = L.marker(
+                [28.64733678, -106.11540358],
+                {
+}
+            ).addTo(feature_group_5b0db55936f84c4eeefc1800f55eecdc);
+        
+    
+            var icon_a61b844406910235b056cd37a56c4602 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "fa-m",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1c626b18952dde1da561a2176aafdd41 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4f5591abc4f60411714d519aaf8c96f4 = $(`<div id="html_4f5591abc4f60411714d519aaf8c96f4" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 558<br><b>Cve_Fuente:</b> 1067<br><b>Nombre Fuente:</b> TRES VIAS<br><b>Número de Específicos:</b> 3<br><b>Cve_Cotizador:</b> 21</div>`)[0];
+                popup_1c626b18952dde1da561a2176aafdd41.setContent(html_4f5591abc4f60411714d519aaf8c96f4);
+            
+        
+
+        marker_9ff97758baba91581e22fb6f89653476.bindPopup(popup_1c626b18952dde1da561a2176aafdd41)
+        ;
+
+        
+    
+    
+                marker_9ff97758baba91581e22fb6f89653476.setIcon(icon_a61b844406910235b056cd37a56c4602);
+            
+    
+            var marker_7ac712b9a9c79c89bc52ae4f2f7183ca = L.marker(
+                [28.64931626, -106.06607187],
+                {
+}
+            ).addTo(feature_group_5b0db55936f84c4eeefc1800f55eecdc);
+        
+    
+            var icon_384e82056210e54bcc7a86d5a0dda5db = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9d89ae567d088dcc67246e2263e37e67 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f29b301ebea0073a2d7525c0e65843ab = $(`<div id="html_f29b301ebea0073a2d7525c0e65843ab" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 541<br><b>Cve_Fuente:</b> 1061<br><b>Nombre Fuente:</b> PACHECO<br><b>Número de Específicos:</b> 2<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_9d89ae567d088dcc67246e2263e37e67.setContent(html_f29b301ebea0073a2d7525c0e65843ab);
+            
+        
+
+        marker_7ac712b9a9c79c89bc52ae4f2f7183ca.bindPopup(popup_9d89ae567d088dcc67246e2263e37e67)
+        ;
+
+        
+    
+    
+                marker_7ac712b9a9c79c89bc52ae4f2f7183ca.setIcon(icon_384e82056210e54bcc7a86d5a0dda5db);
+            
+    
+            var marker_88f70af22194aca855c57b971b0116f5 = L.marker(
+                [28.6545778, -106.1130592],
+                {
+}
+            ).addTo(feature_group_5b0db55936f84c4eeefc1800f55eecdc);
+        
+    
+            var icon_9f8fcaf877aa12c27ff726e758acdacb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "fa-m",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e11c7d003dc08ad4d1cae4bbd05688e0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a12d77a421166ce17e508859cf0dba26 = $(`<div id="html_a12d77a421166ce17e508859cf0dba26" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 190<br><b>Cve_Fuente:</b> 0128<br><b>Nombre Fuente:</b> BARBACOA CHAM<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 21</div>`)[0];
+                popup_e11c7d003dc08ad4d1cae4bbd05688e0.setContent(html_a12d77a421166ce17e508859cf0dba26);
+            
+        
+
+        marker_88f70af22194aca855c57b971b0116f5.bindPopup(popup_e11c7d003dc08ad4d1cae4bbd05688e0)
+        ;
+
+        
+    
+    
+                marker_88f70af22194aca855c57b971b0116f5.setIcon(icon_9f8fcaf877aa12c27ff726e758acdacb);
+            
+    
+            var marker_9387d0100d01a6372a13d9b583fd08b6 = L.marker(
+                [28.65509791, -106.05187855],
+                {
+}
+            ).addTo(feature_group_5b0db55936f84c4eeefc1800f55eecdc);
+        
+    
+            var icon_bb382edd24afc4058eb75014f123cd6a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_675258c36c43f70fc22422b8d607dc35 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1a8440296141f61380d42902c1ff71f2 = $(`<div id="html_1a8440296141f61380d42902c1ff71f2" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 653<br><b>Cve_Fuente:</b> 1065<br><b>Nombre Fuente:</b> ABARROTES ALARCON<br><b>Número de Específicos:</b> 3<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_675258c36c43f70fc22422b8d607dc35.setContent(html_1a8440296141f61380d42902c1ff71f2);
+            
+        
+
+        marker_9387d0100d01a6372a13d9b583fd08b6.bindPopup(popup_675258c36c43f70fc22422b8d607dc35)
+        ;
+
+        
+    
+    
+                marker_9387d0100d01a6372a13d9b583fd08b6.setIcon(icon_bb382edd24afc4058eb75014f123cd6a);
+            
+    
+            var marker_990a51d0f4055632b1bd082cf7748a8c = L.marker(
+                [28.65939524, -106.12004703],
+                {
+}
+            ).addTo(feature_group_5b0db55936f84c4eeefc1800f55eecdc);
+        
+    
+            var icon_89e266f7f4f71987f4b40d0db0b55eb3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "fa-m",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0260856f5c066f94a7a18d1dcbf43fdb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_02d73062744005bf64f5b1555452be35 = $(`<div id="html_02d73062744005bf64f5b1555452be35" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 449<br><b>Cve_Fuente:</b> 0122<br><b>Nombre Fuente:</b> ARRACHERAS BROS<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 21</div>`)[0];
+                popup_0260856f5c066f94a7a18d1dcbf43fdb.setContent(html_02d73062744005bf64f5b1555452be35);
+            
+        
+
+        marker_990a51d0f4055632b1bd082cf7748a8c.bindPopup(popup_0260856f5c066f94a7a18d1dcbf43fdb)
+        ;
+
+        
+    
+    
+                marker_990a51d0f4055632b1bd082cf7748a8c.setIcon(icon_89e266f7f4f71987f4b40d0db0b55eb3);
+            
+    
+            var marker_e5d72bdda7fe91329d95a92107c336a9 = L.marker(
+                [28.66095754, -106.11280646],
+                {
+}
+            ).addTo(feature_group_5b0db55936f84c4eeefc1800f55eecdc);
+        
+    
+            var icon_7514fe6a60d1672b3ef49f987fdb97a2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "fa-m",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e1bd561d55a0c12bc12e03339d88f084 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6c59f62152b10b545371a718b3ae0449 = $(`<div id="html_6c59f62152b10b545371a718b3ae0449" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 528<br><b>Cve_Fuente:</b> 1072<br><b>Nombre Fuente:</b> CARNICERIA LOS CORRALITOS<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 21</div>`)[0];
+                popup_e1bd561d55a0c12bc12e03339d88f084.setContent(html_6c59f62152b10b545371a718b3ae0449);
+            
+        
+
+        marker_e5d72bdda7fe91329d95a92107c336a9.bindPopup(popup_e1bd561d55a0c12bc12e03339d88f084)
+        ;
+
+        
+    
+    
+                marker_e5d72bdda7fe91329d95a92107c336a9.setIcon(icon_7514fe6a60d1672b3ef49f987fdb97a2);
+            
+    
+            var marker_e8300d0f9f52d3fb207ab12c9240761e = L.marker(
+                [28.66647459, -106.01502531],
+                {
+}
+            ).addTo(feature_group_5b0db55936f84c4eeefc1800f55eecdc);
+        
+    
+            var icon_b33aad36c90792a20e15234ceb15ed14 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-j",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_12530a21c68909e821171b74b9e10157 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_28eed8afc79f4d057b17e57b3c786ae6 = $(`<div id="html_28eed8afc79f4d057b17e57b3c786ae6" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 662<br><b>Cve_Fuente:</b> 1023<br><b>Nombre Fuente:</b> EXPENDIO DE PALETAS Y NIEVE<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_12530a21c68909e821171b74b9e10157.setContent(html_28eed8afc79f4d057b17e57b3c786ae6);
+            
+        
+
+        marker_e8300d0f9f52d3fb207ab12c9240761e.bindPopup(popup_12530a21c68909e821171b74b9e10157)
+        ;
+
+        
+    
+    
+                marker_e8300d0f9f52d3fb207ab12c9240761e.setIcon(icon_b33aad36c90792a20e15234ceb15ed14);
+            
+    
+            var marker_14d8724194f91763f3d4e331fdd38daa = L.marker(
+                [28.66776909, -106.12238751],
+                {
+}
+            ).addTo(feature_group_5b0db55936f84c4eeefc1800f55eecdc);
+        
+    
+            var icon_81ff44e559d9cc16f4f9502d06ac0cdb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "fa-m",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3549a03edc5dfc498c06d2b649cb19ce = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a71ed6228b3b6b51f47d3d1b8b97e5b0 = $(`<div id="html_a71ed6228b3b6b51f47d3d1b8b97e5b0" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 7<br><b>Cve_Fuente:</b> 1075<br><b>Nombre Fuente:</b> TORTILLAS DE HARINA<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 21</div>`)[0];
+                popup_3549a03edc5dfc498c06d2b649cb19ce.setContent(html_a71ed6228b3b6b51f47d3d1b8b97e5b0);
+            
+        
+
+        marker_14d8724194f91763f3d4e331fdd38daa.bindPopup(popup_3549a03edc5dfc498c06d2b649cb19ce)
+        ;
+
+        
+    
+    
+                marker_14d8724194f91763f3d4e331fdd38daa.setIcon(icon_81ff44e559d9cc16f4f9502d06ac0cdb);
+            
+    
+            var marker_4460e3fed73b671c1c5e9d122a0f8a1c = L.marker(
+                [28.67338692, -106.1024996],
+                {
+}
+            ).addTo(feature_group_5b0db55936f84c4eeefc1800f55eecdc);
+        
+    
+            var icon_2495456db71b06993364012eb0df80b7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "fa-j",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8f9ecc63f8bc9a83e0494e2e02466cbe = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6ed15b0c5fa9223147470526561b3d6e = $(`<div id="html_6ed15b0c5fa9223147470526561b3d6e" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 539<br><b>Cve_Fuente:</b> 1070<br><b>Nombre Fuente:</b> VALLARTA<br><b>Número de Específicos:</b> 3<br><b>Cve_Cotizador:</b> 21</div>`)[0];
+                popup_8f9ecc63f8bc9a83e0494e2e02466cbe.setContent(html_6ed15b0c5fa9223147470526561b3d6e);
+            
+        
+
+        marker_4460e3fed73b671c1c5e9d122a0f8a1c.bindPopup(popup_8f9ecc63f8bc9a83e0494e2e02466cbe)
+        ;
+
+        
+    
+    
+                marker_4460e3fed73b671c1c5e9d122a0f8a1c.setIcon(icon_2495456db71b06993364012eb0df80b7);
+            
+    
+            var marker_d3d7402be1f5a23e316f2d6687ab0000 = L.marker(
+                [28.67422797, -106.10020345],
+                {
+}
+            ).addTo(feature_group_5b0db55936f84c4eeefc1800f55eecdc);
+        
+    
+            var icon_372b7dc3af7a1688f18c12708f9f76f3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "fa-j",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e8ca925a2c56f5542dc452648fc6471c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_aca8e069129dbb9f8f807e34a89e3372 = $(`<div id="html_aca8e069129dbb9f8f807e34a89e3372" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 321<br><b>Cve_Fuente:</b> 1054<br><b>Nombre Fuente:</b> CARNEMART<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 21</div>`)[0];
+                popup_e8ca925a2c56f5542dc452648fc6471c.setContent(html_aca8e069129dbb9f8f807e34a89e3372);
+            
+        
+
+        marker_d3d7402be1f5a23e316f2d6687ab0000.bindPopup(popup_e8ca925a2c56f5542dc452648fc6471c)
+        ;
+
+        
+    
+    
+                marker_d3d7402be1f5a23e316f2d6687ab0000.setIcon(icon_372b7dc3af7a1688f18c12708f9f76f3);
+            
+    
+            var marker_74d6e0019ffcd5a6d87b76e3ec758471 = L.marker(
+                [28.6836015, -106.11088635],
+                {
+}
+            ).addTo(feature_group_5b0db55936f84c4eeefc1800f55eecdc);
+        
+    
+            var icon_3b248a2f9d89a7007c73d091977142d5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-m",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_627e0d71fb9c45dac4d68b84683c9abe = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e6912d2fd5b3d34e0b380be442d907c2 = $(`<div id="html_e6912d2fd5b3d34e0b380be442d907c2" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 176<br><b>Cve_Fuente:</b> 1131<br><b>Nombre Fuente:</b> BODEGA AURRERA<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_627e0d71fb9c45dac4d68b84683c9abe.setContent(html_e6912d2fd5b3d34e0b380be442d907c2);
+            
+        
+
+        marker_74d6e0019ffcd5a6d87b76e3ec758471.bindPopup(popup_627e0d71fb9c45dac4d68b84683c9abe)
+        ;
+
+        
+    
+    
+                marker_74d6e0019ffcd5a6d87b76e3ec758471.setIcon(icon_3b248a2f9d89a7007c73d091977142d5);
+            
+    
+            var marker_1e94d6109c1ccc949fb58a069cb4e126 = L.marker(
+                [28.68392196, -106.10261415],
+                {
+}
+            ).addTo(feature_group_5b0db55936f84c4eeefc1800f55eecdc);
+        
+    
+            var icon_2999e6d2e0cb10e1b38d9e082261fe11 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-m",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ff20ce88f6872bdf467887d92ea50186 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_16ee8ba673ecb7a31564a9507645b333 = $(`<div id="html_16ee8ba673ecb7a31564a9507645b333" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 46<br><b>Cve_Fuente:</b> 1058<br><b>Nombre Fuente:</b> TIENDA DE ABARROTES LA ESCONDIDA<br><b>Número de Específicos:</b> 5<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_ff20ce88f6872bdf467887d92ea50186.setContent(html_16ee8ba673ecb7a31564a9507645b333);
+            
+        
+
+        marker_1e94d6109c1ccc949fb58a069cb4e126.bindPopup(popup_ff20ce88f6872bdf467887d92ea50186)
+        ;
+
+        
+    
+    
+                marker_1e94d6109c1ccc949fb58a069cb4e126.setIcon(icon_2999e6d2e0cb10e1b38d9e082261fe11);
+            
+    
+            var marker_81bab3de4da7c7393225234f5d29145c = L.marker(
+                [28.6845438914503, -106.111296565024],
+                {
+}
+            ).addTo(feature_group_5b0db55936f84c4eeefc1800f55eecdc);
+        
+    
+            var icon_5574faeca41914cc9c9b71fa28ed901f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-m",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bfbd58ea0ea5f8c6c99c2b7e20db808f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6cd78c6fb6c3ca06172a0645bb8aa212 = $(`<div id="html_6cd78c6fb6c3ca06172a0645bb8aa212" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 99<br><b>Cve_Fuente:</b> 1016<br><b>Nombre Fuente:</b> B EXPRESS TORRES DEL REY 1763<br><b>Número de Específicos:</b> 71<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_bfbd58ea0ea5f8c6c99c2b7e20db808f.setContent(html_6cd78c6fb6c3ca06172a0645bb8aa212);
+            
+        
+
+        marker_81bab3de4da7c7393225234f5d29145c.bindPopup(popup_bfbd58ea0ea5f8c6c99c2b7e20db808f)
+        ;
+
+        
+    
+    
+                marker_81bab3de4da7c7393225234f5d29145c.setIcon(icon_5574faeca41914cc9c9b71fa28ed901f);
+            
+    
+            var marker_790d745ee3af4f2c3074a330df3be128 = L.marker(
+                [28.68476118, -106.11131885],
+                {
+}
+            ).addTo(feature_group_5b0db55936f84c4eeefc1800f55eecdc);
+        
+    
+            var icon_8b08c75bf1cc8040ba2c007489a53cdc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-m",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7db644cb43a379573609dfbd086e6f02 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b1712ebdd5ae4b6c6c6027978863fb6b = $(`<div id="html_b1712ebdd5ae4b6c6c6027978863fb6b" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 331<br><b>Cve_Fuente:</b> 1093<br><b>Nombre Fuente:</b> SMART LA VILLA<br><b>Número de Específicos:</b> 3<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_7db644cb43a379573609dfbd086e6f02.setContent(html_b1712ebdd5ae4b6c6c6027978863fb6b);
+            
+        
+
+        marker_790d745ee3af4f2c3074a330df3be128.bindPopup(popup_7db644cb43a379573609dfbd086e6f02)
+        ;
+
+        
+    
+    
+                marker_790d745ee3af4f2c3074a330df3be128.setIcon(icon_8b08c75bf1cc8040ba2c007489a53cdc);
+            
+    
+            var marker_478df8f66d67ad0b9e55568ce266b8a9 = L.marker(
+                [28.69147135, -106.0916603],
+                {
+}
+            ).addTo(feature_group_5b0db55936f84c4eeefc1800f55eecdc);
+        
+    
+            var icon_0cc96d8fea29c7e7440ae04ee8b97f30 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-v",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4f73b3b93bd05ffcf0e1fd71f9ffdc86 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3f9353a35ea293ca640f143b854481ac = $(`<div id="html_3f9353a35ea293ca640f143b854481ac" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 50<br><b>Cve_Fuente:</b> 1064<br><b>Nombre Fuente:</b> ABARROTES FARES<br><b>Número de Específicos:</b> 4<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_4f73b3b93bd05ffcf0e1fd71f9ffdc86.setContent(html_3f9353a35ea293ca640f143b854481ac);
+            
+        
+
+        marker_478df8f66d67ad0b9e55568ce266b8a9.bindPopup(popup_4f73b3b93bd05ffcf0e1fd71f9ffdc86)
+        ;
+
+        
+    
+    
+                marker_478df8f66d67ad0b9e55568ce266b8a9.setIcon(icon_0cc96d8fea29c7e7440ae04ee8b97f30);
+            
+    
+            var marker_4d00b0dde3530335a0ac6ccac8ab7315 = L.marker(
+                [28.70205403, -106.14229096],
+                {
+}
+            ).addTo(feature_group_5b0db55936f84c4eeefc1800f55eecdc);
+        
+    
+            var icon_60fa877e6e6d4efe6d59aaab22658e6c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-j",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d1e70e0fcb83a7310e1a193d25c2b237 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fb1e7078aabb24ff70d01eaee341f8a8 = $(`<div id="html_fb1e7078aabb24ff70d01eaee341f8a8" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 41<br><b>Cve_Fuente:</b> 1079<br><b>Nombre Fuente:</b> SUPERCARNES DEL SOL<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_d1e70e0fcb83a7310e1a193d25c2b237.setContent(html_fb1e7078aabb24ff70d01eaee341f8a8);
+            
+        
+
+        marker_4d00b0dde3530335a0ac6ccac8ab7315.bindPopup(popup_d1e70e0fcb83a7310e1a193d25c2b237)
+        ;
+
+        
+    
+    
+                marker_4d00b0dde3530335a0ac6ccac8ab7315.setIcon(icon_60fa877e6e6d4efe6d59aaab22658e6c);
+            
+    
+            var marker_bf65b6e670a32fe1810fbdc87c1ebb10 = L.marker(
+                [28.7039129, -106.12830087],
+                {
+}
+            ).addTo(feature_group_5b0db55936f84c4eeefc1800f55eecdc);
+        
+    
+            var icon_760e573a2e02eb16a4c6d59bfb110092 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-j",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6ef50e9a26adfdd9b78744193a107e54 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8f6a732b92acc546de700640ed8abb4e = $(`<div id="html_8f6a732b92acc546de700640ed8abb4e" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 324<br><b>Cve_Fuente:</b> 1084<br><b>Nombre Fuente:</b> SORIANA JUVENTUD<br><b>Número de Específicos:</b> 5<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_6ef50e9a26adfdd9b78744193a107e54.setContent(html_8f6a732b92acc546de700640ed8abb4e);
+            
+        
+
+        marker_bf65b6e670a32fe1810fbdc87c1ebb10.bindPopup(popup_6ef50e9a26adfdd9b78744193a107e54)
+        ;
+
+        
+    
+    
+                marker_bf65b6e670a32fe1810fbdc87c1ebb10.setIcon(icon_760e573a2e02eb16a4c6d59bfb110092);
+            
+    
+            var marker_0179f0a64f8166ba5b80fd6b684e3d26 = L.marker(
+                [28.71345155, -106.16432813],
+                {
+}
+            ).addTo(feature_group_5b0db55936f84c4eeefc1800f55eecdc);
+        
+    
+            var icon_e317d03b047a97690cb4b07e8e1e6792 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-j",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_da130e1f06dd12271bafb0468c8cee79 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_72d871baa06a55de45b689791ef578a8 = $(`<div id="html_72d871baa06a55de45b689791ef578a8" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 42<br><b>Cve_Fuente:</b> 1081<br><b>Nombre Fuente:</b> CARNES Y FRUTAS ESCUADERO<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_da130e1f06dd12271bafb0468c8cee79.setContent(html_72d871baa06a55de45b689791ef578a8);
+            
+        
+
+        marker_0179f0a64f8166ba5b80fd6b684e3d26.bindPopup(popup_da130e1f06dd12271bafb0468c8cee79)
+        ;
+
+        
+    
+    
+                marker_0179f0a64f8166ba5b80fd6b684e3d26.setIcon(icon_e317d03b047a97690cb4b07e8e1e6792);
+            
+    
+            var marker_a34d439bc76fdee8bf4bd872c26d0ef8 = L.marker(
+                [28.72495442, -106.1236371],
+                {
+}
+            ).addTo(feature_group_5b0db55936f84c4eeefc1800f55eecdc);
+        
+    
+            var icon_b3ccea75975f9b58086bc9506d7f8754 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-w",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_da483ed96497530ed5de2e02ff91d249 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dadb0e79d3f87cf94556f2ae6b781bce = $(`<div id="html_dadb0e79d3f87cf94556f2ae6b781bce" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 10<br><b>Cve_Fuente:</b> 1088<br><b>Nombre Fuente:</b> MAS CARNE<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_da483ed96497530ed5de2e02ff91d249.setContent(html_dadb0e79d3f87cf94556f2ae6b781bce);
+            
+        
+
+        marker_a34d439bc76fdee8bf4bd872c26d0ef8.bindPopup(popup_da483ed96497530ed5de2e02ff91d249)
+        ;
+
+        
+    
+    
+                marker_a34d439bc76fdee8bf4bd872c26d0ef8.setIcon(icon_b3ccea75975f9b58086bc9506d7f8754);
+            
+    
+            var marker_641f5afbb38e51689058bfad7c00031f = L.marker(
+                [28.72572675, -106.12159928],
+                {
+}
+            ).addTo(feature_group_5b0db55936f84c4eeefc1800f55eecdc);
+        
+    
+            var icon_e63665c493b40dff3c4c1d87123635f8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-w",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9ff4a5190965afa58484ce10b0ee18e4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b1739ae9f0e0d7008d767db9e06416ba = $(`<div id="html_b1739ae9f0e0d7008d767db9e06416ba" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 556<br><b>Cve_Fuente:</b> 1059<br><b>Nombre Fuente:</b> CHIH 2000<br><b>Número de Específicos:</b> 2<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_9ff4a5190965afa58484ce10b0ee18e4.setContent(html_b1739ae9f0e0d7008d767db9e06416ba);
+            
+        
+
+        marker_641f5afbb38e51689058bfad7c00031f.bindPopup(popup_9ff4a5190965afa58484ce10b0ee18e4)
+        ;
+
+        
+    
+    
+                marker_641f5afbb38e51689058bfad7c00031f.setIcon(icon_e63665c493b40dff3c4c1d87123635f8);
+            
+    
+            var marker_c892acd3c9ec39d48242ecfb671d61b5 = L.marker(
+                [28.73191231, -106.11406745],
+                {
+}
+            ).addTo(feature_group_5b0db55936f84c4eeefc1800f55eecdc);
+        
+    
+            var icon_4ab171505a3f6a08b691923ec45c15ce = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-w",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f0ba32cf180f2234d5c9276afe4cfab0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e78584444524ba8b371906d690ce3bb6 = $(`<div id="html_e78584444524ba8b371906d690ce3bb6" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 323<br><b>Cve_Fuente:</b> 1092<br><b>Nombre Fuente:</b> SMART NOGALES<br><b>Número de Específicos:</b> 2<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_f0ba32cf180f2234d5c9276afe4cfab0.setContent(html_e78584444524ba8b371906d690ce3bb6);
+            
+        
+
+        marker_c892acd3c9ec39d48242ecfb671d61b5.bindPopup(popup_f0ba32cf180f2234d5c9276afe4cfab0)
+        ;
+
+        
+    
+    
+                marker_c892acd3c9ec39d48242ecfb671d61b5.setIcon(icon_4ab171505a3f6a08b691923ec45c15ce);
+            
+    
+            var marker_a6c320dabd8ce4a87adae982cd92c8f2 = L.marker(
+                [28.7336617, -106.1354916],
+                {
+}
+            ).addTo(feature_group_5b0db55936f84c4eeefc1800f55eecdc);
+        
+    
+            var icon_fd4528946a0ffd353cb8977e5e8efaa8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_710cdbcd4c94b4d5fc79e530a59f1e12 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6be51d7977c8f68c3d4350c51fd4e9af = $(`<div id="html_6be51d7977c8f68c3d4350c51fd4e9af" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 9<br><b>Cve_Fuente:</b> 1055<br><b>Nombre Fuente:</b> CARNICERIA EL RANCHO<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_710cdbcd4c94b4d5fc79e530a59f1e12.setContent(html_6be51d7977c8f68c3d4350c51fd4e9af);
+            
+        
+
+        marker_a6c320dabd8ce4a87adae982cd92c8f2.bindPopup(popup_710cdbcd4c94b4d5fc79e530a59f1e12)
+        ;
+
+        
+    
+    
+                marker_a6c320dabd8ce4a87adae982cd92c8f2.setIcon(icon_fd4528946a0ffd353cb8977e5e8efaa8);
+            
+    
+            var marker_aa7eee9e802ea4596b8727ad46a4e4dd = L.marker(
+                [28.73441994, -106.11845826],
+                {
+}
+            ).addTo(feature_group_5b0db55936f84c4eeefc1800f55eecdc);
+        
+    
+            var icon_008d6ecd3b73378d35b1aa4e74395573 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-w",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_211fa3408095b73c35690ec3a3fdb535 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b51e128c4c7dd11d9d84ef1f1fcdf175 = $(`<div id="html_b51e128c4c7dd11d9d84ef1f1fcdf175" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 13<br><b>Cve_Fuente:</b> 1096<br><b>Nombre Fuente:</b> TIENDA DE ABARROTES LESLIE<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_211fa3408095b73c35690ec3a3fdb535.setContent(html_b51e128c4c7dd11d9d84ef1f1fcdf175);
+            
+        
+
+        marker_aa7eee9e802ea4596b8727ad46a4e4dd.bindPopup(popup_211fa3408095b73c35690ec3a3fdb535)
+        ;
+
+        
+    
+    
+                marker_aa7eee9e802ea4596b8727ad46a4e4dd.setIcon(icon_008d6ecd3b73378d35b1aa4e74395573);
+            
+    
+            var marker_8596108edd3a20197c2b19c8559bbaaf = L.marker(
+                [28.73811071, -106.11694784],
+                {
+}
+            ).addTo(feature_group_5b0db55936f84c4eeefc1800f55eecdc);
+        
+    
+            var icon_4db98aa8eded77d7d46fd81c8ef50b42 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-w",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_252b247e972b2a6c357b41f9ac7fd40d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_69e05b40b4a4d8ab3e26850003bc281d = $(`<div id="html_69e05b40b4a4d8ab3e26850003bc281d" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 47<br><b>Cve_Fuente:</b> 1095<br><b>Nombre Fuente:</b> SUPER SANTA CECILIA<br><b>Número de Específicos:</b> 4<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_252b247e972b2a6c357b41f9ac7fd40d.setContent(html_69e05b40b4a4d8ab3e26850003bc281d);
+            
+        
+
+        marker_8596108edd3a20197c2b19c8559bbaaf.bindPopup(popup_252b247e972b2a6c357b41f9ac7fd40d)
+        ;
+
+        
+    
+    
+                marker_8596108edd3a20197c2b19c8559bbaaf.setIcon(icon_4db98aa8eded77d7d46fd81c8ef50b42);
+            
+    
+            var marker_a4f0a4f965bd6eded6bcfd12c8ecbe00 = L.marker(
+                [28.74065404, -106.13342959],
+                {
+}
+            ).addTo(feature_group_5b0db55936f84c4eeefc1800f55eecdc);
+        
+    
+            var icon_db119f2ca1b99c6be29057a355736a82 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_990e5067973b1fb95da80a99d75c87e3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_42269faec43b013e73c72db66295ee8c = $(`<div id="html_42269faec43b013e73c72db66295ee8c" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 1<br><b>Cve_Fuente:</b> 1080<br><b>Nombre Fuente:</b> ABARROTES ANGEL<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_990e5067973b1fb95da80a99d75c87e3.setContent(html_42269faec43b013e73c72db66295ee8c);
+            
+        
+
+        marker_a4f0a4f965bd6eded6bcfd12c8ecbe00.bindPopup(popup_990e5067973b1fb95da80a99d75c87e3)
+        ;
+
+        
+    
+    
+                marker_a4f0a4f965bd6eded6bcfd12c8ecbe00.setIcon(icon_db119f2ca1b99c6be29057a355736a82);
+            
+    
+            var marker_c8c82b5d5d7f0b6300f15500f87a063e = L.marker(
+                [28.74390802, -106.11473228],
+                {
+}
+            ).addTo(feature_group_5b0db55936f84c4eeefc1800f55eecdc);
+        
+    
+            var icon_a3020620642ccd3d45cdacb7ba81d498 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-w",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e7d465c936f82590e3427a6252c77db0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cf981925244d8e5b510e89c9cc8f5d47 = $(`<div id="html_cf981925244d8e5b510e89c9cc8f5d47" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 22<br><b>Cve_Fuente:</b> 1119<br><b>Nombre Fuente:</b> ABARROTES MARY<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_e7d465c936f82590e3427a6252c77db0.setContent(html_cf981925244d8e5b510e89c9cc8f5d47);
+            
+        
+
+        marker_c8c82b5d5d7f0b6300f15500f87a063e.bindPopup(popup_e7d465c936f82590e3427a6252c77db0)
+        ;
+
+        
+    
+    
+                marker_c8c82b5d5d7f0b6300f15500f87a063e.setIcon(icon_a3020620642ccd3d45cdacb7ba81d498);
+            
+    
+            var marker_738b384ea9d5786bbeb13d651f394104 = L.marker(
+                [28.74413857, -106.13715449],
+                {
+}
+            ).addTo(feature_group_5b0db55936f84c4eeefc1800f55eecdc);
+        
+    
+            var icon_ceeaea551bb8ed3b6aa34e61dceb6f1a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_abb73e01a98d6c86c375483396b64c99 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6febd76efa93fe54df6c53f158d1c078 = $(`<div id="html_6febd76efa93fe54df6c53f158d1c078" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 11<br><b>Cve_Fuente:</b> 1073<br><b>Nombre Fuente:</b> ABARROTES DEL CESAR<br><b>Número de Específicos:</b> 2<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_abb73e01a98d6c86c375483396b64c99.setContent(html_6febd76efa93fe54df6c53f158d1c078);
+            
+        
+
+        marker_738b384ea9d5786bbeb13d651f394104.bindPopup(popup_abb73e01a98d6c86c375483396b64c99)
+        ;
+
+        
+    
+    
+                marker_738b384ea9d5786bbeb13d651f394104.setIcon(icon_ceeaea551bb8ed3b6aa34e61dceb6f1a);
+            
+    
+            var marker_b08f5c07c36ff6401228daec1d5e4c10 = L.marker(
+                [28.74506527, -106.13244257],
+                {
+}
+            ).addTo(feature_group_5b0db55936f84c4eeefc1800f55eecdc);
+        
+    
+            var icon_869f71c29aede42c580ebb271a66e1c1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_242deb4ad5aaa41378cbcd8865924c07 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_27ac00ebaa870ac7f674da27f5ec64ef = $(`<div id="html_27ac00ebaa870ac7f674da27f5ec64ef" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 557<br><b>Cve_Fuente:</b> 1083<br><b>Nombre Fuente:</b> A. QUINN<br><b>Número de Específicos:</b> 5<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_242deb4ad5aaa41378cbcd8865924c07.setContent(html_27ac00ebaa870ac7f674da27f5ec64ef);
+            
+        
+
+        marker_b08f5c07c36ff6401228daec1d5e4c10.bindPopup(popup_242deb4ad5aaa41378cbcd8865924c07)
+        ;
+
+        
+    
+    
+                marker_b08f5c07c36ff6401228daec1d5e4c10.setIcon(icon_869f71c29aede42c580ebb271a66e1c1);
+            
+    
+            feature_group_5b0db55936f84c4eeefc1800f55eecdc.addTo(map_a535e2530e7a91f3fe4d6e0c08cd9488);
+        
+    
+            var feature_group_87f90cc4fff075d33abc9acd7682220c = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_d6bdd5ef531dfe16f1158b84fd41785f = L.marker(
+                [28.60401781, -106.10050503],
+                {
+}
+            ).addTo(feature_group_87f90cc4fff075d33abc9acd7682220c);
+        
+    
+            var icon_ecf8c9cc214fc2898d29a6b6c0ba75f7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "fa-v",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b1f5b8cab4e65f9eba5e33988cfc7ee0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f3636c28095818d992fbe38f84e6f2eb = $(`<div id="html_f3636c28095818d992fbe38f84e6f2eb" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 408<br><b>Cve_Fuente:</b> 1129<br><b>Nombre Fuente:</b> CLINICA MEDICA DEL SOL<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 21</div>`)[0];
+                popup_b1f5b8cab4e65f9eba5e33988cfc7ee0.setContent(html_f3636c28095818d992fbe38f84e6f2eb);
+            
+        
+
+        marker_d6bdd5ef531dfe16f1158b84fd41785f.bindPopup(popup_b1f5b8cab4e65f9eba5e33988cfc7ee0)
+        ;
+
+        
+    
+    
+                marker_d6bdd5ef531dfe16f1158b84fd41785f.setIcon(icon_ecf8c9cc214fc2898d29a6b6c0ba75f7);
+            
+    
+            var marker_28ba740d164ad67e3ba43e882d657ffb = L.marker(
+                [28.60428147, -106.09418978],
+                {
+}
+            ).addTo(feature_group_87f90cc4fff075d33abc9acd7682220c);
+        
+    
+            var icon_084f76dc553d69de5355c2277db849b4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "fa-v",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_093a00f335e10988ac83fdb1bd0b0836 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fdd2a8d96e6d2f651c4c855e57d6ac7e = $(`<div id="html_fdd2a8d96e6d2f651c4c855e57d6ac7e" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 410<br><b>Cve_Fuente:</b> 1032<br><b>Nombre Fuente:</b> REFACCIONARIA LA 80<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 21</div>`)[0];
+                popup_093a00f335e10988ac83fdb1bd0b0836.setContent(html_fdd2a8d96e6d2f651c4c855e57d6ac7e);
+            
+        
+
+        marker_28ba740d164ad67e3ba43e882d657ffb.bindPopup(popup_093a00f335e10988ac83fdb1bd0b0836)
+        ;
+
+        
+    
+    
+                marker_28ba740d164ad67e3ba43e882d657ffb.setIcon(icon_084f76dc553d69de5355c2277db849b4);
+            
+    
+            var marker_7bc8f0f9b28055655cfdf4a622c65c9b = L.marker(
+                [28.61187985, -106.09902575],
+                {
+}
+            ).addTo(feature_group_87f90cc4fff075d33abc9acd7682220c);
+        
+    
+            var icon_6cfc8655d585e2ca690f2622b9a9a086 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "fa-v",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_faf49f3df9bda6026ab16561ddd21b0f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9e8a1e548f373f15a69b80e29b3ca42f = $(`<div id="html_9e8a1e548f373f15a69b80e29b3ca42f" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 409<br><b>Cve_Fuente:</b> 1136<br><b>Nombre Fuente:</b> FARMACIA CAMPESINA<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 21</div>`)[0];
+                popup_faf49f3df9bda6026ab16561ddd21b0f.setContent(html_9e8a1e548f373f15a69b80e29b3ca42f);
+            
+        
+
+        marker_7bc8f0f9b28055655cfdf4a622c65c9b.bindPopup(popup_faf49f3df9bda6026ab16561ddd21b0f)
+        ;
+
+        
+    
+    
+                marker_7bc8f0f9b28055655cfdf4a622c65c9b.setIcon(icon_6cfc8655d585e2ca690f2622b9a9a086);
+            
+    
+            var marker_93c577cbe4dfe990282f59ff17c10a49 = L.marker(
+                [28.61423863, -106.09063608],
+                {
+}
+            ).addTo(feature_group_87f90cc4fff075d33abc9acd7682220c);
+        
+    
+            var icon_bd67efeccde9ff77a5c8b859081706e3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-w",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_320bebc76fc592e1c47b2e5aa600c276 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_39bf685429b4cc715bed39011a372c3c = $(`<div id="html_39bf685429b4cc715bed39011a372c3c" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 440<br><b>Cve_Fuente:</b> 1024<br><b>Nombre Fuente:</b> SUPER AMIGO ZARCO<br><b>Número de Específicos:</b> 3<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_320bebc76fc592e1c47b2e5aa600c276.setContent(html_39bf685429b4cc715bed39011a372c3c);
+            
+        
+
+        marker_93c577cbe4dfe990282f59ff17c10a49.bindPopup(popup_320bebc76fc592e1c47b2e5aa600c276)
+        ;
+
+        
+    
+    
+                marker_93c577cbe4dfe990282f59ff17c10a49.setIcon(icon_bd67efeccde9ff77a5c8b859081706e3);
+            
+    
+            var marker_cb998023a19d0c0c9a0a7032da51337f = L.marker(
+                [28.61653185, -106.07871367],
+                {
+}
+            ).addTo(feature_group_87f90cc4fff075d33abc9acd7682220c);
+        
+    
+            var icon_20481edcd7fd65feb059e23078eb7b68 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-w",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_66938ea7a010c74daea4f2a2022d535f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2d132d1de9a01c2ba2d6bc7dbad6eea7 = $(`<div id="html_2d132d1de9a01c2ba2d6bc7dbad6eea7" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 238<br><b>Cve_Fuente:</b> 1034<br><b>Nombre Fuente:</b> ROMERO ACCESORIOS<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_66938ea7a010c74daea4f2a2022d535f.setContent(html_2d132d1de9a01c2ba2d6bc7dbad6eea7);
+            
+        
+
+        marker_cb998023a19d0c0c9a0a7032da51337f.bindPopup(popup_66938ea7a010c74daea4f2a2022d535f)
+        ;
+
+        
+    
+    
+                marker_cb998023a19d0c0c9a0a7032da51337f.setIcon(icon_20481edcd7fd65feb059e23078eb7b68);
+            
+    
+            var marker_364157da7cd41321d4b79bae2f9cc1f3 = L.marker(
+                [28.62260623, -106.11281991],
+                {
+}
+            ).addTo(feature_group_87f90cc4fff075d33abc9acd7682220c);
+        
+    
+            var icon_42bc85f9c65e725b0fe7b3d66f44c162 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "fa-w",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5764f03aaa451dead0f6a239e5867a85 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1989c10bbd646032c44e1c14b817a2f8 = $(`<div id="html_1989c10bbd646032c44e1c14b817a2f8" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 564<br><b>Cve_Fuente:</b> 1074<br><b>Nombre Fuente:</b> LEFTIES FASHION MALL<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 21</div>`)[0];
+                popup_5764f03aaa451dead0f6a239e5867a85.setContent(html_1989c10bbd646032c44e1c14b817a2f8);
+            
+        
+
+        marker_364157da7cd41321d4b79bae2f9cc1f3.bindPopup(popup_5764f03aaa451dead0f6a239e5867a85)
+        ;
+
+        
+    
+    
+                marker_364157da7cd41321d4b79bae2f9cc1f3.setIcon(icon_42bc85f9c65e725b0fe7b3d66f44c162);
+            
+    
+            var marker_69973bf5bc05e7cee78d21f54d853950 = L.marker(
+                [28.62325713, -106.11360878],
+                {
+}
+            ).addTo(feature_group_87f90cc4fff075d33abc9acd7682220c);
+        
+    
+            var icon_d484ca37bc647e8665b3f2e06a2c7471 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "fa-w",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_393b9b3b129a7b30d15aaff3988a9143 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fd5ba02479d0cbcdbbcc01b5fa927198 = $(`<div id="html_fd5ba02479d0cbcdbbcc01b5fa927198" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 607<br><b>Cve_Fuente:</b> 1135<br><b>Nombre Fuente:</b> OPTICAS DEVLYN SUCURSAL 408<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 21</div>`)[0];
+                popup_393b9b3b129a7b30d15aaff3988a9143.setContent(html_fd5ba02479d0cbcdbbcc01b5fa927198);
+            
+        
+
+        marker_69973bf5bc05e7cee78d21f54d853950.bindPopup(popup_393b9b3b129a7b30d15aaff3988a9143)
+        ;
+
+        
+    
+    
+                marker_69973bf5bc05e7cee78d21f54d853950.setIcon(icon_d484ca37bc647e8665b3f2e06a2c7471);
+            
+    
+            var marker_0e885e38d4c97d67d89624beab2570ce = L.marker(
+                [28.62352054, -106.07334477],
+                {
+}
+            ).addTo(feature_group_87f90cc4fff075d33abc9acd7682220c);
+        
+    
+            var icon_1caf5bec60711ed15608729038ca79b8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-w",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_673b5bf33ddcf88ab509bbca88cfb1d5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e669827ced9916a2ab452342ce6f6d1e = $(`<div id="html_e669827ced9916a2ab452342ce6f6d1e" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 241<br><b>Cve_Fuente:</b> 1127<br><b>Nombre Fuente:</b> FARMACIA LOS ANGELES<br><b>Número de Específicos:</b> 3<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_673b5bf33ddcf88ab509bbca88cfb1d5.setContent(html_e669827ced9916a2ab452342ce6f6d1e);
+            
+        
+
+        marker_0e885e38d4c97d67d89624beab2570ce.bindPopup(popup_673b5bf33ddcf88ab509bbca88cfb1d5)
+        ;
+
+        
+    
+    
+                marker_0e885e38d4c97d67d89624beab2570ce.setIcon(icon_1caf5bec60711ed15608729038ca79b8);
+            
+    
+            var marker_c53fa5f94088cbe4b5eeedc102acc445 = L.marker(
+                [28.62470998, -106.08582441],
+                {
+}
+            ).addTo(feature_group_87f90cc4fff075d33abc9acd7682220c);
+        
+    
+            var icon_e0ab3d3dd406adf5696ee63466fb712b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-w",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_25f303559e127a578040695dadc67965 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fa0eccfb42c137f43a2db605681e9083 = $(`<div id="html_fa0eccfb42c137f43a2db605681e9083" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 171<br><b>Cve_Fuente:</b> 0997<br><b>Nombre Fuente:</b> RESTAURANT NATURAL Y VIDA<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_25f303559e127a578040695dadc67965.setContent(html_fa0eccfb42c137f43a2db605681e9083);
+            
+        
+
+        marker_c53fa5f94088cbe4b5eeedc102acc445.bindPopup(popup_25f303559e127a578040695dadc67965)
+        ;
+
+        
+    
+    
+                marker_c53fa5f94088cbe4b5eeedc102acc445.setIcon(icon_e0ab3d3dd406adf5696ee63466fb712b);
+            
+    
+            var marker_8698a025408998e5789d2345236ae892 = L.marker(
+                [28.62544543, -106.11535503],
+                {
+}
+            ).addTo(feature_group_87f90cc4fff075d33abc9acd7682220c);
+        
+    
+            var icon_116824f1b8f326dae13d1e43dd0a4020 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "fa-w",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_286d6fb8c2bcebf56438617b8f0f1184 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_02906f051983add4d0fe00c1a9202908 = $(`<div id="html_02906f051983add4d0fe00c1a9202908" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 407<br><b>Cve_Fuente:</b> 1125<br><b>Nombre Fuente:</b> JUGUETRON<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 21</div>`)[0];
+                popup_286d6fb8c2bcebf56438617b8f0f1184.setContent(html_02906f051983add4d0fe00c1a9202908);
+            
+        
+
+        marker_8698a025408998e5789d2345236ae892.bindPopup(popup_286d6fb8c2bcebf56438617b8f0f1184)
+        ;
+
+        
+    
+    
+                marker_8698a025408998e5789d2345236ae892.setIcon(icon_116824f1b8f326dae13d1e43dd0a4020);
+            
+    
+            var marker_8e013e32395ad24e00e0a5a99456d600 = L.marker(
+                [28.62579651, -106.06990953],
+                {
+}
+            ).addTo(feature_group_87f90cc4fff075d33abc9acd7682220c);
+        
+    
+            var icon_a1fe840133b55d15c2f27ebda55fa545 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_924ade74fee9b748c77717b2d2ce2494 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0cb8f71e08c84cf4c7c264dd9bc7294f = $(`<div id="html_0cb8f71e08c84cf4c7c264dd9bc7294f" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 651<br><b>Cve_Fuente:</b> 1033<br><b>Nombre Fuente:</b> PARTES DE COLISION MERAZ AUTOPARTES<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_924ade74fee9b748c77717b2d2ce2494.setContent(html_0cb8f71e08c84cf4c7c264dd9bc7294f);
+            
+        
+
+        marker_8e013e32395ad24e00e0a5a99456d600.bindPopup(popup_924ade74fee9b748c77717b2d2ce2494)
+        ;
+
+        
+    
+    
+                marker_8e013e32395ad24e00e0a5a99456d600.setIcon(icon_a1fe840133b55d15c2f27ebda55fa545);
+            
+    
+            var marker_da4479f35dfc693f369dbf89898412bd = L.marker(
+                [28.6283777, -106.08576089],
+                {
+}
+            ).addTo(feature_group_87f90cc4fff075d33abc9acd7682220c);
+        
+    
+            var icon_6727d5000b0ecc029cce37b003db9ee6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-w",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ed43577582d51bbd8a1fee3b5dce8b03 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_99148dc3f68ea6cd0dac87bd27558290 = $(`<div id="html_99148dc3f68ea6cd0dac87bd27558290" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 628<br><b>Cve_Fuente:</b> 1029<br><b>Nombre Fuente:</b> PAPELERIA TRAZZO<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_ed43577582d51bbd8a1fee3b5dce8b03.setContent(html_99148dc3f68ea6cd0dac87bd27558290);
+            
+        
+
+        marker_da4479f35dfc693f369dbf89898412bd.bindPopup(popup_ed43577582d51bbd8a1fee3b5dce8b03)
+        ;
+
+        
+    
+    
+                marker_da4479f35dfc693f369dbf89898412bd.setIcon(icon_6727d5000b0ecc029cce37b003db9ee6);
+            
+    
+            var marker_c06069efababd45a7fcfd607d472a2e6 = L.marker(
+                [28.63074816, -106.12200063],
+                {
+}
+            ).addTo(feature_group_87f90cc4fff075d33abc9acd7682220c);
+        
+    
+            var icon_04ed74648a8d78068016669f4e446ffc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "fa-w",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4cf438351c65d3e78fbdea061375222c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f01da0ca6ff3b6edd5627fa64c7e951c = $(`<div id="html_f01da0ca6ff3b6edd5627fa64c7e951c" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 344<br><b>Cve_Fuente:</b> 0078<br><b>Nombre Fuente:</b> POCKETS PASEO CENTRAL<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 21</div>`)[0];
+                popup_4cf438351c65d3e78fbdea061375222c.setContent(html_f01da0ca6ff3b6edd5627fa64c7e951c);
+            
+        
+
+        marker_c06069efababd45a7fcfd607d472a2e6.bindPopup(popup_4cf438351c65d3e78fbdea061375222c)
+        ;
+
+        
+    
+    
+                marker_c06069efababd45a7fcfd607d472a2e6.setIcon(icon_04ed74648a8d78068016669f4e446ffc);
+            
+    
+            var marker_47a7809751e5e74dbfcb652889089a2e = L.marker(
+                [28.63115658, -106.12203075],
+                {
+}
+            ).addTo(feature_group_87f90cc4fff075d33abc9acd7682220c);
+        
+    
+            var icon_90d14cfe4b99e5a87f2f7f61de23a9fa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "fa-w",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2fe0e7c2b85c71f245efeab6053f0ed3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_982d8eb3271b94e53612a20e75f2a342 = $(`<div id="html_982d8eb3271b94e53612a20e75f2a342" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 406<br><b>Cve_Fuente:</b> 1124<br><b>Nombre Fuente:</b> SERVICIO DE PERSONAL HOSPITALARIO<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 21</div>`)[0];
+                popup_2fe0e7c2b85c71f245efeab6053f0ed3.setContent(html_982d8eb3271b94e53612a20e75f2a342);
+            
+        
+
+        marker_47a7809751e5e74dbfcb652889089a2e.bindPopup(popup_2fe0e7c2b85c71f245efeab6053f0ed3)
+        ;
+
+        
+    
+    
+                marker_47a7809751e5e74dbfcb652889089a2e.setIcon(icon_90d14cfe4b99e5a87f2f7f61de23a9fa);
+            
+    
+            var marker_df15d5cb6a76263a6f1d86d7af183cd4 = L.marker(
+                [28.63621594, -106.07149934],
+                {
+}
+            ).addTo(feature_group_87f90cc4fff075d33abc9acd7682220c);
+        
+    
+            var icon_4380b0723e78404785c49bfda5c9f0c2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d0e5b57b7c9c8b37436bfcfcb4a78ad5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_296293d188c35037a622de5a57d5557f = $(`<div id="html_296293d188c35037a622de5a57d5557f" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 302<br><b>Cve_Fuente:</b> 1126<br><b>Nombre Fuente:</b> CLINICA MATERNIDAD BOLIVAR<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_d0e5b57b7c9c8b37436bfcfcb4a78ad5.setContent(html_296293d188c35037a622de5a57d5557f);
+            
+        
+
+        marker_df15d5cb6a76263a6f1d86d7af183cd4.bindPopup(popup_d0e5b57b7c9c8b37436bfcfcb4a78ad5)
+        ;
+
+        
+    
+    
+                marker_df15d5cb6a76263a6f1d86d7af183cd4.setIcon(icon_4380b0723e78404785c49bfda5c9f0c2);
+            
+    
+            var marker_1fe733f09fa10d79b68d6c52652dd9ce = L.marker(
+                [28.63684666, -106.07818732],
+                {
+}
+            ).addTo(feature_group_87f90cc4fff075d33abc9acd7682220c);
+        
+    
+            var icon_7a99bc124d9b57ed0a4b2864367825c4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ef406a626af90418465735fe298bdddc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e4ec717a22e5eb00551e6ca8529ec44b = $(`<div id="html_e4ec717a22e5eb00551e6ca8529ec44b" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 534<br><b>Cve_Fuente:</b> 1071<br><b>Nombre Fuente:</b> ROPA VAQUERA<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_ef406a626af90418465735fe298bdddc.setContent(html_e4ec717a22e5eb00551e6ca8529ec44b);
+            
+        
+
+        marker_1fe733f09fa10d79b68d6c52652dd9ce.bindPopup(popup_ef406a626af90418465735fe298bdddc)
+        ;
+
+        
+    
+    
+                marker_1fe733f09fa10d79b68d6c52652dd9ce.setIcon(icon_7a99bc124d9b57ed0a4b2864367825c4);
+            
+    
+            var marker_25cee59fb55446f6c330642a94740861 = L.marker(
+                [28.6379162, -106.07398636],
+                {
+}
+            ).addTo(feature_group_87f90cc4fff075d33abc9acd7682220c);
+        
+    
+            var icon_33cae70f19c969ace50e5b67a62cd6d0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d17e46503762ebbc9fa4bce7fbaacd34 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c06ea66c3615250596f57a91d9ee6485 = $(`<div id="html_c06ea66c3615250596f57a91d9ee6485" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 608<br><b>Cve_Fuente:</b> 1062<br><b>Nombre Fuente:</b> PERFUMES Y ESENCIAS FRAICHE<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_d17e46503762ebbc9fa4bce7fbaacd34.setContent(html_c06ea66c3615250596f57a91d9ee6485);
+            
+        
+
+        marker_25cee59fb55446f6c330642a94740861.bindPopup(popup_d17e46503762ebbc9fa4bce7fbaacd34)
+        ;
+
+        
+    
+    
+                marker_25cee59fb55446f6c330642a94740861.setIcon(icon_33cae70f19c969ace50e5b67a62cd6d0);
+            
+    
+            var marker_9a7ea32cc3049b293825010aaa3023d3 = L.marker(
+                [28.63801917, -106.08214774],
+                {
+}
+            ).addTo(feature_group_87f90cc4fff075d33abc9acd7682220c);
+        
+    
+            var icon_f1a9f4fe64610571687109efc3e45456 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-w",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_26eba0ffa44ea3c6fdec731366194801 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6a9076fa90717a551e37999db01cb41b = $(`<div id="html_6a9076fa90717a551e37999db01cb41b" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 184<br><b>Cve_Fuente:</b> 1090<br><b>Nombre Fuente:</b> PELTRES MINA<br><b>Número de Específicos:</b> 3<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_26eba0ffa44ea3c6fdec731366194801.setContent(html_6a9076fa90717a551e37999db01cb41b);
+            
+        
+
+        marker_9a7ea32cc3049b293825010aaa3023d3.bindPopup(popup_26eba0ffa44ea3c6fdec731366194801)
+        ;
+
+        
+    
+    
+                marker_9a7ea32cc3049b293825010aaa3023d3.setIcon(icon_f1a9f4fe64610571687109efc3e45456);
+            
+    
+            var marker_0b6c11daa478b75cf53ffb23b2392be3 = L.marker(
+                [28.639374, -106.07731962],
+                {
+}
+            ).addTo(feature_group_87f90cc4fff075d33abc9acd7682220c);
+        
+    
+            var icon_4b771797ef0ec65d33401d7f0fb7ab51 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fb782490ec1fde680ce2467df3b1a83a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5b7622b968509a2a8dfb85367d7590ca = $(`<div id="html_5b7622b968509a2a8dfb85367d7590ca" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 150<br><b>Cve_Fuente:</b> 1120<br><b>Nombre Fuente:</b> TIENDA DE ROPA AMIGUITOS<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_fb782490ec1fde680ce2467df3b1a83a.setContent(html_5b7622b968509a2a8dfb85367d7590ca);
+            
+        
+
+        marker_0b6c11daa478b75cf53ffb23b2392be3.bindPopup(popup_fb782490ec1fde680ce2467df3b1a83a)
+        ;
+
+        
+    
+    
+                marker_0b6c11daa478b75cf53ffb23b2392be3.setIcon(icon_4b771797ef0ec65d33401d7f0fb7ab51);
+            
+    
+            var marker_8133e82edb8b7baf0c016ef7582e56fc = L.marker(
+                [28.64127511, -106.06873527],
+                {
+}
+            ).addTo(feature_group_87f90cc4fff075d33abc9acd7682220c);
+        
+    
+            var icon_4568e16918f0e3cacde0ffa306723e92 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3fc4ed0105e4b1b6c8cad81bd1bcad48 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9fa905c09fc767fd223233d41e24d1fa = $(`<div id="html_9fa905c09fc767fd223233d41e24d1fa" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 278<br><b>Cve_Fuente:</b> 1012<br><b>Nombre Fuente:</b> NOTARIA 27<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_3fc4ed0105e4b1b6c8cad81bd1bcad48.setContent(html_9fa905c09fc767fd223233d41e24d1fa);
+            
+        
+
+        marker_8133e82edb8b7baf0c016ef7582e56fc.bindPopup(popup_3fc4ed0105e4b1b6c8cad81bd1bcad48)
+        ;
+
+        
+    
+    
+                marker_8133e82edb8b7baf0c016ef7582e56fc.setIcon(icon_4568e16918f0e3cacde0ffa306723e92);
+            
+    
+            var marker_d395176ff9df2b8b65c7a3cf3a913915 = L.marker(
+                [28.64147056, -106.06693152],
+                {
+}
+            ).addTo(feature_group_87f90cc4fff075d33abc9acd7682220c);
+        
+    
+            var icon_bf11a01b7673ce139e384b7e140bb16c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_13032f39e55505b11aaee8e3eecb6ef9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_893baeba8fcac15f69fdb0a7fb22bfcb = $(`<div id="html_893baeba8fcac15f69fdb0a7fb22bfcb" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 623<br><b>Cve_Fuente:</b> 1134<br><b>Nombre Fuente:</b> DISTRIBUIDORA DE BELLEZA SAYURI<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_13032f39e55505b11aaee8e3eecb6ef9.setContent(html_893baeba8fcac15f69fdb0a7fb22bfcb);
+            
+        
+
+        marker_d395176ff9df2b8b65c7a3cf3a913915.bindPopup(popup_13032f39e55505b11aaee8e3eecb6ef9)
+        ;
+
+        
+    
+    
+                marker_d395176ff9df2b8b65c7a3cf3a913915.setIcon(icon_bf11a01b7673ce139e384b7e140bb16c);
+            
+    
+            var marker_906a303572391f95c30fb86316e655e2 = L.marker(
+                [28.64370266, -106.06866024],
+                {
+}
+            ).addTo(feature_group_87f90cc4fff075d33abc9acd7682220c);
+        
+    
+            var icon_8861c985cce6986aebdd100a96de16ef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bfd3d0b6f1c53fd3c720f4d37ff8839e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8002edf0b3ebbe8a6210975a02e44d2b = $(`<div id="html_8002edf0b3ebbe8a6210975a02e44d2b" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 449<br><b>Cve_Fuente:</b> 0094<br><b>Nombre Fuente:</b> LENCERIA SAHYRA<br><b>Número de Específicos:</b> 3<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_bfd3d0b6f1c53fd3c720f4d37ff8839e.setContent(html_8002edf0b3ebbe8a6210975a02e44d2b);
+            
+        
+
+        marker_906a303572391f95c30fb86316e655e2.bindPopup(popup_bfd3d0b6f1c53fd3c720f4d37ff8839e)
+        ;
+
+        
+    
+    
+                marker_906a303572391f95c30fb86316e655e2.setIcon(icon_8861c985cce6986aebdd100a96de16ef);
+            
+    
+            var marker_3492e3c70e79dfc9c0c7690fecb87635 = L.marker(
+                [28.64521481, -106.06895879],
+                {
+}
+            ).addTo(feature_group_87f90cc4fff075d33abc9acd7682220c);
+        
+    
+            var icon_1c2ccb5e0a8fca6bf178cee67a4db7e2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_166740c3bae690e860db42878c79e070 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c062a928b84a411bc9d35740dcf05a9e = $(`<div id="html_c062a928b84a411bc9d35740dcf05a9e" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 148<br><b>Cve_Fuente:</b> 1086<br><b>Nombre Fuente:</b> MUEBLERIAS ISSA<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_166740c3bae690e860db42878c79e070.setContent(html_c062a928b84a411bc9d35740dcf05a9e);
+            
+        
+
+        marker_3492e3c70e79dfc9c0c7690fecb87635.bindPopup(popup_166740c3bae690e860db42878c79e070)
+        ;
+
+        
+    
+    
+                marker_3492e3c70e79dfc9c0c7690fecb87635.setIcon(icon_1c2ccb5e0a8fca6bf178cee67a4db7e2);
+            
+    
+            var marker_fb15155902f5f3cc930658fea880be83 = L.marker(
+                [28.64813582, -106.08079258],
+                {
+}
+            ).addTo(feature_group_87f90cc4fff075d33abc9acd7682220c);
+        
+    
+            var icon_5f622531a9aec11a49f526f39e7498ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_079ab6935309332154c0f97123cd2716 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_31c15289b422bbbc20d7a416f13a876d = $(`<div id="html_31c15289b422bbbc20d7a416f13a876d" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 606<br><b>Cve_Fuente:</b> 1048<br><b>Nombre Fuente:</b> RESTAURANTE TACOSTEÑO<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_079ab6935309332154c0f97123cd2716.setContent(html_31c15289b422bbbc20d7a416f13a876d);
+            
+        
+
+        marker_fb15155902f5f3cc930658fea880be83.bindPopup(popup_079ab6935309332154c0f97123cd2716)
+        ;
+
+        
+    
+    
+                marker_fb15155902f5f3cc930658fea880be83.setIcon(icon_5f622531a9aec11a49f526f39e7498ed);
+            
+    
+            var marker_ec5f6cb0d5444c52797f9805ed56b46c = L.marker(
+                [28.65210951, -106.13077543],
+                {
+}
+            ).addTo(feature_group_87f90cc4fff075d33abc9acd7682220c);
+        
+    
+            var icon_e2cdbc2685f59e6cd686dd1fb516eb34 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "fa-m",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bc255e7ada35a523560da24084932196 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ae534a29f40bd1118464196b732ae9dc = $(`<div id="html_ae534a29f40bd1118464196b732ae9dc" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 638<br><b>Cve_Fuente:</b> 1066<br><b>Nombre Fuente:</b> GUITAR WORLD MEXICO<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 21</div>`)[0];
+                popup_bc255e7ada35a523560da24084932196.setContent(html_ae534a29f40bd1118464196b732ae9dc);
+            
+        
+
+        marker_ec5f6cb0d5444c52797f9805ed56b46c.bindPopup(popup_bc255e7ada35a523560da24084932196)
+        ;
+
+        
+    
+    
+                marker_ec5f6cb0d5444c52797f9805ed56b46c.setIcon(icon_e2cdbc2685f59e6cd686dd1fb516eb34);
+            
+    
+            var marker_7117f8f08b3372f6241c105a2496957c = L.marker(
+                [28.67729767, -106.12478843],
+                {
+}
+            ).addTo(feature_group_87f90cc4fff075d33abc9acd7682220c);
+        
+    
+            var icon_56f09b4d64c70db9dfc9db72d7e20c2d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-m",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c0d55c3618d91305a6f2e4f8db4343ad = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_198d7438eb4611bdf9b7fa2677018659 = $(`<div id="html_198d7438eb4611bdf9b7fa2677018659" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 149<br><b>Cve_Fuente:</b> 1110<br><b>Nombre Fuente:</b> EDMY JEANS<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_c0d55c3618d91305a6f2e4f8db4343ad.setContent(html_198d7438eb4611bdf9b7fa2677018659);
+            
+        
+
+        marker_7117f8f08b3372f6241c105a2496957c.bindPopup(popup_c0d55c3618d91305a6f2e4f8db4343ad)
+        ;
+
+        
+    
+    
+                marker_7117f8f08b3372f6241c105a2496957c.setIcon(icon_56f09b4d64c70db9dfc9db72d7e20c2d);
+            
+    
+            var marker_04d6416b9eb2c347bca6ad96b57ff901 = L.marker(
+                [28.6820753429759, -106.10920609655],
+                {
+}
+            ).addTo(feature_group_87f90cc4fff075d33abc9acd7682220c);
+        
+    
+            var icon_509c77fc65e89d160b75afb90bdcefe3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-m",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d85fb8bde35768ff5a7ecf8876c812b8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fd41ae8f5162270b59ab8ffb933b42bc = $(`<div id="html_fd41ae8f5162270b59ab8ffb933b42bc" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 153<br><b>Cve_Fuente:</b> 0999<br><b>Nombre Fuente:</b> FUNERARIAS MIRANDA<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_d85fb8bde35768ff5a7ecf8876c812b8.setContent(html_fd41ae8f5162270b59ab8ffb933b42bc);
+            
+        
+
+        marker_04d6416b9eb2c347bca6ad96b57ff901.bindPopup(popup_d85fb8bde35768ff5a7ecf8876c812b8)
+        ;
+
+        
+    
+    
+                marker_04d6416b9eb2c347bca6ad96b57ff901.setIcon(icon_509c77fc65e89d160b75afb90bdcefe3);
+            
+    
+            var marker_943f0f379fc8eb420baa8158cfaad784 = L.marker(
+                [28.69428371, -106.1168201],
+                {
+}
+            ).addTo(feature_group_87f90cc4fff075d33abc9acd7682220c);
+        
+    
+            var icon_1bac4dab669e6db8b838c9272b060db4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-m",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b1b6e7a5a6eb580a93e5062a277ab3f9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7e967c74153780b6a109bd286d43f12c = $(`<div id="html_7e967c74153780b6a109bd286d43f12c" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 81<br><b>Cve_Fuente:</b> 1052<br><b>Nombre Fuente:</b> REFACCIONARIA DIAZ<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_b1b6e7a5a6eb580a93e5062a277ab3f9.setContent(html_7e967c74153780b6a109bd286d43f12c);
+            
+        
+
+        marker_943f0f379fc8eb420baa8158cfaad784.bindPopup(popup_b1b6e7a5a6eb580a93e5062a277ab3f9)
+        ;
+
+        
+    
+    
+                marker_943f0f379fc8eb420baa8158cfaad784.setIcon(icon_1bac4dab669e6db8b838c9272b060db4);
+            
+    
+            var marker_b626768ff47d8184f31dcf2fafa1df92 = L.marker(
+                [28.70015306, -106.11832651],
+                {
+}
+            ).addTo(feature_group_87f90cc4fff075d33abc9acd7682220c);
+        
+    
+            var icon_8c2faf72897a91f96b96656ff0fd47e0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-m",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b24f6d62a2bf65d632b649213dd03096 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_879aff6a8aa93b5821ea5d3a04469adf = $(`<div id="html_879aff6a8aa93b5821ea5d3a04469adf" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 8<br><b>Cve_Fuente:</b> 1094<br><b>Nombre Fuente:</b> ADRI LOVE<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_b24f6d62a2bf65d632b649213dd03096.setContent(html_879aff6a8aa93b5821ea5d3a04469adf);
+            
+        
+
+        marker_b626768ff47d8184f31dcf2fafa1df92.bindPopup(popup_b24f6d62a2bf65d632b649213dd03096)
+        ;
+
+        
+    
+    
+                marker_b626768ff47d8184f31dcf2fafa1df92.setIcon(icon_8c2faf72897a91f96b96656ff0fd47e0);
+            
+    
+            var marker_d72135162d84c1308605c96a04db2b00 = L.marker(
+                [28.70278517, -106.10079974],
+                {
+}
+            ).addTo(feature_group_87f90cc4fff075d33abc9acd7682220c);
+        
+    
+            var icon_3a6ee70746ffdcd74f1e897abf0056a9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-v",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_838a6c0068a6834bfe078b93fb496a72 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fa5cd93c439b1545791eec9240775c52 = $(`<div id="html_fa5cd93c439b1545791eec9240775c52" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 21<br><b>Cve_Fuente:</b> 1111<br><b>Nombre Fuente:</b> EL BUEN VESTIR<br><b>Número de Específicos:</b> 10<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_838a6c0068a6834bfe078b93fb496a72.setContent(html_fa5cd93c439b1545791eec9240775c52);
+            
+        
+
+        marker_d72135162d84c1308605c96a04db2b00.bindPopup(popup_838a6c0068a6834bfe078b93fb496a72)
+        ;
+
+        
+    
+    
+                marker_d72135162d84c1308605c96a04db2b00.setIcon(icon_3a6ee70746ffdcd74f1e897abf0056a9);
+            
+    
+            feature_group_87f90cc4fff075d33abc9acd7682220c.addTo(map_a535e2530e7a91f3fe4d6e0c08cd9488);
+        
+    
+            var feature_group_6216b540456fa26b076ccba4d56c217e = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_a5e6388c84208eecc8dde638e5f5b008 = L.marker(
+                [28.61222705, -106.03300029],
+                {
+}
+            ).addTo(feature_group_6216b540456fa26b076ccba4d56c217e);
+        
+    
+            var icon_3b16c94ced03f6560b74c504ae118193 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-m",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d1c6c502a2a83edcde77fa4533a5b260 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_71e44fa3cb1d80cb8b08882114b7c7d7 = $(`<div id="html_71e44fa3cb1d80cb8b08882114b7c7d7" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 676<br><b>Cve_Fuente:</b> 1118<br><b>Nombre Fuente:</b> FERRETERIA DELGADOS<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_d1c6c502a2a83edcde77fa4533a5b260.setContent(html_71e44fa3cb1d80cb8b08882114b7c7d7);
+            
+        
+
+        marker_a5e6388c84208eecc8dde638e5f5b008.bindPopup(popup_d1c6c502a2a83edcde77fa4533a5b260)
+        ;
+
+        
+    
+    
+                marker_a5e6388c84208eecc8dde638e5f5b008.setIcon(icon_3b16c94ced03f6560b74c504ae118193);
+            
+    
+            var marker_9b39c5ea0ca28490aac10fb4a145f3d2 = L.marker(
+                [28.61773268, -106.05787369],
+                {
+}
+            ).addTo(feature_group_6216b540456fa26b076ccba4d56c217e);
+        
+    
+            var icon_6cc44e6d8cda22b5147fcb52167cbdf6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "fa-v",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cc9faaa7058e4b0d09c43525b34c279e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_57be0116105c44ab76317bfdf385c1bc = $(`<div id="html_57be0116105c44ab76317bfdf385c1bc" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 650<br><b>Cve_Fuente:</b> 1031<br><b>Nombre Fuente:</b> FLORERIA EL PARAISO<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 1</div>`)[0];
+                popup_cc9faaa7058e4b0d09c43525b34c279e.setContent(html_57be0116105c44ab76317bfdf385c1bc);
+            
+        
+
+        marker_9b39c5ea0ca28490aac10fb4a145f3d2.bindPopup(popup_cc9faaa7058e4b0d09c43525b34c279e)
+        ;
+
+        
+    
+    
+                marker_9b39c5ea0ca28490aac10fb4a145f3d2.setIcon(icon_6cc44e6d8cda22b5147fcb52167cbdf6);
+            
+    
+            var marker_fda9aadad080612e1d548361a6a98e3e = L.marker(
+                [28.63973614, -106.09919418],
+                {
+}
+            ).addTo(feature_group_6216b540456fa26b076ccba4d56c217e);
+        
+    
+            var icon_1bdb96909a3eeafc3debcbc663384ca7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6a0c6cce99c5e601fc3496266fb4b781 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_616e703104c57521b0eba80c38f61ee6 = $(`<div id="html_616e703104c57521b0eba80c38f61ee6" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 220<br><b>Cve_Fuente:</b> 1014<br><b>Nombre Fuente:</b> RESTAURANTE LAS ALITAS<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 21</div>`)[0];
+                popup_6a0c6cce99c5e601fc3496266fb4b781.setContent(html_616e703104c57521b0eba80c38f61ee6);
+            
+        
+
+        marker_fda9aadad080612e1d548361a6a98e3e.bindPopup(popup_6a0c6cce99c5e601fc3496266fb4b781)
+        ;
+
+        
+    
+    
+                marker_fda9aadad080612e1d548361a6a98e3e.setIcon(icon_1bdb96909a3eeafc3debcbc663384ca7);
+            
+    
+            var marker_75d62167b175600a122dcc2098e317a1 = L.marker(
+                [28.65174914, -106.11518104],
+                {
+}
+            ).addTo(feature_group_6216b540456fa26b076ccba4d56c217e);
+        
+    
+            var icon_49e53ef19b26f2a7e61ea914a7aa4af1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "fa-m",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0689be677fef62608270cf9d08f414ee = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2e770192cfb93ab405fd87477c5fad36 = $(`<div id="html_2e770192cfb93ab405fd87477c5fad36" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 531<br><b>Cve_Fuente:</b> 1128<br><b>Nombre Fuente:</b> CLÍNICA PANAMERICANA DE CHIHUAHUA SA DE CV<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 21</div>`)[0];
+                popup_0689be677fef62608270cf9d08f414ee.setContent(html_2e770192cfb93ab405fd87477c5fad36);
+            
+        
+
+        marker_75d62167b175600a122dcc2098e317a1.bindPopup(popup_0689be677fef62608270cf9d08f414ee)
+        ;
+
+        
+    
+    
+                marker_75d62167b175600a122dcc2098e317a1.setIcon(icon_49e53ef19b26f2a7e61ea914a7aa4af1);
+            
+    
+            var marker_bc821e8d61501832cec477f20edc9f24 = L.marker(
+                [28.65275798, -106.08768334],
+                {
+}
+            ).addTo(feature_group_6216b540456fa26b076ccba4d56c217e);
+        
+    
+            var icon_49aae610264a9ad38b75fffed795dfa8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "fa-l",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_63b7b71c763e14b62bfe12a49a1c96fe = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_db1c39aba155e091b1b6a0214f5a00aa = $(`<div id="html_db1c39aba155e091b1b6a0214f5a00aa" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 143<br><b>Cve_Fuente:</b> 1099<br><b>Nombre Fuente:</b> DENTALIFE<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 21</div>`)[0];
+                popup_63b7b71c763e14b62bfe12a49a1c96fe.setContent(html_db1c39aba155e091b1b6a0214f5a00aa);
+            
+        
+
+        marker_bc821e8d61501832cec477f20edc9f24.bindPopup(popup_63b7b71c763e14b62bfe12a49a1c96fe)
+        ;
+
+        
+    
+    
+                marker_bc821e8d61501832cec477f20edc9f24.setIcon(icon_49aae610264a9ad38b75fffed795dfa8);
+            
+    
+            var marker_dbdc0c924c76ee9465687834aef10a12 = L.marker(
+                [28.6635833863734, -106.097941206915],
+                {
+}
+            ).addTo(feature_group_6216b540456fa26b076ccba4d56c217e);
+        
+    
+            var icon_34d2195d457ffde25a89f3a858446a67 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "fa-j",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0ab1e696166bc5c5a94efc66b72d6197 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_80297737f94fc22664a96651be256aa9 = $(`<div id="html_80297737f94fc22664a96651be256aa9" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 493<br><b>Cve_Fuente:</b> 1001<br><b>Nombre Fuente:</b> COMERCIALIZADORA DE NEUMATICOS TARAHUMARA<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 21</div>`)[0];
+                popup_0ab1e696166bc5c5a94efc66b72d6197.setContent(html_80297737f94fc22664a96651be256aa9);
+            
+        
+
+        marker_dbdc0c924c76ee9465687834aef10a12.bindPopup(popup_0ab1e696166bc5c5a94efc66b72d6197)
+        ;
+
+        
+    
+    
+                marker_dbdc0c924c76ee9465687834aef10a12.setIcon(icon_34d2195d457ffde25a89f3a858446a67);
+            
+    
+            var marker_ded3905174a0d78ee2c8c25640cc6836 = L.marker(
+                [28.6641880595645, -106.098221059486],
+                {
+}
+            ).addTo(feature_group_6216b540456fa26b076ccba4d56c217e);
+        
+    
+            var icon_f884e75927e137a32bfeba12518c16d9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "fa-j",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c07f176d8d81776dcc6d2bcf010d4471 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ff81efdf2a73b5b505e063e6c45c178c = $(`<div id="html_ff81efdf2a73b5b505e063e6c45c178c" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 515<br><b>Cve_Fuente:</b> 1019<br><b>Nombre Fuente:</b> FARMACIA HOMEOPATICA CASCER<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 21</div>`)[0];
+                popup_c07f176d8d81776dcc6d2bcf010d4471.setContent(html_ff81efdf2a73b5b505e063e6c45c178c);
+            
+        
+
+        marker_ded3905174a0d78ee2c8c25640cc6836.bindPopup(popup_c07f176d8d81776dcc6d2bcf010d4471)
+        ;
+
+        
+    
+    
+                marker_ded3905174a0d78ee2c8c25640cc6836.setIcon(icon_f884e75927e137a32bfeba12518c16d9);
+            
+    
+            var marker_bd11a8a46366d783a6c50cf73fa0abf9 = L.marker(
+                [28.66530473, -106.0984997],
+                {
+}
+            ).addTo(feature_group_6216b540456fa26b076ccba4d56c217e);
+        
+    
+            var icon_0c0a5a1bebf0387b89969037c870d320 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "fa-j",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0d8a17a5693e1b5668f36cc5c506ab5f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_142baa42e5e145edaec962faaeb65699 = $(`<div id="html_142baa42e5e145edaec962faaeb65699" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 514<br><b>Cve_Fuente:</b> 1132<br><b>Nombre Fuente:</b> AGENCIA LLANTERA<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 21</div>`)[0];
+                popup_0d8a17a5693e1b5668f36cc5c506ab5f.setContent(html_142baa42e5e145edaec962faaeb65699);
+            
+        
+
+        marker_bd11a8a46366d783a6c50cf73fa0abf9.bindPopup(popup_0d8a17a5693e1b5668f36cc5c506ab5f)
+        ;
+
+        
+    
+    
+                marker_bd11a8a46366d783a6c50cf73fa0abf9.setIcon(icon_0c0a5a1bebf0387b89969037c870d320);
+            
+    
+            var marker_574c3dc2f51b58160eed8e655a5591fd = L.marker(
+                [28.66638166, -106.09112068],
+                {
+}
+            ).addTo(feature_group_6216b540456fa26b076ccba4d56c217e);
+        
+    
+            var icon_e9422baa5065ee40eec713c409b6b2bf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "fa-j",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_33bd73fc017d530226293c850588c7a4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6131b9b127a5fa9dcc1ccf85a0a5057f = $(`<div id="html_6131b9b127a5fa9dcc1ccf85a0a5057f" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 318<br><b>Cve_Fuente:</b> 1053<br><b>Nombre Fuente:</b> PAPELERA DEL NORTE DE LA LAGUNA<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 21</div>`)[0];
+                popup_33bd73fc017d530226293c850588c7a4.setContent(html_6131b9b127a5fa9dcc1ccf85a0a5057f);
+            
+        
+
+        marker_574c3dc2f51b58160eed8e655a5591fd.bindPopup(popup_33bd73fc017d530226293c850588c7a4)
+        ;
+
+        
+    
+    
+                marker_574c3dc2f51b58160eed8e655a5591fd.setIcon(icon_e9422baa5065ee40eec713c409b6b2bf);
+            
+    
+            var marker_157221567b9b8e49936ae8c2bdec46fa = L.marker(
+                [28.6839589778686, -106.141418704606],
+                {
+}
+            ).addTo(feature_group_6216b540456fa26b076ccba4d56c217e);
+        
+    
+            var icon_d15cbf4bb74291772f8d91e82ec1f0fe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-j",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5da0007bea179e95b1143bf3b1a12296 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_09fb1bba55acd2dc54b351074a752ca1 = $(`<div id="html_09fb1bba55acd2dc54b351074a752ca1" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 12<br><b>Cve_Fuente:</b> 1050<br><b>Nombre Fuente:</b> PAPELERIA ARELI<br><b>Número de Específicos:</b> 4<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_5da0007bea179e95b1143bf3b1a12296.setContent(html_09fb1bba55acd2dc54b351074a752ca1);
+            
+        
+
+        marker_157221567b9b8e49936ae8c2bdec46fa.bindPopup(popup_5da0007bea179e95b1143bf3b1a12296)
+        ;
+
+        
+    
+    
+                marker_157221567b9b8e49936ae8c2bdec46fa.setIcon(icon_d15cbf4bb74291772f8d91e82ec1f0fe);
+            
+    
+            var marker_fe2d74aacbf52e27a99dd9e2786b15ab = L.marker(
+                [28.70579141, -106.14732884],
+                {
+}
+            ).addTo(feature_group_6216b540456fa26b076ccba4d56c217e);
+        
+    
+            var icon_c8c79f27f14e92824585e440baded967 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "fa-j",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_65e6597aff42f82379a01ea8fd9428c7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_108f78e7bba78a83bcbe265dce24db9e = $(`<div id="html_108f78e7bba78a83bcbe265dce24db9e" style="width: 100.0%; height: 100.0%;"><b>Secuencia:</b> 6<br><b>Cve_Fuente:</b> 1038<br><b>Nombre Fuente:</b> PAPELERIA LA MISION<br><b>Número de Específicos:</b> 1<br><b>Cve_Cotizador:</b> 2</div>`)[0];
+                popup_65e6597aff42f82379a01ea8fd9428c7.setContent(html_108f78e7bba78a83bcbe265dce24db9e);
+            
+        
+
+        marker_fe2d74aacbf52e27a99dd9e2786b15ab.bindPopup(popup_65e6597aff42f82379a01ea8fd9428c7)
+        ;
+
+        
+    
+    
+                marker_fe2d74aacbf52e27a99dd9e2786b15ab.setIcon(icon_c8c79f27f14e92824585e440baded967);
+            
+    
+            feature_group_6216b540456fa26b076ccba4d56c217e.addTo(map_a535e2530e7a91f3fe4d6e0c08cd9488);
+        
+    
+            var layer_control_85d557769e374fa148dc22685814a9fa_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_ab6e504a6879b16efca60eccfd712142,
+                },
+                overlays :  {
+                    "Ambas" : feature_group_5b0db55936f84c4eeefc1800f55eecdc,
+                    "Semana 1" : feature_group_87f90cc4fff075d33abc9acd7682220c,
+                    "Semana 2" : feature_group_6216b540456fa26b076ccba4d56c217e,
+                },
+            };
+            let layer_control_85d557769e374fa148dc22685814a9fa = L.control.layers(
+                layer_control_85d557769e374fa148dc22685814a9fa_layers.base_layers,
+                layer_control_85d557769e374fa148dc22685814a9fa_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_a535e2530e7a91f3fe4d6e0c08cd9488);
+
+        
+</script>
+</html>

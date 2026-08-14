@@ -1,0 +1,164 @@
+﻿USUARIO,NOMBRE,AREA,CIUDAD,FECHA,PREGUNTA,RESPUESTA_DADA,RESPUESTA_CORRECTA,ESTATUS
+FERNANDA.RAMIREZ,Maria Fernanda Ramirez Soto,IP/NORTE,"Fresnillo, Zac.",2026-08-12 13:23:06,¿Qué debe proteger siempre el investigador?,La integridad de los datos,A,Incorrecta
+FERNANDA.RAMIREZ,Maria Fernanda Ramirez Soto,IP/NORTE,"Fresnillo, Zac.",2026-08-12 13:23:06,Se revisa la información del día a captura?,SI,A,Incorrecta
+FERNANDA.RAMIREZ,Maria Fernanda Ramirez Soto,IP/NORTE,"Fresnillo, Zac.",2026-08-12 13:23:06,¿Cuál es el objetivo final del levantamiento de precios?,Incrementar ventas,D,Incorrecta
+FERNANDA.RAMIREZ,Maria Fernanda Ramirez Soto,IP/NORTE,"Fresnillo, Zac.",2026-08-12 13:23:06,Conoces proceso completo de captura?,SI,A,Incorrecta
+FERNANDA.RAMIREZ,Maria Fernanda Ramirez Soto,IP/NORTE,"Fresnillo, Zac.",2026-08-12 13:23:06,Se captura en hojas o dispositivo móvil?,HOJA,D,Incorrecta
+FERNANDA.RAMIREZ,Maria Fernanda Ramirez Soto,IP/NORTE,"Fresnillo, Zac.",2026-08-12 13:23:06,¿Cuál es la función principal del investigador de campo?,Realizar ventas,C,Incorrecta
+FERNANDA.RAMIREZ,Maria Fernanda Ramirez Soto,IP/NORTE,"Fresnillo, Zac.",2026-08-12 13:23:06,¿Un investigador puede modificar precios para corregir errores?,"No, debe aplicar el procedimiento establecido",A,Incorrecta
+FERNANDA.RAMIREZ,Maria Fernanda Ramirez Soto,IP/NORTE,"Fresnillo, Zac.",2026-08-12 13:23:06,Expresa tus dudas o comentarios,prueba 3,nan,Correcta
+FERNANDA.RAMIREZ,Maria Fernanda Ramirez Soto,IP/NORTE,"Fresnillo, Zac.",2026-08-12 13:23:06,¿Qué ayuda a reducir errores de captura?,Menos validaciones,B,Incorrecta
+FERNANDA.RAMIREZ,Maria Fernanda Ramirez Soto,IP/NORTE,"Fresnillo, Zac.",2026-08-12 13:23:06,¿Qué debe hacer un investigador al detectar un error propio?,Ocultarlo,B,Incorrecta
+ERIKA.ORTIZ,ERIKA JUDITH HERNANDEZ ORTIZ,IP/NORTE,"San Luis Potosi, S.L.P.",2026-08-12 13:26:12,¿Qué ayuda a reducir errores de captura?,Menos validaciones,B,Incorrecta
+ERIKA.ORTIZ,ERIKA JUDITH HERNANDEZ ORTIZ,IP/NORTE,"San Luis Potosi, S.L.P.",2026-08-12 13:26:12,¿Qué debe hacer un investigador al detectar un error propio?,Ocultarlo,B,Incorrecta
+ERIKA.ORTIZ,ERIKA JUDITH HERNANDEZ ORTIZ,IP/NORTE,"San Luis Potosi, S.L.P.",2026-08-12 13:26:12,¿Cuál es la función principal del investigador de campo?,Realizar ventas,C,Incorrecta
+ERIKA.ORTIZ,ERIKA JUDITH HERNANDEZ ORTIZ,IP/NORTE,"San Luis Potosi, S.L.P.",2026-08-12 13:26:12,¿Qué debe proteger siempre el investigador?,La integridad de los datos,A,Incorrecta
+ERIKA.ORTIZ,ERIKA JUDITH HERNANDEZ ORTIZ,IP/NORTE,"San Luis Potosi, S.L.P.",2026-08-12 13:26:12,Se revisa de ruta de trabajo?,NUNCA,C,Incorrecta
+ERIKA.ORTIZ,ERIKA JUDITH HERNANDEZ ORTIZ,IP/NORTE,"San Luis Potosi, S.L.P.",2026-08-12 13:26:12,Se captura en hojas o dispositivo móvil?,HOJA,D,Incorrecta
+ERIKA.ORTIZ,ERIKA JUDITH HERNANDEZ ORTIZ,IP/NORTE,"San Luis Potosi, S.L.P.",2026-08-12 13:26:12,Cada cuando se sincroniza?,DIARIO,A,Incorrecta
+ERIKA.ORTIZ,ERIKA JUDITH HERNANDEZ ORTIZ,IP/NORTE,"San Luis Potosi, S.L.P.",2026-08-12 13:26:12,¿Cuál es el objetivo final del levantamiento de precios?,Incrementar ventas,D,Incorrecta
+ERIKA.ORTIZ,ERIKA JUDITH HERNANDEZ ORTIZ,IP/NORTE,"San Luis Potosi, S.L.P.",2026-08-12 13:26:12,Se revisa la información del día a captura?,SI,A,Incorrecta
+ERIKA.ORTIZ,ERIKA JUDITH HERNANDEZ ORTIZ,IP/NORTE,"San Luis Potosi, S.L.P.",2026-08-12 13:26:12,Conoces proceso completo de captura?,SI,A,Incorrecta
+DIANA.NAJERA,DIANA OFELIA NAJERA VILLANUEVA,IP/NORTE,"Matamoros, Tamps.",2026-08-12 13:34:36,¿Un investigador puede modificar precios para corregir errores?,"No, debe aplicar el procedimiento establecido",A,Incorrecta
+DIANA.NAJERA,DIANA OFELIA NAJERA VILLANUEVA,IP/NORTE,"Matamoros, Tamps.",2026-08-12 13:34:36,Expresa tus dudas o comentarios,no esta mal esta,nan,Correcta
+DIANA.NAJERA,DIANA OFELIA NAJERA VILLANUEVA,IP/NORTE,"Matamoros, Tamps.",2026-08-12 13:34:36,"Si un precio no puede verificarse, ¿qué procede?",Inventarlo,C,Incorrecta
+DIANA.NAJERA,DIANA OFELIA NAJERA VILLANUEVA,IP/NORTE,"Matamoros, Tamps.",2026-08-12 13:34:36,Se captura en hojas o dispositivo móvil?,HOJA,D,Incorrecta
+DIANA.NAJERA,DIANA OFELIA NAJERA VILLANUEVA,IP/NORTE,"Matamoros, Tamps.",2026-08-12 13:34:36,Cada cuando se sincroniza?,DIARIO,A,Incorrecta
+DIANA.NAJERA,DIANA OFELIA NAJERA VILLANUEVA,IP/NORTE,"Matamoros, Tamps.",2026-08-12 13:34:36,¿Qué ayuda a reducir errores de captura?,Menos validaciones,B,Incorrecta
+DIANA.NAJERA,DIANA OFELIA NAJERA VILLANUEVA,IP/NORTE,"Matamoros, Tamps.",2026-08-12 13:34:36,¿Qué debe hacer un investigador al detectar un error propio?,Ocultarlo,B,Incorrecta
+DIANA.NAJERA,DIANA OFELIA NAJERA VILLANUEVA,IP/NORTE,"Matamoros, Tamps.",2026-08-12 13:34:36,¿Qué debe proteger siempre el investigador?,La integridad de los datos,A,Incorrecta
+DIANA.NAJERA,DIANA OFELIA NAJERA VILLANUEVA,IP/NORTE,"Matamoros, Tamps.",2026-08-12 13:34:36,¿Cuál es el objetivo final del levantamiento de precios?,Incrementar ventas,D,Incorrecta
+DIANA.NAJERA,DIANA OFELIA NAJERA VILLANUEVA,IP/NORTE,"Matamoros, Tamps.",2026-08-12 13:34:36,Se revisa que el equipo tenga batería?,NUNCA,C,Incorrecta
+DIANA.NAJERA,DIANA OFELIA NAJERA VILLANUEVA,IP/NORTE,"Matamoros, Tamps.",2026-08-12 13:34:36,Expresa tus dudas o comentarios acerca del proceso o dificultades con el sistema.,,N/A,Comentario / Retroalimentación
+GRACIELA.QUINTERO,Eladia Graciela Quintero Aaguilar,IP/NORTE,"Durango, Dgo.",2026-08-12 13:40:28,Cada cuando se sincroniza?,DIARIO,A,Incorrecta
+GRACIELA.QUINTERO,Eladia Graciela Quintero Aaguilar,IP/NORTE,"Durango, Dgo.",2026-08-12 13:40:28,Se captura en hojas o dispositivo móvil?,HOJA,D,Incorrecta
+GRACIELA.QUINTERO,Eladia Graciela Quintero Aaguilar,IP/NORTE,"Durango, Dgo.",2026-08-12 13:40:28,¿Qué debe hacer un investigador al detectar un error propio?,Ocultarlo,B,Incorrecta
+GRACIELA.QUINTERO,Eladia Graciela Quintero Aaguilar,IP/NORTE,"Durango, Dgo.",2026-08-12 13:40:28,Se revisa de ruta de trabajo?,NUNCA,C,Incorrecta
+GRACIELA.QUINTERO,Eladia Graciela Quintero Aaguilar,IP/NORTE,"Durango, Dgo.",2026-08-12 13:40:28,¿Un investigador puede modificar precios para corregir errores?,"No, debe aplicar el procedimiento establecido",A,Incorrecta
+GRACIELA.QUINTERO,Eladia Graciela Quintero Aaguilar,IP/NORTE,"Durango, Dgo.",2026-08-12 13:40:28,¿Cuál es el objetivo final del levantamiento de precios?,Incrementar ventas,D,Incorrecta
+GRACIELA.QUINTERO,Eladia Graciela Quintero Aaguilar,IP/NORTE,"Durango, Dgo.",2026-08-12 13:40:28,¿Cuál es la función principal del investigador de campo?,Realizar ventas,C,Incorrecta
+GRACIELA.QUINTERO,Eladia Graciela Quintero Aaguilar,IP/NORTE,"Durango, Dgo.",2026-08-12 13:40:28,Conoces proceso completo de captura?,SI,A,Incorrecta
+GRACIELA.QUINTERO,Eladia Graciela Quintero Aaguilar,IP/NORTE,"Durango, Dgo.",2026-08-12 13:40:28,¿Qué ayuda a reducir errores de captura?,Menos validaciones,B,Incorrecta
+GRACIELA.QUINTERO,Eladia Graciela Quintero Aaguilar,IP/NORTE,"Durango, Dgo.",2026-08-12 13:40:28,Se revisa que el equipo tenga batería?,NUNCA,C,Incorrecta
+GRACIELA.QUINTERO,Eladia Graciela Quintero Aaguilar,IP/NORTE,"Durango, Dgo.",2026-08-12 13:40:28,Expresa tus dudas o comentarios acerca del proceso o dificultades con el sistema.,mas,N/A,Comentario / Retroalimentación
+OLGA.PALMA,Olga Leticia Palma Sanchez,IP/NORTE,"Campeche, Camp.",2026-08-12 13:41:25,¿Qué debe hacer un investigador al detectar un error propio?,Ocultarlo,B,Incorrecta
+OLGA.PALMA,Olga Leticia Palma Sanchez,IP/NORTE,"Campeche, Camp.",2026-08-12 13:41:25,¿Cuál es la función principal del investigador de campo?,Realizar ventas,C,Incorrecta
+OLGA.PALMA,Olga Leticia Palma Sanchez,IP/NORTE,"Campeche, Camp.",2026-08-12 13:41:25,Cada cuando se sincroniza?,DIARIO,A,Incorrecta
+OLGA.PALMA,Olga Leticia Palma Sanchez,IP/NORTE,"Campeche, Camp.",2026-08-12 13:41:25,¿Qué debe proteger siempre el investigador?,La integridad de los datos,A,Incorrecta
+OLGA.PALMA,Olga Leticia Palma Sanchez,IP/NORTE,"Campeche, Camp.",2026-08-12 13:41:25,Se revisa la información del día a captura?,SI,A,Incorrecta
+OLGA.PALMA,Olga Leticia Palma Sanchez,IP/NORTE,"Campeche, Camp.",2026-08-12 13:41:25,Conoces proceso completo de captura?,SI,A,Incorrecta
+OLGA.PALMA,Olga Leticia Palma Sanchez,IP/NORTE,"Campeche, Camp.",2026-08-12 13:41:25,Se captura en hojas o dispositivo móvil?,HOJA,D,Incorrecta
+OLGA.PALMA,Olga Leticia Palma Sanchez,IP/NORTE,"Campeche, Camp.",2026-08-12 13:41:25,"Si un precio no puede verificarse, ¿qué procede?",Inventarlo,C,Incorrecta
+OLGA.PALMA,Olga Leticia Palma Sanchez,IP/NORTE,"Campeche, Camp.",2026-08-12 13:41:25,Se revisa que el equipo tenga batería?,NUNCA,C,Incorrecta
+OLGA.PALMA,Olga Leticia Palma Sanchez,IP/NORTE,"Campeche, Camp.",2026-08-12 13:41:25,¿Qué ayuda a reducir errores de captura?,Menos validaciones,B,Incorrecta
+OLGA.PALMA,Olga Leticia Palma Sanchez,IP/NORTE,"Campeche, Camp.",2026-08-12 13:41:25,Expresa tus dudas o comentarios acerca del proceso o dificultades con el sistema.,,N/A,Comentario / Retroalimentación
+VIANCA.ROQUE,Vianca Yanire Roque Villalobos,IP/NORTE,"Esperanza, Son.",2026-08-12 13:42:33,Expresa tus dudas o comentarios,,nan,Incorrecta
+VIANCA.ROQUE,Vianca Yanire Roque Villalobos,IP/NORTE,"Esperanza, Son.",2026-08-12 13:42:33,¿Cuál es el objetivo final del levantamiento de precios?,Incrementar ventas,D,Incorrecta
+VIANCA.ROQUE,Vianca Yanire Roque Villalobos,IP/NORTE,"Esperanza, Son.",2026-08-12 13:42:33,Se revisa la información del día a captura?,SI,A,Incorrecta
+VIANCA.ROQUE,Vianca Yanire Roque Villalobos,IP/NORTE,"Esperanza, Son.",2026-08-12 13:42:33,¿Cuál es la función principal del investigador de campo?,Realizar ventas,C,Incorrecta
+VIANCA.ROQUE,Vianca Yanire Roque Villalobos,IP/NORTE,"Esperanza, Son.",2026-08-12 13:42:33,"Si un precio no puede verificarse, ¿qué procede?",Inventarlo,C,Incorrecta
+VIANCA.ROQUE,Vianca Yanire Roque Villalobos,IP/NORTE,"Esperanza, Son.",2026-08-12 13:42:33,¿Un investigador puede modificar precios para corregir errores?,"No, debe aplicar el procedimiento establecido",A,Incorrecta
+VIANCA.ROQUE,Vianca Yanire Roque Villalobos,IP/NORTE,"Esperanza, Son.",2026-08-12 13:42:33,¿Qué debe proteger siempre el investigador?,La integridad de los datos,A,Incorrecta
+VIANCA.ROQUE,Vianca Yanire Roque Villalobos,IP/NORTE,"Esperanza, Son.",2026-08-12 13:42:33,Cada cuando se sincroniza?,DIARIO,A,Incorrecta
+VIANCA.ROQUE,Vianca Yanire Roque Villalobos,IP/NORTE,"Esperanza, Son.",2026-08-12 13:42:33,¿Qué debe hacer un investigador al detectar un error propio?,Ocultarlo,B,Incorrecta
+VIANCA.ROQUE,Vianca Yanire Roque Villalobos,IP/NORTE,"Esperanza, Son.",2026-08-12 13:42:33,¿Qué ayuda a reducir errores de captura?,Menos validaciones,B,Incorrecta
+VIANCA.ROQUE,Vianca Yanire Roque Villalobos,IP/NORTE,"Esperanza, Son.",2026-08-12 13:42:33,Expresa tus dudas o comentarios acerca del proceso o dificultades con el sistema.,no tengo,N/A,Comentario / Retroalimentación
+DIANA.MARTINEZ,DIANA LUCIA MARTINEZ RAMIREZ,IP/NORTE,"Zacatecas, Zac.",2026-08-12 13:49:30,¿Un investigador puede modificar precios para corregir errores?,"No, debe aplicar el procedimiento establecido",A,Incorrecta
+DIANA.MARTINEZ,DIANA LUCIA MARTINEZ RAMIREZ,IP/NORTE,"Zacatecas, Zac.",2026-08-12 13:49:30,Se revisa la información del día a captura?,Si,A,Incorrecta
+DIANA.MARTINEZ,DIANA LUCIA MARTINEZ RAMIREZ,IP/NORTE,"Zacatecas, Zac.",2026-08-12 13:49:30,Se revisa de ruta de trabajo?,Nunca,C,Incorrecta
+DIANA.MARTINEZ,DIANA LUCIA MARTINEZ RAMIREZ,IP/NORTE,"Zacatecas, Zac.",2026-08-12 13:49:30,Se captura en hojas o dispoSitivo móvil?,Hojas,D,Incorrecta
+DIANA.MARTINEZ,DIANA LUCIA MARTINEZ RAMIREZ,IP/NORTE,"Zacatecas, Zac.",2026-08-12 13:49:30,¿Qué debe hacer un investigador al detectar un error propio?,Ocultarlo,B,Incorrecta
+DIANA.MARTINEZ,DIANA LUCIA MARTINEZ RAMIREZ,IP/NORTE,"Zacatecas, Zac.",2026-08-12 13:49:30,Cada cuando se Sincroniza?,Diario,A,Incorrecta
+DIANA.MARTINEZ,DIANA LUCIA MARTINEZ RAMIREZ,IP/NORTE,"Zacatecas, Zac.",2026-08-12 13:49:30,¿Cuál es la función principal del investigador de campo?,Realizar ventas,C,Incorrecta
+DIANA.MARTINEZ,DIANA LUCIA MARTINEZ RAMIREZ,IP/NORTE,"Zacatecas, Zac.",2026-08-12 13:49:30,"Si un precio No puede verificarse, ¿qué procede?",Inventarlo,C,Incorrecta
+DIANA.MARTINEZ,DIANA LUCIA MARTINEZ RAMIREZ,IP/NORTE,"Zacatecas, Zac.",2026-08-12 13:49:30,¿Qué debe proteger Siempre el investigador?,La integridad de los datos,A,Incorrecta
+DIANA.MARTINEZ,DIANA LUCIA MARTINEZ RAMIREZ,IP/NORTE,"Zacatecas, Zac.",2026-08-12 13:49:30,¿Qué ayuda a reducir errores de captura?,Menos,B,Incorrecta
+DIANA.MARTINEZ,DIANA LUCIA MARTINEZ RAMIREZ,IP/NORTE,"Zacatecas, Zac.",2026-08-12 13:49:30,Expresa tus dudas o comentarios acerca del proceso o dificultades con el sistema.,Sin responder,N/A,Comentario / Retroalimentación
+CAROLINA.OROZCO,Nancy Carolina Orozco de Jesus,IP/NORTE,"Coatzacoalcos, Ver.",2026-08-12 14:14:51,¿Un investigador puede modificar precios para corregir errores?,"No, debe aplicar el procedimiento establecido",A,Incorrecta
+CAROLINA.OROZCO,Nancy Carolina Orozco de Jesus,IP/NORTE,"Coatzacoalcos, Ver.",2026-08-12 14:14:51,¿Qué debe hacer un investigador al detectar un error propio?,Ocultarlo,B,Incorrecta
+CAROLINA.OROZCO,Nancy Carolina Orozco de Jesus,IP/NORTE,"Coatzacoalcos, Ver.",2026-08-12 14:14:51,¿Cuál es la función principal del investigador de campo?,Realizar ventas,C,Incorrecta
+CAROLINA.OROZCO,Nancy Carolina Orozco de Jesus,IP/NORTE,"Coatzacoalcos, Ver.",2026-08-12 14:14:51,"Si un precio No puede verificarse, ¿qué procede?",Inventarlo,C,Incorrecta
+CAROLINA.OROZCO,Nancy Carolina Orozco de Jesus,IP/NORTE,"Coatzacoalcos, Ver.",2026-08-12 14:14:51,¿Qué debe proteger Siempre el investigador?,La integridad de los datos,A,Incorrecta
+CAROLINA.OROZCO,Nancy Carolina Orozco de Jesus,IP/NORTE,"Coatzacoalcos, Ver.",2026-08-12 14:14:51,CoNoces proceso completo de captura?,Si,A,Incorrecta
+CAROLINA.OROZCO,Nancy Carolina Orozco de Jesus,IP/NORTE,"Coatzacoalcos, Ver.",2026-08-12 14:14:51,Se revisa que el equipo tenga batería?,Nunca,C,Incorrecta
+CAROLINA.OROZCO,Nancy Carolina Orozco de Jesus,IP/NORTE,"Coatzacoalcos, Ver.",2026-08-12 14:14:51,Se captura en hojas o dispoSitivo móvil?,Hojas,D,Incorrecta
+CAROLINA.OROZCO,Nancy Carolina Orozco de Jesus,IP/NORTE,"Coatzacoalcos, Ver.",2026-08-12 14:14:51,¿Qué ayuda a reducir errores de captura?,Menos,B,Incorrecta
+CAROLINA.OROZCO,Nancy Carolina Orozco de Jesus,IP/NORTE,"Coatzacoalcos, Ver.",2026-08-12 14:14:51,¿Cuál es el objetivo final del levantamiento de precios?,Incrementar ventas,D,Incorrecta
+CAROLINA.OROZCO,Nancy Carolina Orozco de Jesus,IP/NORTE,"Coatzacoalcos, Ver.",2026-08-12 14:14:51,Expresa tus dudas o comentarios acerca del proceso o dificultades con el sistema.,ya es obligatorio,N/A,Comentario / Retroalimentación
+EUNICE.GOMEZ,Eunice Gabriela Gomez Nucamendi,IP/NORTE,"Tehuantepec, Oax.",2026-08-12 16:13:10,Se revisa que el equipo tenga batería?,Nunca,C,Incorrecta
+EUNICE.GOMEZ,Eunice Gabriela Gomez Nucamendi,IP/NORTE,"Tehuantepec, Oax.",2026-08-12 16:13:10,¿Cuál es el objetivo final del levantamiento de precios?,Incrementar ventas,D,Incorrecta
+EUNICE.GOMEZ,Eunice Gabriela Gomez Nucamendi,IP/NORTE,"Tehuantepec, Oax.",2026-08-12 16:13:10,¿Qué debe proteger Siempre el investigador?,La integridad de los datos,A,Incorrecta
+EUNICE.GOMEZ,Eunice Gabriela Gomez Nucamendi,IP/NORTE,"Tehuantepec, Oax.",2026-08-12 16:13:10,¿Qué debe hacer un investigador al detectar un error propio?,Ocultarlo,B,Incorrecta
+EUNICE.GOMEZ,Eunice Gabriela Gomez Nucamendi,IP/NORTE,"Tehuantepec, Oax.",2026-08-12 16:13:10,Se captura en hojas o dispoSitivo móvil?,Hojas,D,Incorrecta
+EUNICE.GOMEZ,Eunice Gabriela Gomez Nucamendi,IP/NORTE,"Tehuantepec, Oax.",2026-08-12 16:13:10,Se revisa de ruta de trabajo?,Nunca,C,Incorrecta
+EUNICE.GOMEZ,Eunice Gabriela Gomez Nucamendi,IP/NORTE,"Tehuantepec, Oax.",2026-08-12 16:13:10,Cada cuando se Sincroniza?,Diario,A,Incorrecta
+EUNICE.GOMEZ,Eunice Gabriela Gomez Nucamendi,IP/NORTE,"Tehuantepec, Oax.",2026-08-12 16:13:10,¿Cuál es la función principal del investigador de campo?,Realizar ventas,C,Incorrecta
+EUNICE.GOMEZ,Eunice Gabriela Gomez Nucamendi,IP/NORTE,"Tehuantepec, Oax.",2026-08-12 16:13:10,¿Qué ayuda a reducir errores de captura?,Sin responder,B,Incorrecta
+EUNICE.GOMEZ,Eunice Gabriela Gomez Nucamendi,IP/NORTE,"Tehuantepec, Oax.",2026-08-12 16:13:10,CoNoces proceso completo de captura?,Sin responder,A,Incorrecta
+EUNICE.GOMEZ,Eunice Gabriela Gomez Nucamendi,IP/NORTE,"Tehuantepec, Oax.",2026-08-12 16:13:10,Expresa tus dudas o comentarios acerca del proceso o dificultades con el sistema.,Sin responder,N/A,Comentario / Retroalimentación
+SENORINA.GARAY,Senorina Garay Quintana,IP/NORTE,"Atlacomulco, Edo. de Mex.",2026-08-12 16:16:28,Se revisa que el equipo tenga batería?,Si,C,Incorrecta
+SENORINA.GARAY,Senorina Garay Quintana,IP/NORTE,"Atlacomulco, Edo. de Mex.",2026-08-12 16:16:28,Se revisa de ruta de trabajo?,Si,C,Incorrecta
+SENORINA.GARAY,Senorina Garay Quintana,IP/NORTE,"Atlacomulco, Edo. de Mex.",2026-08-12 16:16:28,¿Cuál es la función principal del investigador de campo?,Captar información de calidad,C,Incorrecta
+SENORINA.GARAY,Senorina Garay Quintana,IP/NORTE,"Atlacomulco, Edo. de Mex.",2026-08-12 16:16:28,¿Qué debe proteger Siempre el investigador?,La integridad de los datos,A,Incorrecta
+SENORINA.GARAY,Senorina Garay Quintana,IP/NORTE,"Atlacomulco, Edo. de Mex.",2026-08-12 16:16:28,¿Cuál es el objetivo final del levantamiento de precios?,Obtener información confiable,D,Incorrecta
+SENORINA.GARAY,Senorina Garay Quintana,IP/NORTE,"Atlacomulco, Edo. de Mex.",2026-08-12 16:16:28,"Si un precio No puede verificarse, ¿qué procede?",Inventarlo,C,Incorrecta
+SENORINA.GARAY,Senorina Garay Quintana,IP/NORTE,"Atlacomulco, Edo. de Mex.",2026-08-12 16:16:28,Se captura en hojas o dispoSitivo móvil?,Hojas,D,Incorrecta
+SENORINA.GARAY,Senorina Garay Quintana,IP/NORTE,"Atlacomulco, Edo. de Mex.",2026-08-12 16:16:28,CoNoces proceso completo de captura?,Si,A,Incorrecta
+SENORINA.GARAY,Senorina Garay Quintana,IP/NORTE,"Atlacomulco, Edo. de Mex.",2026-08-12 16:16:28,¿Qué debe hacer un investigador al detectar un error propio?,Ocultarlo,B,Incorrecta
+SENORINA.GARAY,Senorina Garay Quintana,IP/NORTE,"Atlacomulco, Edo. de Mex.",2026-08-12 16:16:28,¿Un investigador puede modificar precios para corregir errores?,"No, debe aplicar el procedimiento establecido",A,Incorrecta
+SENORINA.GARAY,Senorina Garay Quintana,IP/NORTE,"Atlacomulco, Edo. de Mex.",2026-08-12 16:16:28,Expresa tus dudas o comentarios acerca del proceso o dificultades con el sistema.,prueba correcta y eficiente del sistema,N/A,Comentario / Retroalimentación
+LUIS.ZAMUDIO,Luis Enrique Zamudio Renteria,IP/NORTE,"Pachuca, Hgo.",2026-08-12 16:27:42,Se revisa de ruta de trabajo?,Nunca,C,Incorrecta
+LUIS.ZAMUDIO,Luis Enrique Zamudio Renteria,IP/NORTE,"Pachuca, Hgo.",2026-08-12 16:27:42,¿Qué ayuda a reducir errores de captura?,Revisar los datos antes del envío,B,Incorrecta
+LUIS.ZAMUDIO,Luis Enrique Zamudio Renteria,IP/NORTE,"Pachuca, Hgo.",2026-08-12 16:27:42,¿Cuál es la función principal del investigador de campo?,Captar información de calidad,C,Incorrecta
+LUIS.ZAMUDIO,Luis Enrique Zamudio Renteria,IP/NORTE,"Pachuca, Hgo.",2026-08-12 16:27:42,Cada cuando se Sincroniza?,Cada que puedo,A,Incorrecta
+LUIS.ZAMUDIO,Luis Enrique Zamudio Renteria,IP/NORTE,"Pachuca, Hgo.",2026-08-12 16:27:42,¿Qué debe hacer un investigador al detectar un error propio?,Ocultarlo,B,Incorrecta
+LUIS.ZAMUDIO,Luis Enrique Zamudio Renteria,IP/NORTE,"Pachuca, Hgo.",2026-08-12 16:27:42,¿Un investigador puede modificar precios para corregir errores?,"No, debe aplicar el procedimiento establecido",A,Incorrecta
+LUIS.ZAMUDIO,Luis Enrique Zamudio Renteria,IP/NORTE,"Pachuca, Hgo.",2026-08-12 16:27:42,Se revisa la información del día a captura?,Si,A,Incorrecta
+LUIS.ZAMUDIO,Luis Enrique Zamudio Renteria,IP/NORTE,"Pachuca, Hgo.",2026-08-12 16:27:42,¿Qué debe proteger Siempre el investigador?,La integridad de los datos,A,Incorrecta
+LUIS.ZAMUDIO,Luis Enrique Zamudio Renteria,IP/NORTE,"Pachuca, Hgo.",2026-08-12 16:27:42,Se captura en hojas o dispoSitivo móvil?,Hojas,D,Incorrecta
+LUIS.ZAMUDIO,Luis Enrique Zamudio Renteria,IP/NORTE,"Pachuca, Hgo.",2026-08-12 16:27:42,"Si un precio No puede verificarse, ¿qué procede?",Inventarlo,C,Incorrecta
+LUIS.ZAMUDIO,Luis Enrique Zamudio Renteria,IP/NORTE,"Pachuca, Hgo.",2026-08-12 16:27:42,Expresa tus dudas o comentarios acerca del proceso o dificultades con el sistema.,cambios no cargados,N/A,Comentario / Retroalimentación
+SANDRA.GARCIAP,GARCIA PEREZ SANDRA,IP/NORTE,"Pachuca, Hgo.",2026-08-12 16:31:21,Conoces proceso completo de captura?,Si,A,Incorrecta
+SANDRA.GARCIAP,GARCIA PEREZ SANDRA,IP/NORTE,"Pachuca, Hgo.",2026-08-12 16:31:21,¿Cuál es el objetivo final del levantamiento de precios?,Obtener información confiable,D,Incorrecta
+SANDRA.GARCIAP,GARCIA PEREZ SANDRA,IP/NORTE,"Pachuca, Hgo.",2026-08-12 16:31:21,Se revisa que el equipo tenga batería?,Si,C,Incorrecta
+SANDRA.GARCIAP,GARCIA PEREZ SANDRA,IP/NORTE,"Pachuca, Hgo.",2026-08-12 16:31:21,¿Qué debe hacer un investigador al detectar un error propio?,Reportarlo y corregirlo conforme al procedimiento,B,Incorrecta
+SANDRA.GARCIAP,GARCIA PEREZ SANDRA,IP/NORTE,"Pachuca, Hgo.",2026-08-12 16:31:21,¿Cuál es la función principal del investigador de campo?,Captar información de calidad,C,Incorrecta
+SANDRA.GARCIAP,GARCIA PEREZ SANDRA,IP/NORTE,"Pachuca, Hgo.",2026-08-12 16:31:21,¿Un investigador puede modificar precios para corregir errores?,Siempre,A,Incorrecta
+SANDRA.GARCIAP,GARCIA PEREZ SANDRA,IP/NORTE,"Pachuca, Hgo.",2026-08-12 16:31:21,Se revisa de ruta de trabajo?,Nunca,C,Incorrecta
+SANDRA.GARCIAP,GARCIA PEREZ SANDRA,IP/NORTE,"Pachuca, Hgo.",2026-08-12 16:31:21,Cada cuando se Sincroniza?,Cada que puedo,A,Incorrecta
+SANDRA.GARCIAP,GARCIA PEREZ SANDRA,IP/NORTE,"Pachuca, Hgo.",2026-08-12 16:31:21,¿Qué ayuda a reducir errores de captura?,Menos tiempo en campo,B,Incorrecta
+SANDRA.GARCIAP,GARCIA PEREZ SANDRA,IP/NORTE,"Pachuca, Hgo.",2026-08-12 16:31:21,Se revisa la información del día a captura?,Si,A,Incorrecta
+SANDRA.GARCIAP,GARCIA PEREZ SANDRA,IP/NORTE,"Pachuca, Hgo.",2026-08-12 16:31:21,Expresa tus dudas o comentarios acerca del proceso o dificultades con el sistema.,cargando todo,N/A,Comentario / Retroalimentación
+JAZMIN.CORDERO,JAZMIN CORDERO CARRILLO,IP/NORTE,"Cancun, Q. Roo.",2026-08-12 16:32:41,¿Cuál es el objetivo final del levantamiento de precios?,Incrementar ventas,D,Incorrecta
+JAZMIN.CORDERO,JAZMIN CORDERO CARRILLO,IP/NORTE,"Cancun, Q. Roo.",2026-08-12 16:32:41,¿Un investigador puede modificar precios para corregir errores?,"No, debe aplicar el procedimiento establecido",A,Incorrecta
+JAZMIN.CORDERO,JAZMIN CORDERO CARRILLO,IP/NORTE,"Cancun, Q. Roo.",2026-08-12 16:32:41,Se revisa la información del día a captura?,Si,A,Incorrecta
+JAZMIN.CORDERO,JAZMIN CORDERO CARRILLO,IP/NORTE,"Cancun, Q. Roo.",2026-08-12 16:32:41,Se revisa de ruta de trabajo?,Nunca,C,Incorrecta
+JAZMIN.CORDERO,JAZMIN CORDERO CARRILLO,IP/NORTE,"Cancun, Q. Roo.",2026-08-12 16:32:41,Se captura en hojas o dispositivo móvil?,Hojas,D,Incorrecta
+JAZMIN.CORDERO,JAZMIN CORDERO CARRILLO,IP/NORTE,"Cancun, Q. Roo.",2026-08-12 16:32:41,¿Qué ayuda a reducir errores de captura?,Menos tiempo en campo,B,Incorrecta
+JAZMIN.CORDERO,JAZMIN CORDERO CARRILLO,IP/NORTE,"Cancun, Q. Roo.",2026-08-12 16:32:41,"Si un precio No puede verificarse, ¿qué procede?",Inventarlo,C,Incorrecta
+JAZMIN.CORDERO,JAZMIN CORDERO CARRILLO,IP/NORTE,"Cancun, Q. Roo.",2026-08-12 16:32:41,Cada cuando se Sincroniza?,Diario,A,Incorrecta
+JAZMIN.CORDERO,JAZMIN CORDERO CARRILLO,IP/NORTE,"Cancun, Q. Roo.",2026-08-12 16:32:41,¿Cuál es la función principal del investigador de campo?,Realizar ventas,C,Incorrecta
+JAZMIN.CORDERO,JAZMIN CORDERO CARRILLO,IP/NORTE,"Cancun, Q. Roo.",2026-08-12 16:32:41,Conoces proceso completo de captura?,Si,A,Incorrecta
+JAZMIN.CORDERO,JAZMIN CORDERO CARRILLO,IP/NORTE,"Cancun, Q. Roo.",2026-08-12 16:32:41,Expresa tus dudas o comentarios acerca del proceso o dificultades con el sistema.,falta,N/A,Comentario / Retroalimentación
+ELOISA.CAMPOY,Eloisa Campoy Espinoza,IP/NORTE,"Esperanza, Son.",2026-08-12 16:46:28,¿Qué debe proteger Siempre el investigador?,La integridad de los datos,A: La integridad de los datos,Correcta
+ELOISA.CAMPOY,Eloisa Campoy Espinoza,IP/NORTE,"Esperanza, Son.",2026-08-12 16:46:28,Se revisa de ruta de trabajo?,Si,C: Si,Correcta
+ELOISA.CAMPOY,Eloisa Campoy Espinoza,IP/NORTE,"Esperanza, Son.",2026-08-12 16:46:28,¿Cuál es la función principal del investigador de campo?,Captar información de calidad,C: Captar información de calidad,Correcta
+ELOISA.CAMPOY,Eloisa Campoy Espinoza,IP/NORTE,"Esperanza, Son.",2026-08-12 16:46:28,¿Qué ayuda a reducir errores de captura?,Menos tiempo en campo,B: Revisar los datos antes del envío,Incorrecta
+ELOISA.CAMPOY,Eloisa Campoy Espinoza,IP/NORTE,"Esperanza, Son.",2026-08-12 16:46:28,Se revisa que el equipo tenga batería?,Nunca,C: Si,Incorrecta
+ELOISA.CAMPOY,Eloisa Campoy Espinoza,IP/NORTE,"Esperanza, Son.",2026-08-12 16:46:28,Cada cuando se Sincroniza?,Diario,A: Diario,Correcta
+ELOISA.CAMPOY,Eloisa Campoy Espinoza,IP/NORTE,"Esperanza, Son.",2026-08-12 16:46:28,Se revisa la información del día a captura?,Si,A: Si,Correcta
+ELOISA.CAMPOY,Eloisa Campoy Espinoza,IP/NORTE,"Esperanza, Son.",2026-08-12 16:46:28,¿Un investigador puede modificar precios para corregir errores?,"No, debe aplicar el procedimiento establecido","A: No, debe aplicar el procedimiento establecido",Correcta
+ELOISA.CAMPOY,Eloisa Campoy Espinoza,IP/NORTE,"Esperanza, Son.",2026-08-12 16:46:28,"Si un precio No puede verificarse, ¿qué procede?",Inventarlo,C: Aplicar la metodología establecida,Incorrecta
+ELOISA.CAMPOY,Eloisa Campoy Espinoza,IP/NORTE,"Esperanza, Son.",2026-08-12 16:46:28,¿Qué debe hacer un investigador al detectar un error propio?,Ocultarlo,B: Reportarlo y corregirlo conforme al procedimiento,Incorrecta
+ELOISA.CAMPOY,Eloisa Campoy Espinoza,IP/NORTE,"Esperanza, Son.",2026-08-12 16:46:28,Expresa tus dudas o comentarios acerca del proceso o dificultades con el sistema.,vale,N/A,Comentario / Retroalimentación
+veronica.wong,Veronica Wong Inv. 1,IP/NORTE,"Oaxaca, Oax.",2026-08-12 17:01:18,Se revisa que el equipo tenga batería?,No,C: Si,Incorrecta
+veronica.wong,Veronica Wong Inv. 1,IP/NORTE,"Oaxaca, Oax.",2026-08-12 17:01:18,Se revisa de ruta de trabajo?,Si,C: Si,Correcta
+veronica.wong,Veronica Wong Inv. 1,IP/NORTE,"Oaxaca, Oax.",2026-08-12 17:01:18,Se captura en hojas o dispositivo móvil?,Celular,D: Dispositivo Ghia,Incorrecta
+veronica.wong,Veronica Wong Inv. 1,IP/NORTE,"Oaxaca, Oax.",2026-08-12 17:01:18,¿Cuál es la función principal del investigador de campo?,Captar información de calidad,C: Captar información de calidad,Correcta
+veronica.wong,Veronica Wong Inv. 1,IP/NORTE,"Oaxaca, Oax.",2026-08-12 17:01:18,Se revisa la información del día a captura?,Nunca,A: Si,Incorrecta
+veronica.wong,Veronica Wong Inv. 1,IP/NORTE,"Oaxaca, Oax.",2026-08-12 17:01:18,¿Qué debe hacer un investigador al detectar un error propio?,Ocultarlo,B: Reportarlo y corregirlo conforme al procedimiento,Incorrecta
+veronica.wong,Veronica Wong Inv. 1,IP/NORTE,"Oaxaca, Oax.",2026-08-12 17:01:18,¿Un investigador puede modificar precios para corregir errores?,"No, debe aplicar el procedimiento establecido","A: No, debe aplicar el procedimiento establecido",Correcta
+veronica.wong,Veronica Wong Inv. 1,IP/NORTE,"Oaxaca, Oax.",2026-08-12 17:01:18,"Si un precio No puede verificarse, ¿qué procede?",Inventarlo,C: Aplicar la metodología establecida,Incorrecta
+veronica.wong,Veronica Wong Inv. 1,IP/NORTE,"Oaxaca, Oax.",2026-08-12 17:01:18,¿Qué debe proteger Siempre el investigador?,La integridad de los datos,A: La integridad de los datos,Correcta
+veronica.wong,Veronica Wong Inv. 1,IP/NORTE,"Oaxaca, Oax.",2026-08-12 17:01:18,¿Cuál es el objetivo final del levantamiento de precios?,Incrementar ventas,D: Obtener información confiable,Incorrecta
+veronica.wong,Veronica Wong Inv. 1,IP/NORTE,"Oaxaca, Oax.",2026-08-12 17:01:18,Expresa tus dudas o comentarios acerca del proceso o dificultades con el sistema.,khk,N/A,Comentario / Retroalimentación
