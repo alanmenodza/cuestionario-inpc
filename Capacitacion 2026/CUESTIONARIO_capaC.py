@@ -268,8 +268,11 @@ elif st.session_state.pagina == "bienvenida":
 
 # ---------- 3. EVALUACION (5 MINUTOS) ----------
 elif st.session_state.pagina == "evaluacion":
-    st_autorefresh(interval=1000, key="timer")
-
+    # Solo activamos el autorefresh si realmente estamos en la evaluación
+    try:
+        st_autorefresh(interval=1000, key="timer_evaluacion")
+    except Exception:
+        pass
     duracion = 5 * 60
     transcurrido = (datetime.now() - st.session_state.inicio_examen).seconds
     restante = duracion - transcurrido
