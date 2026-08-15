@@ -25,7 +25,7 @@ import socket
 st.set_page_config(
     page_title="Sistema de Evaluación INPC",
     page_icon="📊",
-    layout="wide"
+    layout="wide",
     initial_sidebar_state="expanded"  # Opciones: "auto", "expanded" (abierta) o "collapsed" (oculta por defecto)
 )
 
