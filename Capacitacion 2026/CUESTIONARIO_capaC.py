@@ -2,7 +2,7 @@
 """
 Created on Thu Jul 16 10:03:14 2026
 
-@author: ALAN.MENDOZA
+Tratamiento de la información INPC
 """
 ##streamlit run "D:\alan.mendoza\Documents\Capacitacion 2026\CUESTIONARIO_capaC.py"
 ##streamlit run "D:\alan.mendoza\Documents\Capacitacion 2026\CUESTIONARIO_capaC.py"  --server.address 0.0.0.0 --server.port 8501
