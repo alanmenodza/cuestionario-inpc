@@ -128,7 +128,7 @@ with st.sidebar:
     
     # Generamos la URL dinámicamente con la IP actual del equipo
     #IP_ACTUAL = obtener_ip_local()
-    #IP_ACTUAL= "https://cuestionario-inpc-norte.streamlit.app"
+    IP_ACTUAL= "https://cuestionario-inpc-norte.streamlit.app"
     # URL pública o la que te asigne Streamlit Cloud automáticamente
     #url = "https://tu-app.streamlit.app" # (Streamlit Cloud te da el enlace exacto al desplegar)
     # URL pública de tu aplicación en la nube
