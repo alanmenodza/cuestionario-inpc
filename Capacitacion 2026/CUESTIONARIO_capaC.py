@@ -16,7 +16,7 @@ import streamlit as st
 import pandas as pd
 import os
 from datetime import datetime
-from streamlit_autorefresh import st_autorefresh
+#from streamlit_autorefresh import st_autorefresh
 import qrcode
 import plotly.express as px
 import socket
