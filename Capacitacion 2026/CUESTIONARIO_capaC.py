@@ -135,8 +135,9 @@ with st.sidebar:
     # Generamos la URL dinámicamente con la IP actual del equipo
     IP_ACTUAL = obtener_ip_local()
     # URL pública o la que te asigne Streamlit Cloud automáticamente
-    url = "https://tu-app.streamlit.app" # (Streamlit Cloud te da el enlace exacto al desplegar)
-    
+    #url = "https://tu-app.streamlit.app" # (Streamlit Cloud te da el enlace exacto al desplegar)
+    # URL pública de tu aplicación en la nube
+    url = "https://cuestionario-inpc-norte.streamlit.app"
     qr_path = os.path.join(BASE_DIR, "qr_acceso.png")
     
     try:
