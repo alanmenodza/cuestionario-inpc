@@ -1,11 +1,8 @@
 # -*- coding: utf-8 -*-
-"""
-"""
 ##streamlit run "D:\alan.mendoza\Documents\Capacitacion 2026\CUESTIONARIO_capaC.py"
 ##streamlit run "D:\alan.mendoza\Documents\Capacitacion 2026\CUESTIONARIO_capaC.py"  --server.address 0.0.0.0 --server.port 8501
 # -*- coding: utf-8 -*-
-"""
-Tratamiemnto de la Información
+"""Tratamiento de la Información
 """
 import streamlit as st
 import pandas as pd
