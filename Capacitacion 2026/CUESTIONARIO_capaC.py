@@ -2,7 +2,8 @@
 ##streamlit run "D:\alan.mendoza\Documents\Capacitacion 2026\CUESTIONARIO_capaC.py"
 ##streamlit run "D:\alan.mendoza\Documents\Capacitacion 2026\CUESTIONARIO_capaC.py"  --server.address 0.0.0.0 --server.port 8501
 # -*- coding: utf-8 -*-
-"""Tratamiento de la Información
+"""
+Tratamiento de la Información
 """
 import streamlit as st
 import pandas as pd
@@ -127,7 +128,7 @@ with st.sidebar:
     
     # Generamos la URL dinámicamente con la IP actual del equipo
     #IP_ACTUAL = obtener_ip_local()
-    IP_ACTUAL= "https://cuestionario-inpc-norte.streamlit.app"
+    #IP_ACTUAL= "https://cuestionario-inpc-norte.streamlit.app"
     # URL pública o la que te asigne Streamlit Cloud automáticamente
     #url = "https://tu-app.streamlit.app" # (Streamlit Cloud te da el enlace exacto al desplegar)
     # URL pública de tu aplicación en la nube
