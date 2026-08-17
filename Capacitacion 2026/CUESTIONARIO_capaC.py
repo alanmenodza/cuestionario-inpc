@@ -262,73 +262,58 @@ elif st.session_state.pagina == "bienvenida":
             st.session_state.pagina = "evaluacion"
             st.rerun()
 
-# ---------- 3. EVALUACION (5 MINUTOS) ----------
+import streamlit.components.v1 as components
+
+# ---------- 3. EVALUACION (5 MINUTOS CON RELOJ EN TIEMPO REAL) ----------
 elif st.session_state.pagina == "evaluacion":
-    # Solo activamos el autorefresh si realmente estamos en la evaluación
-    try:
-        st_autorefresh(interval=1000, key="timer_evaluacion")
-    except Exception:
-        pass
-    duracion = 5 * 60
-    transcurrido = (datetime.now() - st.session_state.inicio_examen).seconds
-    restante = duracion - transcurrido
+    st.subheader("📝 Cuestionario de Evaluación")
+    
+    # Definimos el tiempo total en segundos (5 minutos = 300 segundos)
+    # O calculamos el tiempo restante basado en cuándo inició sesión el usuario:
+    tiempo_transcurrido = (datetime.now() - st.session_state.inicio_examen).seconds
+    tiempo_restante_inicial = max(0, 300 - tiempo_transcurrido)
 
-    minutos = max(0, restante // 60)
-    segundos = max(0, restante % 60)
+    # Componente HTML/JS para el segundero flotante y fluido en el navegador
+    timer_html = f"""
+    <div style="font-family: sans-serif; background-color: #f0f2f6; padding: 10px; border-radius: 8px; text-align: center; margin-bottom: 15px;">
+        <span style="font-size: 16px; color: #31333F; font-weight: bold;">⏱️ Tiempo restante: </span>
+        <span id="timer" style="font-size: 20px; color: #d9534f; font-weight: bold;">05:00</span>
+    </div>
 
-    col_t1, col_t2 = st.columns([3, 1])
-    with col_t2:
-        st.markdown(f"<h3 style='color: #d9534f; text-align: right;'>⏰ {minutos:02}:{segundos:02}</h3>", unsafe_allow_html=True)
+    <script>
+        var timeLeft = {tiempo_restante_inicial};
+        
+        function updateTimer() {{
+            var minutes = Math.floor(timeLeft / 60);
+            var seconds = timeLeft % 60;
+            
+            document.getElementById('timer').innerText = 
+                (minutes < 10 ? "0" : "") + minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
+            
+            if (timeLeft <= 0) {{
+                clearInterval(timerInterval);
+                alert("¡El tiempo del examen ha terminado!");
+                // Opcional: recarga la página o simula el envío cuando se acabe el tiempo
+                window.location.reload();
+            }} else {{
+                timeLeft--;
+            }}
+        }}
+        
+        updateTimer();
+        var timerInterval = setInterval(updateTimer, 1000);
+    </script>
+    """
+    
+    # Mostramos el reloj en la interfaz de Streamlit
+    components.html(timer_html, height=70)
 
-    if restante <= 0:
-        st.session_state.pagina = "finalizar"
-        st.rerun()
-
-    total = len(st.session_state.preguntas_examen)
-    avance = (st.session_state.pregunta_actual + 1) / total
-    st.progress(avance)
-
-    indice = st.session_state.pregunta_actual
-    pregunta = st.session_state.preguntas_examen.iloc[indice]
-
-    es_pregunta_comentarios = (str(pregunta.get("Correcta", "")) == "COMENTARIO")
-
-    if es_pregunta_comentarios:
-        st.subheader("💬 Comentarios y Retroalimentación Final (Obligatorio)")
-        st.write(f"**{pregunta['Pregunta']}**")
-        respuesta_previa = st.session_state.respuestas.get(indice, "")
-        respuesta = st.text_area("Escriba sus comentarios o dudas acerca del proceso o del sistema (Campo Obligatorio):", value=str(respuesta_previa), key=f"preq_text_{indice}")
-    else:
-        st.subheader(f"Pregunta {indice + 1} de {total - 1}")
-        st.write(f"**{pregunta['Pregunta']}**")
-
-        es_abierta = False
-        if "A" not in pregunta or pd.isna(pregunta["A"]) or str(pregunta["A"]).strip() == "" or str(pregunta["A"]).strip() == "nan":
-            es_abierta = True
-
-        respuesta_previa = st.session_state.respuestas.get(indice, "")
-
-        if es_abierta:
-            respuesta = st.text_area("Escriba su respuesta libre:", value=str(respuesta_previa), key=f"preq_text_{indice}")
-        else:
-            opciones = [str(pregunta.get("A", "")), str(pregunta.get("B", "")), str(pregunta.get("C", "")), str(pregunta.get("D", ""))]
-            opciones = [o for o in opciones if o != "nan" and o != ""]
-            index_default = opciones.index(respuesta_previa) if respuesta_previa in opciones else 0
-            respuesta = st.radio("Seleccione una opción:", opciones, index=index_default, key=f"preq_radio_{indice}")
-
-    col_ant, col_sig = st.columns(2)
-    with col_sig:
-        texto_boton = "Finalizar y Enviar 🏁" if indice == total - 1 else "Siguiente ➡"
-        if st.button(texto_boton, use_container_width=True):
-            if es_pregunta_comentarios and (not respuesta or str(respuesta).strip() == ""):
-                st.error("⚠️ La pregunta final es obligatoria. Por favor, escriba sus comentarios o dudas antes de enviar.")
-            else:
-                st.session_state.respuestas[indice] = respuesta
-                if indice < total - 1:
-                    st.session_state.pregunta_actual += 1
-                else:
-                    st.session_state.pagina = "finalizar"
-                st.rerun()
+    # Validar si el tiempo ya expiró del lado del servidor también por seguridad
+    if tiempo_transcurrido >= 300:
+        st.warning("El tiempo reglamentario ha finalizado.")
+        # Aquí puedes forzar el cambio de página a resultados o calificación automática
+        # st.session_state.pagina = "resultados"
+        # st.rerun
 
 # ---------- 4. FINALIZAR ----------
 elif st.session_state.pagina == "finalizar":
