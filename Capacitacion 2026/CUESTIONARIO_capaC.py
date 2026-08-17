@@ -447,13 +447,41 @@ elif st.session_state.pagina == "admin_panel":
     st.title("🔒 Panel de Administración y Estadísticas INPC")
     st.success(f"Bienvenido al panel de control, **{st.session_state.nombre}** (Administrador).")
     
-    if st.button("🚪 Cerrar Sesión de Administrador"):
-        st.session_state.pagina = "login"
-        st.session_state.usuario = ""
-        st.session_state.nombre = ""
-        st.session_state.area = ""
-        st.rerun()
-        
+    col_salir, col_borrar = st.columns([2, 1])
+    with col_salir:
+        if st.button("🚪 Cerrar Sesión de Administrador"):
+            st.session_state.pagina = "login"
+            st.session_state.usuario = ""
+            st.session_state.nombre = ""
+            st.session_state.area = ""
+            st.rerun()
+            
+    with col_borrar:
+        # Botón de peligro para reiniciar registros
+        if st.button("🗑️ Borrar Todas las Estadísticas", type="primary"):
+            st.session_state.confirmar_borrado = True
+
+    # Confirmación de seguridad para evitar borrados accidentales
+    if st.session_state.get("confirmar_borrado", False):
+        st.warning("⚠️ **¿Estás completamente seguro?** Esta acción eliminará permanentemente todos los resultados, calificaciones y comentarios registrados hasta el momento.")
+        col_si, col_no = st.columns(2)
+        with col_si:
+            if st.button("Sí, borrar todo", use_container_width=True):
+                try:
+                    if os.path.exists(archivo_csv):
+                        os.remove(archivo_csv)
+                    if os.path.exists(archivo_preguntas_ip_resul):
+                        os.remove(archivo_preguntas_ip_resul)
+                    st.success("✅ Los registros y estadísticas han sido eliminados correctamente.")
+                    st.session_state.confirmar_borrado = False
+                    st.rerun()
+                except Exception as e:
+                    st.error(f"Error al eliminar los archivos: {e}")
+        with col_no:
+            if st.button("Cancelar", use_container_width=True):
+                st.session_state.confirmar_borrado = False
+                st.rerun()
+
     st.markdown("---")
     
     if os.path.exists(archivo_csv):
