@@ -498,7 +498,37 @@ elif st.session_state.pagina == "admin_panel":
             if st.button("Cancelar", use_container_width=True):
                 st.session_state.confirmar_borrado = False
                 st.rerun()
-
+    st.markdown("---")
+    st.subheader("📥 Descarga de Reportes y Datos")
+    
+    # Columnas para los botones de descarga de ambos archivos
+    col_dl1, col_dl2 = st.columns(2)
+    
+    with col_dl1:
+        if os.path.exists(archivo_csv):
+            with open(archivo_csv, "rb") as f:
+                st.download_button(
+                    label="📊 Descargar Concentrado (RESULTADOS_NORTE.csv)",
+                    data=f,
+                    file_name="RESULTADOS_NORTE.csv",
+                    mime="text/csv",
+                    use_container_width=True
+                )
+        else:
+            st.info("Aún no hay datos en el concentrado general.")
+            
+    with col_dl2:
+        if os.path.exists(archivo_preguntas_ip_resul):
+            with open(archivo_preguntas_ip_resul, "rb") as f:
+                st.download_button(
+                    label="📝 Descargar Detalle y Comentarios (PREGUNTAS_IP_RESUL.csv)",
+                    data=f,
+                    file_name="PREGUNTAS_IP_RESUL.csv",
+                    mime="text/csv",
+                    use_container_width=True
+                )
+        else:
+            st.info("Aún no hay datos en el detalle de preguntas.")
     st.markdown("---")
     
     if os.path.exists(archivo_csv):
