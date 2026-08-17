@@ -3,23 +3,23 @@
 ##streamlit run "D:\alan.mendoza\Documents\Capacitacion 2026\CUESTIONARIO_capaC.py"  --server.address 0.0.0.0 --server.port 8501
 # -*- coding: utf-8 -*-
 """
-Tratamiento de la Información
+Tratamiento de la Información - Sistema de Evaluación INPC
 """
 import streamlit as st
 import pandas as pd
 import os
 from datetime import datetime
-#from streamlit_autorefresh import st_autorefresh
 import qrcode
 import plotly.express as px
 import socket
+import streamlit.components.v1 as components
 
 # ---------- CONFIGURACION DE PAGINA ----------
 st.set_page_config(
     page_title="Sistema de Evaluación INPC",
     page_icon="📊",
     layout="wide",
-    initial_sidebar_state="expanded"  # Opciones: "auto", "expanded" (abierta) o "collapsed" (oculta por defecto)
+    initial_sidebar_state="expanded"
 )
 
 # ---------- ESTILOS Y DISEÑO CORPORATIVO ----------
@@ -32,7 +32,6 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ---------- DIRECTORIO Y RUTAS (COMPATIBLE CON LA NUBE) ----------
-# Obtiene la ruta de la carpeta donde se encuentra este script ejecutándose
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 DIR_DATOS = os.path.join(BASE_DIR, "Datos")
@@ -103,19 +102,7 @@ if "inicio_examen" not in st.session_state:
 if "resultado_guardado" not in st.session_state:
     st.session_state.resultado_guardado = False
 
-# ---------- BARRA LATERAL (LOGO LOCAL Y BOTÓN A PÁGINA QR GIGANTE) ----------
-
-# ---------- OBTENCIÓN DINÁMICA DE LA IP LOCAL ----------
-def obtener_ip_local():
-    try:
-        s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-        s.connect(("8.8.8.8", 80))
-        ip_local = s.getsockname()[0]
-        s.close()
-    except Exception:
-        ip_local = "127.0.0.1"
-    return ip_local
-
+# ---------- BARRA LATERAL ----------
 with st.sidebar:
     logo_path = os.path.join(BASE_DIR, "logo_inegi.png")
     if os.path.exists(logo_path):
@@ -126,17 +113,10 @@ with st.sidebar:
     st.markdown("### Acceso Rápido")
     st.write("Escanee el código QR para ingresar desde su dispositivo:")
     
-    # Generamos la URL dinámicamente con la IP actual del equipo
-    #IP_ACTUAL = obtener_ip_local()
-    IP_ACTUAL= "https://cuestionario-inpc-norte.streamlit.app"
-    # URL pública o la que te asigne Streamlit Cloud automáticamente
-    #url = "https://tu-app.streamlit.app" # (Streamlit Cloud te da el enlace exacto al desplegar)
-    # URL pública de tu aplicación en la nube
     url = "https://cuestionario-inpc-norte.streamlit.app"
     qr_path = os.path.join(BASE_DIR, "qr_acceso.png")
     
     try:
-        # Generar QR en alta resolución y asegurarnos de guardarlo
         qr = qrcode.QRCode(version=1, box_size=12, border=2)
         qr.add_data(url)
         qr.make(fit=True)
@@ -145,21 +125,20 @@ with st.sidebar:
     except Exception as e:
         st.error(f"Error al generar QR: {e}")
 
-    # Mostrar QR si el archivo existe
     if os.path.exists(qr_path):
-        st.image(qr_path, width=220, caption=f"IP: {IP_ACTUAL}")
+        st.image(qr_path, width=220, caption="Portal Web En Línea")
     else:
         st.warning("⚠️ No se pudo generar la imagen QR.")
     
-    # Botón para abrir el QR como una página completa independiente
     if st.button("🔍 Código QR grande", use_container_width=True):
         st.session_state.pagina = "qr_gigante"
         st.rerun()
 
     st.markdown("---")
     st.info("💡 **Capacitación INPC 2026**")
-    st.info(" **ZONA NORTE**")
-# ---------- 0. PANTALLA: QR GIGANTE (PÁGINA COMPLETA) ----------
+    st.info("📍 **ZONA NORTE**")
+
+# ---------- 0. PANTALLA: QR GIGANTE ----------
 if st.session_state.pagina == "qr_gigante":
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
@@ -172,14 +151,13 @@ if st.session_state.pagina == "qr_gigante":
         
         qr_path = os.path.join(BASE_DIR, "qr_acceso.png")
         if os.path.exists(qr_path):
-            # Mostramos el QR a un tamaño grande e impactante al centro
             st.image(qr_path, width=450)
-            st.markdown(f"<h3 style='text-align: center; color: #333;'>Enlace directo: <code>http://10.15.15.16:8501</code></h3>", unsafe_allow_html=True)
+            st.markdown(f"<h3 style='text-align: center; color: #333;'>Enlace directo: <code>{url}</code></h3>", unsafe_allow_html=True)
             
         st.markdown("---")
         if st.button("⬅️ Regresar al Sistema", use_container_width=True):
-            # Regresa a login o al panel según el usuario activo
-            st.session_state.pagina = "admin_panel" if st.session_state.usuario and (st.session_state.usuario.lower() == "alan.mendoza" or st.session_state.area.lower() in ["admin", "administrador", "sistemas"]) else "login"
+            es_admin_previo = st.session_state.usuario and (st.session_state.usuario.lower() == "alan.mendoza" or st.session_state.area.lower() in ["admin", "administrador", "sistemas"])
+            st.session_state.pagina = "admin_panel" if es_admin_previo else "login"
             st.rerun()
 
 # ---------- 1. LOGIN ----------
@@ -234,6 +212,8 @@ elif st.session_state.pagina == "login":
                         df_exam = pd.concat([df_exam, pregunta_comentario], ignore_index=True)
                         
                         st.session_state.preguntas_examen = df_exam
+                        st.session_state.pregunta_actual = 0
+                        st.session_state.respuestas = {}
                     else:
                         st.error("No hay preguntas configuradas en el sistema.")
                         st.stop()
@@ -262,58 +242,104 @@ elif st.session_state.pagina == "bienvenida":
             st.session_state.pagina = "evaluacion"
             st.rerun()
 
-import streamlit.components.v1 as components
-
-# ---------- 3. EVALUACION (5 MINUTOS CON RELOJ EN TIEMPO REAL) ----------
+# ---------- 3. EVALUACION (INTERACTIVA CON CRONÓMETRO) ----------
 elif st.session_state.pagina == "evaluacion":
     st.subheader("📝 Cuestionario de Evaluación")
     
-    # Definimos el tiempo total en segundos (5 minutos = 300 segundos)
-    # O calculamos el tiempo restante basado en cuándo inició sesión el usuario:
-    tiempo_transcurrido = (datetime.now() - st.session_state.inicio_examen).seconds
-    tiempo_restante_inicial = max(0, 300 - tiempo_transcurrido)
+    # Validación de tiempo transcurrido (5 minutos = 300 segundos)
+    if st.session_state.inicio_examen:
+        tiempo_transcurrido = (datetime.now() - st.session_state.inicio_examen).seconds
+        tiempo_restante_inicial = max(0, 300 - tiempo_transcurrido)
+        
+        if tiempo_transcurrido >= 300:
+            st.warning("⏱️ El tiempo reglamentario ha finalizado.")
+            st.session_state.pagina = "finalizar"
+            st.rerun()
+    else:
+        tiempo_restante_inicial = 300
 
-    # Componente HTML/JS para el segundero flotante y fluido en el navegador
+    # Cronómetro flotante en JavaScript
     timer_html = f"""
     <div style="font-family: sans-serif; background-color: #f0f2f6; padding: 10px; border-radius: 8px; text-align: center; margin-bottom: 15px;">
         <span style="font-size: 16px; color: #31333F; font-weight: bold;">⏱️ Tiempo restante: </span>
         <span id="timer" style="font-size: 20px; color: #d9534f; font-weight: bold;">05:00</span>
     </div>
-
     <script>
         var timeLeft = {tiempo_restante_inicial};
-        
         function updateTimer() {{
             var minutes = Math.floor(timeLeft / 60);
             var seconds = timeLeft % 60;
-            
             document.getElementById('timer').innerText = 
                 (minutes < 10 ? "0" : "") + minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
-            
             if (timeLeft <= 0) {{
                 clearInterval(timerInterval);
-                alert("¡El tiempo del examen ha terminado!");
-                // Opcional: recarga la página o simula el envío cuando se acabe el tiempo
                 window.location.reload();
             }} else {{
                 timeLeft--;
             }}
         }}
-        
         updateTimer();
         var timerInterval = setInterval(updateTimer, 1000);
     </script>
     """
-    
-    # Mostramos el reloj en la interfaz de Streamlit
     components.html(timer_html, height=70)
 
-    # Validar si el tiempo ya expiró del lado del servidor también por seguridad
-    if tiempo_transcurrido >= 300:
-        st.warning("El tiempo reglamentario ha finalizado.")
-        # Aquí puedes forzar el cambio de página a resultados o calificación automática
-        # st.session_state.pagina = "resultados"
-        # st.rerun
+    df_exam = st.session_state.preguntas_examen
+    idx = st.session_state.pregunta_actual
+    total_preguntas = len(df_exam)
+
+    # Barra de progreso
+    st.progress((idx + 1) / total_preguntas)
+    st.markdown(f"**Pregunta {idx + 1} de {total_preguntas}**")
+
+    fila_actual = df_exam.iloc[idx]
+    texto_p = fila_actual.get("Pregunta", "")
+    es_comentario = (str(fila_actual.get("Correcta", "")).strip().upper() == "COMENTARIO")
+
+    st.markdown(f"### {texto_p}")
+
+    # Mostrar opciones o campo de texto libre para el comentario final
+    respuesta_actual = st.session_state.respuestas.get(idx, "")
+
+    if es_comentario:
+        val_resp = st.text_area("Escriba sus comentarios o dudas aquí:", value=respuesta_actual, height=150)
+        st.session_state.respuestas[idx] = val_resp
+    else:
+        opciones = []
+        opciones_letras = ["A", "B", "C", "D"]
+        labels_map = {}
+        for letra in opciones_letras:
+            if letra in fila_actual and pd.notna(fila_actual[letra]) and str(fila_actual[letra]).strip() != "":
+                val_opc = str(fila_actual[letra])
+                opciones.append(val_opc)
+                labels_map[val_opc] = letra
+
+        # Determinar índice preseleccionado si ya respondió
+        index_default = 0
+        if respuesta_actual in opciones:
+            index_default = opciones.index(respuesta_actual)
+
+        sel_opcion = st.radio("Seleccione una opción:", opciones, index=index_default, key=f"radio_p_{idx}")
+        st.session_state.respuestas[idx] = sel_opcion
+
+    st.markdown("---")
+    col_ant, col_sig = st.columns(2)
+
+    with col_ant:
+        if idx > 0:
+            if st.button("⬅️ Anterior", use_container_width=True):
+                st.session_state.pregunta_actual -= 1
+                st.rerun()
+
+    with col_sig:
+        if idx < total_preguntas - 1:
+            if st.button("Siguiente ➡️", use_container_width=True):
+                st.session_state.pregunta_actual += 1
+                st.rerun()
+        else:
+            if st.button("✅ Finalizar y Enviar Evaluación", use_container_width=True):
+                st.session_state.pagina = "finalizar"
+                st.rerun()
 
 # ---------- 4. FINALIZAR ----------
 elif st.session_state.pagina == "finalizar":
@@ -342,16 +368,13 @@ elif st.session_state.pagina == "finalizar":
                     resp_usuario_clean = respuesta_usuario.lower().strip()
                     corr_clean = respuesta_correcta_raw.lower().strip()
                     
-                    # 1. Determinar el texto real de la respuesta correcta basándonos en la letra (A, B, C, D) si aplica
                     texto_opcion_correcta_real = ""
                     if corr_clean in ["a", "b", "c", "d"] and corr_clean.upper() in fila:
                         texto_opcion_correcta_real = str(fila[corr_clean.upper()]).lower().strip()
                     
-                    # 2. Comprobar si coincide ya sea por la letra, por el texto de la opción o por coincidencia directa
                     coincide_por_letra = (corr_clean in ["a", "b", "c", "d"] and resp_usuario_clean == texto_opcion_correcta_real)
                     coincide_por_texto_directo = (resp_usuario_clean == corr_clean)
                     
-                    # También revisamos si el texto de la respuesta coincide con cualquiera de las opciones si la columna contenía texto directo
                     coincide_texto_opciones = False
                     for letra_opc in ["a", "b", "c", "d"]:
                         if letra_opc in fila and pd.notna(fila[letra_opc]):
@@ -362,14 +385,9 @@ elif st.session_state.pagina == "finalizar":
                     if coincide_por_letra or coincide_por_texto_directo or coincide_texto_opciones:
                         aciertos += 1
                         es_correcta = True
-                else:
-                    if respuesta_usuario != "" and respuesta_usuario != "Sin responder":
-                        aciertos += 1
-                        es_correcta = True
-                        
+                
                 estatus_txt = "Correcta" if es_correcta else "Incorrecta"
 
-            # Guardamos el texto real de la respuesta correcta para auditoría clara en el CSV
             texto_resp_corr_audit = respuesta_correcta_raw
             if respuesta_correcta_raw.upper() in ["A", "B", "C", "D"] and respuesta_correcta_raw.upper() in fila:
                 texto_resp_corr_audit = f"{respuesta_correcta_raw.upper()}: {fila[respuesta_correcta_raw.upper()]}"
@@ -498,18 +516,15 @@ elif st.session_state.pagina == "admin_panel":
                     st.plotly_chart(fig_bar_c, use_container_width=True)
                     
             with c4:
-                # ---------- NUEVA GRÁFICA: LAS 5 PREGUNTAS CON MÁS ERROR ----------
                 if os.path.exists(archivo_preguntas_ip_resul):
                     try:
                         df_detalles_err = pd.read_csv(archivo_preguntas_ip_resul, encoding="utf-8-sig")
                         if not df_detalles_err.empty and "ESTATUS" in df_detalles_err.columns:
-                            # Filtramos únicamente las respuestas incorrectas
                             df_errores = df_detalles_err[df_detalles_err["ESTATUS"] == "Incorrecta"]
                             if not df_errores.empty:
                                 top_errores = df_errores.groupby("PREGUNTA").size().reset_index(name="TOTAL_ERRORES")
                                 top_errores = top_errores.sort_values(by="TOTAL_ERRORES", ascending=False).head(5)
                                 
-                                # Acortamos el texto de la pregunta si es muy largo para que luzca bien en la gráfica
                                 top_errores["PREGUNTA_CORTA"] = top_errores["PREGUNTA"].apply(lambda x: x[:45] + "..." if len(str(x)) > 45 else str(x))
                                 
                                 fig_bar_err = px.bar(
@@ -522,7 +537,7 @@ elif st.session_state.pagina == "admin_panel":
                                     color="TOTAL_ERRORES",
                                     color_continuous_scale="Reds"
                                 )
-                                fig_bar_err.update_layout(yaxis=dict(autorange="reversed")) # Muestra la mayor arriba
+                                fig_bar_err.update_layout(yaxis=dict(autorange="reversed"))
                                 st.plotly_chart(fig_bar_err, use_container_width=True)
                             else:
                                 st.info("✨ Aún no hay registros de respuestas incorrectas.")
@@ -532,7 +547,7 @@ elif st.session_state.pagina == "admin_panel":
                         st.info("No se pudo procesar la gráfica de errores.")
                 else:
                     st.info("Esperando registros en PREGUNTAS_IP_RESUL.csv para generar la gráfica de errores.")                
-                
+            
             st.markdown("---")
             st.subheader("💬 Buzón de Dudas y Comentarios Obligatorios del Personal IP")
             if os.path.exists(archivo_preguntas_ip_resul):
