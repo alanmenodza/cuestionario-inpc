@@ -165,6 +165,10 @@ elif st.session_state.pagina == "login":
     col1, col2, col3 = st.columns([1, 2, 1])
     
     with col2:
+        logo_path = os.path.join(BASE_DIR, "logo_inegi.png")
+        if os.path.exists(logo_path):
+            st.image(logo_path, width=220)
+            
         st.markdown("<h1 style='text-align: center;'>Sistema de Evaluación INPC</h1>", unsafe_allow_html=True)
         st.markdown("<p style='text-align: center;'>Acceso para Personal Operativo</p>", unsafe_allow_html=True)
         
@@ -228,6 +232,10 @@ elif st.session_state.pagina == "bienvenida":
     col1, col2, col3 = st.columns([1, 2, 1])
     
     with col2:
+        logo_path = os.path.join(BASE_DIR, "logo_inegi.png")
+        if os.path.exists(logo_path):
+            st.image(logo_path, width=200)
+            
         st.markdown(f"# ¡Bienvenido, {st.session_state.nombre}!")
         st.success("Tus credenciales han sido verificadas exitosamente.")
         
@@ -244,6 +252,13 @@ elif st.session_state.pagina == "bienvenida":
 
 # ---------- 3. EVALUACION (INTERACTIVA CON CRONÓMETRO) ----------
 elif st.session_state.pagina == "evaluacion":
+    # Logotipo institucional centrado/alineado en la encuesta
+    col_img1, col_img2, col_img3 = st.columns([1, 1, 1])
+    with col_img2:
+        logo_path = os.path.join(BASE_DIR, "logo_inegi.png")
+        if os.path.exists(logo_path):
+            st.image(logo_path, use_container_width=True)
+
     st.subheader("📝 Cuestionario de Evaluación")
     
     # Validación de tiempo transcurrido (5 minutos = 300 segundos)
@@ -428,6 +443,10 @@ elif st.session_state.pagina == "finalizar":
 
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
+        logo_path = os.path.join(BASE_DIR, "logo_inegi.png")
+        if os.path.exists(logo_path):
+            st.image(logo_path, width=200)
+
         st.markdown("<h1 style='text-align: center; color: #1f4e78;'>¡Muchas Gracias!</h1>", unsafe_allow_html=True)
         st.markdown("<p style='text-align: center; font-size: 18px;'>Su evaluación y comentarios han sido registrados exitosamente en el sistema.</p>", unsafe_allow_html=True)
         st.success("✨ Puede cerrar esta ventana o salir de la sesión de manera segura.")
@@ -457,11 +476,9 @@ elif st.session_state.pagina == "admin_panel":
             st.rerun()
             
     with col_borrar:
-        # Botón de peligro para reiniciar registros
         if st.button("🗑️ Borrar Todas las Estadísticas", type="primary"):
             st.session_state.confirmar_borrado = True
 
-    # Confirmación de seguridad para evitar borrados accidentales
     if st.session_state.get("confirmar_borrado", False):
         st.warning("⚠️ **¿Estás completamente seguro?** Esta acción eliminará permanentemente todos los resultados, calificaciones y comentarios registrados hasta el momento.")
         col_si, col_no = st.columns(2)
